@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+ <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Секция Администрирование  | Linux Mint и его Cinnamon (Алексей Alv Федорчук)</title>
+<link rel="stylesheet" type="text/css" href="/css/syntax.css">
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/modern-business.css">
+<link rel="stylesheet" type="text/css" href="/css/lavish-bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/css/customstyles.css">
+<link rel="stylesheet" type="text/css" href="/css/theme-green.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+
+
+
+ 
+
+<script>
+  $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Linux Mint и его Cinnamon</span></a>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                <li><a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll" target="_blank">Github Repo</a></li>
+                
+                
+                
+                
+
+
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+
+                <li class="dropdown">
+                    
+                    
+                    
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        
+                        <li><a href="doc_about.html">About this theme</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_support.html">Support</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_troubleshooting.html">Troubleshooting</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+                <!-- special insertion -->
+
+               
+                <!-- Send feedback function -->
+<script>
+function SendLinkByMail(href) {
+var subject= "Linux Mint и его Cinnamon (Алексей Alv Федорчук) feedback";
+var body = "I have some feedback about the Секция Администрирование page: ";
+body += window.location.href;
+body += "";
+var uri = "mailto:nemilya@gmail.com?subject=";
+uri += encodeURIComponent(subject);
+uri += "&body=";
+uri += encodeURIComponent(body);
+window.location.href = uri;
+}
+</script>
+
+<li><a href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B" target="_blank"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+
+
+                <li>
+                <!-- start search -->
+                <div id="search-demo-container">
+                <input type="text" id="search-input" placeholder="search...">
+                <ul id="results-container"></ul>
+                </div>
+                <script src="js/jekyll-search.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                SimpleJekyllSearch.init({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                dataSource: 'search.json',
+                searchResultTemplate: '<li><a href="{url}" title="Секция Администрирование">{title}</a></li>',
+                noResultsText: 'No results found.',
+                limit: 10,
+                fuzzy: true,
+                })
+                </script>
+                <!-- end search -->
+                </li>
+
+                
+<script language="JavaScript" type="text/javascript">
+
+    $( document ).ready(function() {
+        if (top.location == location)  {
+            $(".escapeMe").remove();
+        }
+
+    });
+
+            function breakout_of_frame() {
+                if (top.location != location) {
+                    window.open(window.location.href, '_blank');
+
+                }
+
+            }
+</script>
+
+<li class="escapeMe">
+    <a href="#" onclick="breakout_of_frame()" ><i class="fa fa-sign-out"></i> Pop-out</a>
+</li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+        <script>
+
+            $(document).ready(function() {
+                        // Initialize navgoco with default options
+                        $("#mysidebar").navgoco({
+                            caretHtml: '',
+                            accordion: true,
+                            openClass: 'active', // open
+                            save: false, // leave false or nav highlighting doesn't work right
+                            cookie: {
+                                name: 'navgoco',
+                                expires: false,
+                                path: '/'
+                        },
+                        slide: {
+                            duration: 400,
+                            easing: 'swing'
+                                }
+                                });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+            });
+
+        </script>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ul id="mysidebar" class="nav">
+
+            <div class="siteTagline">Linux&nbsp;Mint Cinnamon</div>
+            <div class="versionTagline">version 17.1</div>
+
+            
+            
+            
+            <li><a href="#">Вступление</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="index.html">Аннотация</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="01_about_book.html">Об этой книге</a></li>
+                    
+
+                    
+            </li>
+            
+            
+            </ul>
+        </li>
+        
+        
+            
+            <li><a href="#">Введение</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="02_linux_mint_into.html">Введение в Linux Mint</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="03_cinnamon_intro.html">Введение в Cinnamon</a></li>
+                    
+
+                    
+            </li>
+            
+            
+            </ul>
+        </li>
+        
+        
+            
+            <li><a href="#">Linux Mint: установка</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="04_linux_mint_installation.html">Linux Mint: установка</a></li>
+                    
+
+                    
+            </li>
+            
+            
+            </ul>
+        </li>
+        
+        
+            
+            <li><a href="#">Mint и Cinnamon</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="05_mint_and_cinnamon_obzor.html">Обзор среды</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="06_cinnamon_system_config.html">Cinnamon и системные настройки</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="07_section_parameters.html">Секция Параметры</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="08_devices.html">Секция Оборудование</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li class="active"><a href="09_admins.html">Секция Администрирование</a></li>
+                    
+
+                    
+            </li>
+            
+            
+            </ul>
+        </li>
+        
+        
+        
+        </ul>
+
+        
+    </div>
+       <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
+    <script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <div class="post-header">
+   <h1 class="post-title-main">Секция Администрирование</h1>
+</div>
+
+<div class="post-content">
+
+   
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+
+  <p>Наступает волнующий момент — среди штатных настроек Cinnamon&#39;а осталась одна
+секция -- <code>Администрирование</code>, а в ней — четыре модуля:</p>
+
+<ul>
+<li><p>Источники приложений; </p></li>
+<li><p>Менеджер драйверов; </p></li>
+<li><p>Окно входа в систему; </p></li>
+<li><p>Пользователи и группы. </p></li>
+</ul>
+
+<p>Первые два модуля прямого отношения к Cinnamon не имеют, а принадлежат к кругу
+фирменных утилит Mint, которые будут предметом соответствующего очерка. Так
+что в очерке этом будут рассмотрены два последних.</p>
+
+<h3 id="Окно-входа-в-систему">Окно входа в систему</h3>
+
+<p>Строго говоря этот модуль тоже не часть среды Cinnamon, а является
+инструментом настройки дисплейного менеджера <code>MDM</code> (изначально аббревиатура <code>Mint
+Display Manager</code>, ныне превратившаяся в рекурсивное <code>MDM Display Manager</code>),
+обеспечивающего во всех редакциях дистрибутива Mint авторизацию в системе.
+Однако он очень тесно интегрирован в Системные настройки, в том числе и в
+отношении внешнего вида, и потому его целесообразно рассмотреть здесь.</p>
+
+<p>Поскольку авторизация в системе выходит за пределы компетенции отдельного
+пользователя, при запуске этого модуля (из CLI его можно запустить командой
+<code>sudo mdmsetup</code>) для начала запрашивается пароль, после ввода которого
+появляется такая панель:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_068.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_068-572x386.png" alt="Изображение144"> </a> <a href="http://alv.me/wp-content/img/2014/12/param_068.png"> </a></p>
+
+<p>С пунктом Тема всё понятно — это выбор заставки, на фоне которой выводится
+окно авторизации, а также, при желании, определение собственного приветствия:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_069.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_069-572x481.png" alt="Изображение145"> </a></p>
+
+<p>Далее можно задать автоматический вход в систему для определённого
+пользователя, и установить задержку перед входом, позволяющую выбрать сеанс:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_070.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_070-572x386.png" alt="Изображение146"> </a></p>
+
+<p>Сеанс по умолчанию задаётся в пункте Настройки:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_071.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_071-572x386.png" alt="Изображение147"> </a></p>
+
+<p>Здесь же есть вожделенная для начинающих линуксоидов опция — разрешение
+авторизоваться в иксовом сеансе в качестве суперпользователя. Что, конечно,
+круто, но делать не рекомендуется, за исключением единичных ну очень
+специальных случаев.</p>
+
+<h3 id="Пользователи-и-группы">Пользователи и группы</h3>
+
+<p>А вот модуль Пользователи и группы — родной для Cinnamon, из CLI его можно
+запустить командой <code>cinnamon-settings-users</code>. Очевидно, что и здесь потребуется
+пароль, ввод которого даст доступ к святая святых — списку пользователей и
+групп:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_072.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_072-572x406.png" alt="Изображение148"> </a></p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_073.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_073-572x406.png" alt="Изображение149"> </a></p>
+
+<p>От описания возможных тут действий в каждом аккаунте позволю себе воздержаться
+— они почти очевидны из скриншота и становятся более чем очевидными после пары
+щелчков мышью. А вот о том, как создаётся новый пользовательский аккаунт,
+скажу чуть подробнее.</p>
+
+<p>Собственно, для создания аккаунта достаточно заполнить простую форму, выбрав в
+ней тип учётной записи:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_074.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_074.png" alt="Изображение150"></a></p>
+
+<p>Тут возможно два варианта — <code>Администратор</code> и <code>Стандартный</code>. Второй выводится по
+умолчанию — и пусть таковым остаётся (почему — скажу чуть позже). Так что
+теперь достаточно нажать кнопку Добавить, чтобы новый пользователь появился в
+списке оных:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_075.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_075-572x382.png" alt="Изображение151"> </a></p>
+
+<p>Обращаю внимание, что пароль в ходе создания нового аккаунта не запрашивается.
+Его можно установить здесь же, щёлкнув на поле Пароль:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_076.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_076.png" alt="Изображение152">
+</a></p>
+
+<p>Впрочем, я по ряду причин предпочитаю делать это из CLI командой</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>sudo passwd username
+</code></pre></div>
+<p>Только после этого надо не забыть исключить пользователя из группы
+<code>nopasswdlogin</code>, членство в которой даёт возможность беспарольного входа в
+систему, что не есть правильно. Для этого достаточно щёлкнуть мышью на поле
+Группы и снять отметку с соответствующего боксика:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/param_077.png"> <img src="http://alv.me/wp-content/img/im_cin_img/param_077.png" alt="Изображение153"></a></p>
+
+<p>Здесь, во-первых, надо подчеркнуть, что беспарольный вход в систему — это
+совсем не то же самое, что автоматический вход, о котором говорилось выше: во-
+втором случае пароль пользователя существует, просто его не нужно вводить в
+окошке <code>MDM</code> (это, в соответствие с названием, делается автоматически, за
+кадром). А вот при авторизации в консоли этому самому «автоматическому»
+пользователю пароль вводить придётся. Как и при запуске программ, требующих
+прав администратора. И, чтобы ни говорили записные параноики, с точки зрения
+безопасности на локальной машине, находящейся в индивидуальном пользовании,
+автоматический вход ничем не отличается от парольного.</p>
+
+<p>Во-вторых, поясняю, в чём отличие административного типа учётной записи от
+стандартного: только пользователь с аккаунтом первого типа имеет возможность
+получить доступ к административным привилегиям с помощью команды <code>sudo</code>.
+Административный статус автоматически присваивается тому пользователю, чей
+аккаунт был создан при инсталляции системы. Так что для всех остальных
+аккаунтов достаточно статуса стандартного. Ибо зачем нам два генеральных
+секретаря? — резонно говорил незабвенный Леонид Ильич (правда, не в жизни, а в
+анекдоте)</p>
+
+<p>И в-третьих, может возникнуть вопрос, зачем на индивидуальной машине несколько
+аккаунтов? Причины могут быть разные, скажу только за себя. Мой первый и
+главный аккаунт, <code>alv</code>, предназначен для меня, любимого, когда он занят
+выполнением своей непосредственной работы. Например, сочинением этой книжки.</p>
+
+<p>Никаких потенциально опасных действий я под основным аккаунтом не делаю (или
+стараюсь не делать). Для всякого рода экспериментов предназначен аккаунт <code>exp</code>,
+пользователь которого не имеет доступа к правам администратора и потому
+напортачить на системном уровне не может — в его власти только развалить
+собственные пользовательские настройки. Поскольку такое рано или поздно
+случается — на помощь приходит аккаунт <code>def</code>, в котором сохраняются все
+настройки по умолчанию. И из которого настройки несчастного exp можно
+восстановить до исходного состояния простым копированием конфигов.</p>
+
+<p>На этом разговор о настройках Mint совместно с Cinnamon можно считать
+законченным. Следующий очерк имеет отношение только к Mint, так как посвящён
+«фирменному» иснтсрументарию этого дистрибутива — и не только имеющему
+отношение к настройкам.</p>
+
+
+
+<div class="tags">
+    
+</div>
+
+
+
+</div>
+
+
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               2015 Алексей Alv Федорчук.<br />
+ Site last generated: Sep 14, 2015 <br />
+<p><a href="http://linuxmint.com/"><img width="50" src="images/menu.svg"/></a></p>
+                </div>
+            </div>
+        </footer>
+
+            </div><!-- /.row -->
+
+    </div>    <!-- /.container -->
+
+</body>
+
+
+</html>
+

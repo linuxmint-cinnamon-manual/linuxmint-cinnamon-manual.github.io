@@ -1,0 +1,122 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+index:
+  title: "Аннотация"
+  url: "index.html"
+  link: "<a href='index.html'>Аннотация</a>"
+
+
+01_about_book:
+  title: "Об этой книге"
+  url: "01_about_book.html"
+  link: "<a href='01_about_book.html'>Об этой книге</a>"
+
+
+
+
+02_linux_mint_into:
+  title: "Введение в Linux Mint"
+  url: "02_linux_mint_into.html"
+  link: "<a href='02_linux_mint_into.html'>Введение в Linux Mint</a>"
+
+
+03_cinnamon_intro:
+  title: "Введение в Cinnamon"
+  url: "03_cinnamon_intro.html"
+  link: "<a href='03_cinnamon_intro.html'>Введение в Cinnamon</a>"
+
+
+
+
+04_linux_mint_installation:
+  title: "Linux Mint: установка"
+  url: "04_linux_mint_installation.html"
+  link: "<a href='04_linux_mint_installation.html'>Linux Mint: установка</a>"
+
+
+
+
+05_mint_and_cinnamon_obzor:
+  title: "Обзор среды"
+  url: "05_mint_and_cinnamon_obzor.html"
+  link: "<a href='05_mint_and_cinnamon_obzor.html'>Обзор среды</a>"
+
+
+06_cinnamon_system_config:
+  title: "Cinnamon и системные настройки"
+  url: "06_cinnamon_system_config.html"
+  link: "<a href='06_cinnamon_system_config.html'>Cinnamon и системные настройки</a>"
+
+
+07_section_parameters:
+  title: "Секция Параметры"
+  url: "07_section_parameters.html"
+  link: "<a href='07_section_parameters.html'>Секция Параметры</a>"
+
+
+08_devices:
+  title: "Секция Оборудование"
+  url: "08_devices.html"
+  link: "<a href='08_devices.html'>Секция Оборудование</a>"
+
+
+09_admins:
+  title: "Секция Администрирование"
+  url: "09_admins.html"
+  link: "<a href='09_admins.html'>Секция Администрирование</a>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+doc_about:
+  title: "About this theme"
+  url: "doc_about.html"
+  link: "<a href='doc_about.html'>About this theme</a>"
+
+
+
+doc_support:
+  title: "Support"
+  url: "doc_support.html"
+  link: "<a href='doc_support.html'>Support</a>"
+
+
+
+doc_troubleshooting:
+  title: "Troubleshooting"
+  url: "doc_troubleshooting.html"
+  link: "<a href='doc_troubleshooting.html'>Troubleshooting</a>"
+
+
+
+
+
+

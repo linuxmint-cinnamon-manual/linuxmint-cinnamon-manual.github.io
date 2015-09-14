@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+ <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Введение в Cinnamon  | Linux Mint и его Cinnamon (Алексей Alv Федорчук)</title>
+<link rel="stylesheet" type="text/css" href="/css/syntax.css">
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/modern-business.css">
+<link rel="stylesheet" type="text/css" href="/css/lavish-bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/css/customstyles.css">
+<link rel="stylesheet" type="text/css" href="/css/theme-green.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+
+
+
+ 
+
+<script>
+  $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Linux Mint и его Cinnamon</span></a>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                <li><a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll" target="_blank">Github Repo</a></li>
+                
+                
+                
+                
+
+
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+
+                <li class="dropdown">
+                    
+                    
+                    
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        
+                        <li><a href="doc_about.html">About this theme</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_support.html">Support</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_troubleshooting.html">Troubleshooting</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+                <!-- special insertion -->
+
+               
+                <!-- Send feedback function -->
+<script>
+function SendLinkByMail(href) {
+var subject= "Linux Mint и его Cinnamon (Алексей Alv Федорчук) feedback";
+var body = "I have some feedback about the Введение в Cinnamon page: ";
+body += window.location.href;
+body += "";
+var uri = "mailto:nemilya@gmail.com?subject=";
+uri += encodeURIComponent(subject);
+uri += "&body=";
+uri += encodeURIComponent(body);
+window.location.href = uri;
+}
+</script>
+
+<li><a href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B" target="_blank"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+
+
+                <li>
+                <!-- start search -->
+                <div id="search-demo-container">
+                <input type="text" id="search-input" placeholder="search...">
+                <ul id="results-container"></ul>
+                </div>
+                <script src="js/jekyll-search.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                SimpleJekyllSearch.init({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                dataSource: 'search.json',
+                searchResultTemplate: '<li><a href="{url}" title="Введение в Cinnamon">{title}</a></li>',
+                noResultsText: 'No results found.',
+                limit: 10,
+                fuzzy: true,
+                })
+                </script>
+                <!-- end search -->
+                </li>
+
+                
+<script language="JavaScript" type="text/javascript">
+
+    $( document ).ready(function() {
+        if (top.location == location)  {
+            $(".escapeMe").remove();
+        }
+
+    });
+
+            function breakout_of_frame() {
+                if (top.location != location) {
+                    window.open(window.location.href, '_blank');
+
+                }
+
+            }
+</script>
+
+<li class="escapeMe">
+    <a href="#" onclick="breakout_of_frame()" ><i class="fa fa-sign-out"></i> Pop-out</a>
+</li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+        <script>
+
+            $(document).ready(function() {
+                        // Initialize navgoco with default options
+                        $("#mysidebar").navgoco({
+                            caretHtml: '',
+                            accordion: true,
+                            openClass: 'active', // open
+                            save: false, // leave false or nav highlighting doesn't work right
+                            cookie: {
+                                name: 'navgoco',
+                                expires: false,
+                                path: '/'
+                        },
+                        slide: {
+                            duration: 400,
+                            easing: 'swing'
+                                }
+                                });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+            });
+
+        </script>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ul id="mysidebar" class="nav">
+
+            <div class="siteTagline">Linux&nbsp;Mint Cinnamon</div>
+            <div class="versionTagline">version 17.1</div>
+
+            
+            
+            
+            <li><a href="#">Вступление</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="index.html">Аннотация</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="01_about_book.html">Об этой книге</a></li>
+                    
+
+                    
+            </li>
+            
+            
+            </ul>
+        </li>
+        
+        
+            
+            <li><a href="#">Введение</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="02_linux_mint_into.html">Введение в Linux Mint</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li class="active"><a href="03_cinnamon_intro.html">Введение в Cinnamon</a></li>
+                    
+
+                    
+            </li>
+            
+            
+            </ul>
+        </li>
+        
+        
+            
+            <li><a href="#">Linux Mint: установка</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="04_linux_mint_installation.html">Linux Mint: установка</a></li>
+                    
+
+                    
+            </li>
+            
+            
+            </ul>
+        </li>
+        
+        
+            
+            <li><a href="#">Mint и Cinnamon</a>
+                <ul>
+                    
+                    
+                    
+                    <li><a href="05_mint_and_cinnamon_obzor.html">Обзор среды</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="06_cinnamon_system_config.html">Cinnamon и системные настройки</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="07_section_parameters.html">Секция Параметры</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="08_devices.html">Секция Оборудование</a></li>
+                    
+
+                    
+            </li>
+            
+            
+                    
+                    
+                    <li><a href="09_admins.html">Секция Администрирование</a></li>
+                    
+
+                    
+            </li>
+            
+            
+            </ul>
+        </li>
+        
+        
+        
+        </ul>
+
+        
+    </div>
+       <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
+    <script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <div class="post-header">
+   <h1 class="post-title-main">Введение в Cinnamon</h1>
+</div>
+
+<div class="post-content">
+
+   
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+
+  <p>Здесь будет рассказано о интегрированной рабочей среде Cinnamon — её истории,
+особенностях, распространении и поддержке в других дистрибутивах.</p>
+
+<h3 id="История">История</h3>
+
+<p>Cinnamon — самая молодая из «уже действующих» интегрированных рабочих сред
+(иначе — декстопов): проект был анонсирован 20 декабря 2011 года, а уже 23
+декабря он стал доступен для скачивания, и сразу в виде релиза 1.1.2 — версии
+с меньшими номерами предназначались только для тестирования.</p>
+
+<p>Далее развитие проекта происходило стремительно: 23 января следующего года
+появляется релиз 1.3, в середине марта — 1.4, а затем, в сентябре — релиз 1.6.
+После чего устанавливается полугодовой релиз-цикл — релиз 1.8 выходит в свет 5
+мая 2013 года, после серии релизов корректирующих. В октябре того же года
+появляется релиз 2.0, в апреле 2014 года — релиз 2.2. И, наконец, герой нашего
+рассказа, релиз 2.4, увидел свет 1 ноября 2014 года.</p>
+
+<p>Все релизы среды опережали версии Mint, для которых они предназначались,
+примерно на месяц — для дополнительного тестирования среды силами энтузиастов
+и притирки её к целевому дистрибутиву. Что, как показала практика, давало
+весьма положительный результат. О чём могу свидетельствовать по собственному
+опыту для версий Cinnamon 2.2 и 2.4: в релизы Mint 17 и 17.1, соответственно,
+они были включены в существенно доработанном виде по сравнению с первоначально
+представленными сборками.</p>
+
+<p>Смена версий Cinnamon отражает специфичность его судьбы. Что же происходило
+при этом? В предыдущем очерке упоминалось, что история этого десктопа началась
+с появлением GNOME 3. Говорить о кипении страстей, связанных с этим событием,
+здесь не уместно. Достаточно сказать, что для многих применителей ряда
+дистрибутивов, включавших GNOME 2 в качестве штатного десктопа, его
+«осовремененная» версия, в частности, «очень прогрессивная» оболочка GNOME
+Shell, оказалась неприемлемой.</p>
+
+<p>В частности, Mint был очень крепко связан с десктопом GNOME 2. Однако GNOME 3,
+особенно в своём первозданном виде, в концепцию его развития не вписывался, а
+основа его предшественника, библиотека Gtk 2, перестала поддерживаться
+разработчиками. Ситуация требовала кардинального решения.</p>
+
+<p>Первое решение носило косметический характер. Это был набор MGSE (Mint GNOME
+Shell Extensions), объединяющий дополнения к GNOME Shell, которые могли
+обеспечить не только его традиционный интерфейс, но и восполнить недостающий
+функционал за счёт внешних модулей, таких, как панель Bottompanel, система
+переключения между окнами Windowlist и меню приложений Menu. Результатом стал
+выход в ноябре 2011 года релиза Mint 12 Lisa, включавшего в качестве десктопа
+по умолчанию GNOME 3 с MGSE.</p>
+
+<p>Однако, видимо, майнтайнерам Mint изначально было ясно, что MGSE — не более,
+чем паллиатив, и потому, с одной стороны, включили в свой дистрибутив
+альтернативный десктоп — MATE (первыми среди майнтайнеров распространённых
+дистрибутивов). А с другой стороны, можно догадаться, что где-то за кадром
+Клемент Лефевр (Clement Lefebvre), основатель и основной майнтайнер
+дистрибутива, уже ковал основу совершенно новой оболочки для GNOME 3. Которая
+стала доступной буквально через месяц после выхода Mint 12 Lisa и получила имя
+Cinnamon.</p>
+
+<p>Отступление. Словом cinnamon, восходящим к латыни, в английском языке
+называют, во-первых, коричное дерево, коричник цейлонский (Cinnamomum
+zeylanicum) — вечнозелёное растение семейства лавровых. Второе его значение —
+корица, название пряности, изготовляемой из коры этого дерева. Наконец, слово
+cinnamon применяется и для именования коричного масла, добываемого из листьев
+коричника, и используемого в медицине, парфюмерии и косметике.</p>
+
+<p>Основу Cinnamon&#39;а составил оконный менеджер Muffin — форк аналогичной
+программы Mutter из GNOME 3. Главное отличие новой оболочки от связки GNOME 3
+и MGSE состояло в том, функционал внешних расширений последнего был включён
+непосредственно в её состав. Это предоставило средства управления
+взаимодействием между дополнительными функциями и определения порядка их
+загрузки. В результате были реализованы добавление пиктограмм в область
+уведомлений, система уведомлений в стиле GNOME 2, возможность изменения
+позиции панели и и её автоматического скрытия.</p>
+
+<p>После серии основных и корректирующих релизов, стремительно следующих друг за
+другим, Cinnamon 1.4 UP1, появившийся 14 мая 2012 года, был включён в качестве
+штатного десктопа в Mint 13 Maya, анонсированный десять дней спустя. С тех пор
+выход его версий и стал привязан к релиз-циклу этого дистрибутива.</p>
+
+<p>Всё это время Cinnamon представлял собой просто оболочку к GNOME 3,
+надстраивающую «форкнутый» менеджер окон и замещающую собой его штатный GNOME
+Shell. Он включал все базовые приложения GNOME 3 — терминал, файловый
+менеджер, текстовый редактор — в неизменном виде. Однако во время подготовки
+релиза GNOME 3.6, в котором предполагалось существенное ограничение
+функционала файлового менеджера Nautilus, разработчики Cinnamon начали работы
+над форком его версии 3.4, назвав её Nemo. Который и попал в релиз Mint 14
+Nadia, хотя сначала в качестве альтернативного. Но уже в версии Cinnamon 1.8.X
+он был интегрирован с этой средой. Кроме того, в этой версии отказались от
+Центра управления GNOME 3.</p>
+
+<p>Версии Cinnamon 1.8 суждено было стать последним «чистым» форком GNOME 3 — в
+это же время полным ходом шла подготовка релиза 2.0. Суть её заключалась в
+полной замене базовых компонентов GNOME 3 собственными аналогами. То есть — в
+создании полностью обособленного окружения, не пересекающегося с GNOME 3 и не
+связанного с ним внешними зависимостями. В результате чего Cinnamon из
+оболочки для GNOME, вроде GNOME Shell и Unity, превращался в полноценное
+рабочее окружение. Итог этой деятельности был вынесен на суд общественности 10
+октября 2013 года, в виде релиза 2.0.</p>
+
+<h3 id="Особенности">Особенности</h3>
+
+<p>Так каковы же особенности нового десктопа, приобретённые им в версии 2.0 и
+получившие дальнейшее развитие в версиях последующих? Важнейших — три.</p>
+
+<p>Первая — в Cinnamon гармонично сочетаются старые добрые элементы управления,
+такие, как главное меню в стиле кнопки Пуск, и элементы модерна, столь
+привлекающие в Unity, такие, как строка поиска, подобная Dash — но без
+излишеств последнего, то есть без средств поиска в Интернете всякого рода
+«парнухи».</p>
+
+<p>Вторая особенность — достигнутая в Cinnamon гармония между простотой
+конфигурирования и богатством возможностей последнего. Если настройки в KDE,
+при их изобилии, приобретают всё более необозримый вид, а в GNOME 3, напротив
+разубоживаются, в нашем десктопе они почти столь же просты, как в Xfce, и
+почти столь же изобильны, как в KDE. И, в отличие от Ubuntu, выполняются
+исключительно штатными средствами, а не бесчисленными твикерами с
+полуофициальным и вообще неофициальным статусом.</p>
+
+<p>Третья особенность — аскетизм Cinnamon в отношении штатных приложений. В
+существующем виде к таковым можно отнести только файловый менеджер Nemo.
+Обычно богатство приложений считается достоинством интегрированных сред (на то
+они и зовутся интегрированными). И бедность Cinnamon в этом плане можно было
+бы отнести к числу её недостатков. Если бы не оборотная сторона медали —
+отсутствие приложений в штате среды позволяет легко и без избыточности
+подобрать оптимальный набор рабочих инструментов «для себя».</p>
+
+<p>Наконец, весь традиционализм Cinnamon&#39;а покоится на весьма современном базисе
+в виде библиотек Gtk+ 3, что должно обеспечить спокойное развитие этого
+десктопа в обозримом будущем. При этом сохраняется и совместимость с
+приложениями на основе Gtk+ 2, до сих пор широко распространёнными и не
+имеющими адекватных аналогов.</p>
+
+<h3 id="Распространение">Распространение</h3>
+
+<p>Тем не менее, несмотря на многочисленные достоинства, десктоп Cinnamon долго
+не получал широкого распространения в дистрибутивах Linux. И после знакомства
+с его историей легко понять, почему. В сущности, модель разработки его
+оказалась противоположно направленной по сравнению со всеми остальными
+интегрированными средами. Если KDE, Xfce, GNOME, а позднее LXDE и Razot-qt
+создавались командами разработчиков, более или менее независимыми от
+майнтайнеров отдельных дистрибутивов, и лишь потом начинали использоваться
+последними в своих сборках, если MATE представлял собой попытку сохранить
+наработки GNOME 2, то Cinnamon с первых дней своего существования выглядел
+«привязанным» к прародительскому Mint. Почти так же, как это имеет место для
+Ubuntu и Unity — или, по крайней мере, как это воспринимается для последней
+пары так называемой общественностью.</p>
+
+<p>На самом деле эта «привязка» была кажущейся, хотя команды разработчиков Mint и
+Cinnamon действительно были множествами сильно пересекающимися. И политика
+разработчиков этого десктопа не требует от сторонних разработчиков, скажем,
+передачи им имущественных прав на свою продукцию, как это практикует фирма
+Canonical при приёме патчей для Ubuntu и Unity. Однако можно предполагать, что
+майнтайнеры большинства дистрибутивов отнеслись к Cinnamon настороженно. Тем
+не менее, некоторые из них поддержали нашу героиню.</p>
+
+<h3 id="Поддержка">Поддержка</h3>
+
+<p>Если через поиск Distrowatch попытаться найти дистрибутивы, <a href="http://distrowatch.com/search.php?ostype=All&amp;amp;category=All&amp;amp;origin=All&amp;amp;basedon=All%C2%ACbasedon=None&amp;amp;desktop=Cinnamon&amp;amp;architecture=All&amp;amp;status=Active">поддерживающие Cinnamon</a>,
+получится список из 16, на момент сочинения этих строк, позиций. Он не вполне
+соответствует действительности — с одной стороны, на официальных сайтах
+некоторых проектов явных упоминаний о поддержке этого десктопа не
+обнаруживается, с другой — некоторые дистрибутивы, в которых он есть заведомо
+(например, openSUSE), в нём отсутствуют. Однако, с учётом этого и с
+исключением явной экзотики из Южной Африки, Андалузии или Непала, оказывается,
+что Cinnamon поддерживается в десятке распространённых дисрибутивов, среди
+которых:</p>
+
+<ul>
+<li><p>Fedora и её клон — Korora; </p></li>
+<li><p>Sabayon — дружественный к пользователю клон Gentoo; </p></li>
+<li><p>Archlinux и его клон Manjaro; </p></li>
+<li><p>openSUSE, где он присутствует в полуофициальном (Semi official) репозитории; </p></li>
+<li><p>siduction — дистрибутив, основанный на unstable-ветке Debian; </p></li>
+<li><p>PC-BSD, которая, конечно, не Linux, но Cinnamon поддерживает на стадии установки. </p></li>
+</ul>
+
+<p>Я перечислил только те дистрибутивы, в которых поддержка Cinnamon может быть
+задействована на стадии их установки, и реализацию её проверял лично. Кроме
+того, Cinnamon нынче можно найти в портах FreeBSD и пакетах DragonFly, в
+тестовоой ветке Debian, а главное — в ppa-репозиториях Ubuntu. До недавнего
+времени в последних она поддерживалась Гвендалем Ле Бианном (Gwendal Le
+Bihan). И, хотя весной 2014 года он отказался от сборки стабильной ветки этой
+среды, ограничившись экспериментальными «ночными», эстафета была немедленно
+подхвачена другими майнтайнерами.</p>
+
+<p>Как я уже сказал, большая часть перечисленных выше систем проверялась мной на
+предмет поддержки Cinnamon собственноручно. И этот личный опыт показывал, что
+до недавнего времени качество таковой у всех представителей списка (кроме
+Ubuntu) оставляло желать лучшего. Это касалось мелких, но часто существенных
+для применителях деталей, таких, как настройка раскладок клавиатуры и их
+переключателей.</p>
+
+<p>Однако буквально в последние месяцы, после выхода Cinnamon 2.4, ситуация
+изменилась кардинальным образом. И теперь этот десктоп безукоризненно
+поддерживается в большинстве дистрибутивов первого эшелона — в Archlinux&#39;е и
+Manjaro, в openSUSE и Fedora, по прежнему хорошо — в Ubuntu, с оговорками на
+счёт отставания версии — в Debian testing (опять же, говорю только о тех, в
+которых проверял сам).</p>
+
+<p>Однако по прежнему наиболее эффективно Cinnamon поддерживается в Mint — за
+счёт интеграции его с дистрибутив-специфическим системным инструментарием
+последнего. Подобно тому, как испокон веков KDE было лучше всего интегрировано
+с openSUSE, GNOME органично срастался с Fedora, а Xfce был «роднее» лёгким
+клонам Slackware (таким, как Zenwalk и Salix). Так что самый простой способ
+ознакомиться со средой Cinnamon во всёй её красе — установка соответствующей
+редакции Mint 17.1 Rebecca, о чём и пойдёт речь в следующем очерке.</p>
+
+
+
+<div class="tags">
+    
+</div>
+
+
+
+</div>
+
+
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               2015 Алексей Alv Федорчук.<br />
+ Site last generated: Sep 14, 2015 <br />
+<p><a href="http://linuxmint.com/"><img width="50" src="images/menu.svg"/></a></p>
+                </div>
+            </div>
+        </footer>
+
+            </div><!-- /.row -->
+
+    </div>    <!-- /.container -->
+
+</body>
+
+
+</html>
+
