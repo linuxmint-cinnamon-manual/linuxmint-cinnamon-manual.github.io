@@ -273,7 +273,7 @@ div#toc ul li ul li::before {
 }
 
 div#toc >ul::before {
-  /* content: "Table of Contents"; */
+  content: "Содержание";
   font-weight: 500;
   color: #555;
   text-align:center;
@@ -494,8 +494,8 @@ figcaption {
 }
 
 .siteTagline {
-margin: 20px 0px;
-font-size:17px;
+/* margin: 20px 0px; */
+  font-size:17px;
 }
 
 table.dataTable thead {
@@ -702,7 +702,7 @@ ol.series li {
 }
 
 .siteTagline {
-    font-size: 300%;
+    font-size: 150%;
     font-weight: bold;
     color: silver;
     font-family: monospace;
@@ -817,4 +817,3 @@ a.accordion-toggle {
 .tommy {font-weight:bold; font-color: red;}
 #johnson {font-weight:bold; font-color: blue;}
 
-     

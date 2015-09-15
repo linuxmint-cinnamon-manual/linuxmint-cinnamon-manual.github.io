@@ -82,6 +82,12 @@ index:
   link: "<a href='09_admins.html'>Секция Администрирование</a>"
 
 
+10_mint_utils:
+  title: "Mint: фирменный инструментарий"
+  url: "10_mint_utils.html"
+  link: "<a href='10_mint_utils.html'>Mint: фирменный инструментарий</a>"
+
+
 
 
 
