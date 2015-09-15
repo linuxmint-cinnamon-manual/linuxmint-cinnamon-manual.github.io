@@ -88,6 +88,12 @@ index:
   link: "<a href='10_mint_utils.html'>Mint: фирменный инструментарий</a>"
 
 
+11_other_config:
+  title: "Прочие настройки"
+  url: "11_other_config.html"
+  link: "<a href='11_other_config.html'>Прочие настройки</a>"
+
+
 
 
 
