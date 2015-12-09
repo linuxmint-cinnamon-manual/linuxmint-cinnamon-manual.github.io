@@ -274,7 +274,7 @@ $('#toc').on('click', 'a', function() {
 <li>перевод книги в MarkDown</li>
 <li>выкладывание на github</li>
 <li>создание для каждой версии Cinnamon - отдельной ветки</li>
-<li>возможность добавленя других языков (не только русского)</li>
+<li>возможность добавления других языков (не только русского)</li>
 </ul>
 
 <p>Сделано:</p>
@@ -297,6 +297,7 @@ $('#toc').on('click', 'a', function() {
 <li>&quot;вычистить&quot; html/css тему от лишних артефактов</li>
 <li>возможность навигации между страницами</li>
 <li>добавить ветки 17.2/17.3 - и актуализировать информацию для этих версий (текст, картинки)</li>
+<li>вынесение русскоязычных строк из основного конфиг файла в отдельный конфиг файл (в папке <code>ru</code>)</li>
 </ul>
 
 <p>Структура папок:</p>
@@ -310,22 +311,45 @@ $('#toc').on('click', 'a', function() {
 <p>Исходный код:</p>
 
 <ul>
-<li>https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll</li>
-<li>https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-ru</li>
+<li><a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll">https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll</a></li>
+<li><a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-ru">https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-ru</a></li>
 </ul>
 
 <p>Установка и работа:</p>
 
 <ul>
-<li>устанавливается Jekyll</li>
-<li>создаются папку, и выкачиваются git репозитории</li>
+<li>устанавливается <a href="http://jekyllrb.com/">Jekyll</a> (сейчас 2.5.3 версия)</li>
+<li>создаются папки, и выкачиваются соотв. git репозитории</li>
 <li>создаётся симлинк на контент (из папки с jekyll проектом)</li>
-<li>стартуется Jekyll</li>
+<li>стартуется <code>Jekyll</code></li>
 <li>генерирует код в <code>linuxmint-cinnamon</code> папку</li>
+<li>браузером открывается локальный веб-сервер поднятый <code>Jekyll</code> - и просматривается сгенерированный контент</li>
 <li>редактируется шаблон или контент</li>
-<li>Jekyll - автоматически перегенерирует папку (секунд 5)</li>
-<li>сгенерированный html выкладывается в https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-manual.github.io</li>
-<li>и становится доступен по адресу http://linuxmint-cinnamon-manual.github.io/</li>
+<li><code>Jekyll</code> - автоматически перегенерирует папку (секунд 5)</li>
+<li>сгенерированный html выкладывается в репозиторий <a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-manual.github.io">https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-manual.github.io</a></li>
+<li>и становится (автоматически) доступен по адресу <a href="http://linuxmint-cinnamon-manual.github.io/">http://linuxmint-cinnamon-manual.github.io/</a></li>
+</ul>
+
+<p>Конфигурационные файлы:</p>
+
+<ul>
+<li>основной конфиг для Jekyll - <code>_config.yml</code></li>
+<li><code>_data/sidebar_doc.yml</code> - левая навигационная панель</li>
+<li>папки <code>_includes</code> и <code>_layouts</code> содержат html шаблоны (в формате <a href="https://github.com/Shopify/liquid">Liquid</a>)</li>
+<li>папки <code>css</code>, <code>fonts</code>, <code>images</code>, <code>js</code> - содержат стилевое оформление (за основу была взята <a href="http://idratherbewriting.com/documentation-theme-jekyll/">эта тема</a>)</li>
+</ul>
+
+<p>Содержимое:</p>
+
+<ul>
+<li>содержимое находится в папке <code>ru</code>, и соответствующей версии подпапке (сейчас <code>17-1-Rebecca</code>)</li>
+<li>для того чтобы отображение и содержимое не пересекались - всё содержимое книги вынесено в <a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-ru">отдельный репозиторий</a>, 
+но т.к. для Jekyll всё содержимое должно быть внутри - сделан симлинк изнутри Jekyll папки, на папку с
+содержимым книги </li>
+<li>так же для того чтобы можно было сопровождать новые версии - для каждой версии планируется одноимённая ветка (branch), 
+сейчас есть ветка <code>17-1-Rebecca</code>, далее будет <code>17-2-Rafaela</code> и т.п. Таким образом все фиксы можно легко 
+&quot;мержить&quot; из 17.1 в 17.2 (17.3), и так же добавлять новый текст в новых версиях (на базе предыдущего контента).</li>
+<li>вкратце инструкция по настройке папок <a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll/blob/master/README.ru.md">здесь</a></li>
 </ul>
 
 <p>Обсуждение:</p>
