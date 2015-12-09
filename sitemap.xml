@@ -4,24 +4,9 @@
   
     
     <url>
-      <loc>/01_about_book.html</loc>
+      <loc>/ru/17-1-Rebecca/010_about_book.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/02_linux_mint_into.html</loc>
-      
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -34,24 +19,9 @@
   
     
     <url>
-      <loc>/03_cinnamon_intro.html</loc>
+      <loc>/ru/17-1-Rebecca/020_linux_mint_into.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/04_linux_mint_installation.html</loc>
-      
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -64,24 +34,9 @@
   
     
     <url>
-      <loc>/05_mint_and_cinnamon_obzor.html</loc>
+      <loc>/ru/17-1-Rebecca/030_cinnamon_intro.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/06_cinnamon_system_config.html</loc>
-      
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -94,24 +49,9 @@
   
     
     <url>
-      <loc>/07_section_parameters.html</loc>
+      <loc>/ru/17-1-Rebecca/040_linux_mint_installation.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/08_devices.html</loc>
-      
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -124,24 +64,9 @@
   
     
     <url>
-      <loc>/09_admins.html</loc>
+      <loc>/ru/17-1-Rebecca/050_mint_and_cinnamon_obzor.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/10_mint_utils.html</loc>
-      
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -154,9 +79,84 @@
   
     
     <url>
-      <loc>/11_other_config.html</loc>
+      <loc>/ru/17-1-Rebecca/060_cinnamon_system_config.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>/ru/17-1-Rebecca/070_section_parameters.html</loc>
+      
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>/ru/17-1-Rebecca/080_devices.html</loc>
+      
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>/ru/17-1-Rebecca/090_admins.html</loc>
+      
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>/ru/17-1-Rebecca/100_mint_utils.html</loc>
+      
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>/ru/17-1-Rebecca/110_other_config.html</loc>
+      
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -171,7 +171,7 @@
     <url>
       <loc>/404.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -186,7 +186,7 @@
     <url>
       <loc>/doc_about.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -201,7 +201,7 @@
     <url>
       <loc>/</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -214,24 +214,9 @@
   
     
     <url>
-      <loc>/index.md.removed</loc>
+      <loc>/ru/17-1-Rebecca/</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.3</priority>
-      
-    </url>
-    
-  
-    
-    <url>
-      <loc>/prince-file-list.txt</loc>
-      
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -246,7 +231,7 @@
     <url>
       <loc>/search.json</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -261,7 +246,7 @@
     <url>
       <loc>/sitemap.xml</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -276,7 +261,7 @@
     <url>
       <loc>/title-checker.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -291,7 +276,7 @@
     <url>
       <loc>/titlepage.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -306,7 +291,7 @@
     <url>
       <loc>/tocpage.html</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -321,7 +306,7 @@
     <url>
       <loc>/tooltips.json</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>
@@ -336,7 +321,7 @@
     <url>
       <loc>/urls.txt</loc>
       
-        <last_updated>2015-09-15T15:16:47+00:00</last_updated>
+        <last_updated>2015-12-09T12:41:29+00:00</last_updated>
       
       
         <changefreq>monthly</changefreq>

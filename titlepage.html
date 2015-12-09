@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
 <html>
   <head>
-
- <meta charset="utf-8">
+    <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
@@ -37,25 +35,15 @@
 
 
  
-
-<script>
-  $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-  })
-</script>
-
-
-
-
-
-
-
-
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
   </head>
 
 <body>
-
-   <!-- Navigation -->
+  <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container topnavlinks">
         <div class="navbar-header">
@@ -66,7 +54,7 @@
                 <span class="icon-bar"></span>
             </button>
            
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Linux Mint и его Cinnamon</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Linux Mint и его Cinnamon</span></a>
             
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -74,6 +62,8 @@
                 <!-- entries without drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
                 
+
+
 
 
 
@@ -211,227 +201,217 @@ window.location.href = uri;
         <!-- /.container -->
 </nav>
 
-
-    <!-- Page Content -->
-    <div class="container">
-        <div class="col-lg-12">&nbsp;</div>
-
-
-<!-- Content Row -->
+  <!-- Page Content -->
+  <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    
+      <!-- Content Row -->
 <div class="row">
-    <!-- Sidebar Column -->
-    <div class="col-md-3">
+  <!-- Sidebar Column -->
+  <div class="col-md-3">
+    <script>
+      $(document).ready(function() {
+        // Initialize navgoco with default options
+        $("#mysidebar").navgoco({
+          caretHtml: '',
+          accordion: true,
+          openClass: 'active', // open
+          save: false, // leave false or nav highlighting doesn't work right
+          cookie: {
+            name: 'navgoco',
+            expires: false,
+            path: '/'
+          },
+          slide: {
+            duration: 400,
+            easing: 'swing'
+            }
+          });
 
-        <script>
+          $("#collapseAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', false);
+          });
 
-            $(document).ready(function() {
-                        // Initialize navgoco with default options
-                        $("#mysidebar").navgoco({
-                            caretHtml: '',
-                            accordion: true,
-                            openClass: 'active', // open
-                            save: false, // leave false or nav highlighting doesn't work right
-                            cookie: {
-                                name: 'navgoco',
-                                expires: false,
-                                path: '/'
-                        },
-                        slide: {
-                            duration: 400,
-                            easing: 'swing'
-                                }
-                                });
+          $("#expandAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', true);
+          });
 
-            $("#collapseAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', false);
-            });
+        });
+      </script>
 
-            $("#expandAll").click(function(e) {
-                e.preventDefault();
-                $("#mysidebar").navgoco('toggle', true);
-            });
-
-            });
-
-        </script>
+    
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul id="mysidebar" class="nav">
+      <div class="siteTagline">Linux&nbsp;Mint Cinnamon</div>
+      <div class="versionTagline">version 17.1 (Rebecca)</div>
+
+      
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <ul id="mysidebar" class="nav">
-
-            <div class="siteTagline">Linux&nbsp;Mint Cinnamon</div>
-            <div class="versionTagline">version 17.1 (Rebecca)</div>
-
+          <li><a href="#">Вступление</a>
+            <ul>
             
-            
-            
-            <li><a href="#">Вступление</a>
-                <ul>
-                    
-                    
-                    
-                    <li><a href="index.html">Аннотация</a></li>
-                    
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/index.html">Аннотация</a></li>
+              
 
-                    
-            </li>
-            
-            
-                    
-                    
-                    <li><a href="01_about_book.html">Об этой книге</a></li>
-                    
-
-                    
-            </li>
-            
-            
-            </ul>
-        </li>
+              
+          </li>
         
-        
-            
-            <li><a href="#">Введение</a>
-                <ul>
-                    
-                    
-                    
-                    <li><a href="02_linux_mint_into.html">Введение в Linux Mint</a></li>
-                    
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/010_about_book.html">Об этой книге</a></li>
+              
 
-                    
-            </li>
-            
-            
-                    
-                    
-                    <li><a href="03_cinnamon_intro.html">Введение в Cinnamon</a></li>
-                    
-
-                    
-            </li>
-            
-            
-            </ul>
-        </li>
-        
-        
-            
-            <li><a href="#">Linux Mint: установка</a>
-                <ul>
-                    
-                    
-                    
-                    <li><a href="04_linux_mint_installation.html">Linux Mint: установка</a></li>
-                    
-
-                    
-            </li>
-            
-            
-            </ul>
-        </li>
-        
-        
-            
-            <li><a href="#">Mint и Cinnamon</a>
-                <ul>
-                    
-                    
-                    
-                    <li><a href="05_mint_and_cinnamon_obzor.html">Обзор среды</a></li>
-                    
-
-                    
-            </li>
-            
-            
-                    
-                    
-                    <li><a href="06_cinnamon_system_config.html">Cinnamon и системные настройки</a></li>
-                    
-
-                    
-            </li>
-            
-            
-                    
-                    
-                    <li><a href="07_section_parameters.html">Секция Параметры</a></li>
-                    
-
-                    
-            </li>
-            
-            
-                    
-                    
-                    <li><a href="08_devices.html">Секция Оборудование</a></li>
-                    
-
-                    
-            </li>
-            
-            
-                    
-                    
-                    <li><a href="09_admins.html">Секция Администрирование</a></li>
-                    
-
-                    
-            </li>
-            
-            
-                    
-                    
-                    <li><a href="10_mint_utils.html">Mint: фирменный инструментарий</a></li>
-                    
-
-                    
-            </li>
-            
-            
-                    
-                    
-                    <li><a href="11_other_config.html">Прочие настройки</a></li>
-                    
-
-                    
-            </li>
-            
-            
-            </ul>
-        </li>
-        
+              
+          </li>
         
         
         </ul>
-
+          <!-- </li> -->
         
-    </div>
-       <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
-    <script>$("li.active").parents('li').toggleClass("active");</script>
+          <li><a href="#">Введение</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/020_linux_mint_into.html">Введение в Linux Mint</a></li>
+              
 
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/030_cinnamon_intro.html">Введение в Cinnamon</a></li>
+              
 
-            <!-- Content Column -->
-            <div class="col-md-9">
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Linux Mint: установка</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/040_linux_mint_installation.html">Linux Mint: установка</a></li>
+              
 
-                <div class="post-header">
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Mint и Cinnamon</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/050_mint_and_cinnamon_obzor.html">Обзор среды</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/060_cinnamon_system_config.html">Cinnamon и системные настройки</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/070_section_parameters.html">Секция Параметры</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/080_devices.html">Секция Оборудование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/090_admins.html">Секция Администрирование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/100_mint_utils.html">Mint: фирменный инструментарий</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/110_other_config.html">Прочие настройки</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+      
+    </ul>
+
+    
+  </div>
+  <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
+  <script>$("li.active").parents('li').toggleClass("active");</script>
+
+    
+    <!-- Content Column -->
+    <div class="col-md-9">
+      <div class="post-header">
    <h1 class="post-title-main"></h1>
 </div>
 
@@ -464,7 +444,7 @@ $('#toc').on('click', 'a', function() {
       <div class="printTitleArea">
         <div class="printTitle"></div>
         <div class="printSubtitle"></div>
-        <div class="lastGeneratedDate">Last generated: September 15, 2015</div>
+        <div class="lastGeneratedDate">Last generated: December 09, 2015</div>
         <hr />
 
         <div class="printTitleImage">
@@ -498,21 +478,17 @@ $('#toc').on('click', 'a', function() {
 
 
 <footer>
-            <div class="row">
-                <div class="col-lg-12 footer">
-               2015 Алексей Alv Федорчук.<br />
- Site last generated: Sep 15, 2015 <br />
-<p><a href="http://linuxmint.com/"><img width="50" src="images/menu.svg"/></a></p>
-                </div>
-            </div>
-        </footer>
+  <div class="row">
+    <div class="col-lg-12 footer">
+      2015 Алексей Alv Федорчук.<br />
+       Site last generated: Dec 9, 2015 <br />
+      <p><a href="http://linuxmint.com/"><img title="http://linuxmint.com/" width="50" src="/images/menu.svg"/></a></p>
+    </div>
+  </div>
+</footer>
 
-            </div><!-- /.row -->
-
-    </div>    <!-- /.container -->
-
+    </div><!-- /.row -->
+  </div>    <!-- /.container -->
 </body>
 
-
 </html>
-

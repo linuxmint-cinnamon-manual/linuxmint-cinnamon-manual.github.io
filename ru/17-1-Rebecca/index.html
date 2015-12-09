@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" ">
-<title> Linux Mint и его Cinnamon   | Linux Mint и его Cinnamon (Алексей Alv Федорчук)</title>
+<title>Аннотация  | Linux Mint и его Cinnamon (Алексей Alv Федорчук)</title>
 <link rel="stylesheet" type="text/css" href="/css/syntax.css">
 <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -138,7 +138,7 @@
 <script>
 function SendLinkByMail(href) {
 var subject= "Linux Mint и его Cinnamon (Алексей Alv Федорчук) feedback";
-var body = "I have some feedback about the Start page: ";
+var body = "I have some feedback about the Аннотация page: ";
 body += window.location.href;
 body += "";
 var uri = "mailto:nemilya@gmail.com?subject=";
@@ -164,7 +164,7 @@ window.location.href = uri;
                 searchInput: document.getElementById('search-input'),
                 resultsContainer: document.getElementById('results-container'),
                 dataSource: 'search.json',
-                searchResultTemplate: '<li><a href="{url}" title="Start">{title}</a></li>',
+                searchResultTemplate: '<li><a href="{url}" title="Аннотация">{title}</a></li>',
                 noResultsText: 'No results found.',
                 limit: 10,
                 fuzzy: true,
@@ -205,19 +205,214 @@ window.location.href = uri;
   <div class="container">
     <div class="col-lg-12">&nbsp;</div>
     
-      <div class="row">
+      <!-- Content Row -->
+<div class="row">
+  <!-- Sidebar Column -->
   <div class="col-md-3">
+    <script>
+      $(document).ready(function() {
+        // Initialize navgoco with default options
+        $("#mysidebar").navgoco({
+          caretHtml: '',
+          accordion: true,
+          openClass: 'active', // open
+          save: false, // leave false or nav highlighting doesn't work right
+          cookie: {
+            name: 'navgoco',
+            expires: false,
+            path: '/'
+          },
+          slide: {
+            duration: 400,
+            easing: 'swing'
+            }
+          });
+
+          $("#collapseAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', true);
+          });
+
+        });
+      </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <ul id="mysidebar" class="nav">
-       <li><a href="/ru/17-1-Rebecca">/ru/17-1-Rebecca</a></li>
-       <li><a href="#">17.2 (todo)</a></li>
+      <div class="siteTagline">Linux&nbsp;Mint Cinnamon</div>
+      <div class="versionTagline">version 17.1 (Rebecca)</div>
+
+      
+        
+          <li><a href="#">Вступление</a>
+            <ul>
+            
+              
+              
+              
+                <li class="active"><a href="/ru/17-1-Rebecca/index.html">Аннотация</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/010_about_book.html">Об этой книге</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Введение</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/020_linux_mint_into.html">Введение в Linux Mint</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/030_cinnamon_intro.html">Введение в Cinnamon</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Linux Mint: установка</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/040_linux_mint_installation.html">Linux Mint: установка</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Mint и Cinnamon</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/050_mint_and_cinnamon_obzor.html">Обзор среды</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/060_cinnamon_system_config.html">Cinnamon и системные настройки</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/070_section_parameters.html">Секция Параметры</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/080_devices.html">Секция Оборудование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/090_admins.html">Секция Администрирование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/100_mint_utils.html">Mint: фирменный инструментарий</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/110_other_config.html">Прочие настройки</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+      
     </ul>
+
+    
   </div>
+  <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
+  <script>$("li.active").parents('li').toggleClass("active");</script>
 
     
     <!-- Content Column -->
     <div class="col-md-9">
       <div class="post-header">
-   <h1 class="post-title-main"> Linux Mint и его Cinnamon </h1>
+   <h1 class="post-title-main">Аннотация</h1>
 </div>
 
 <div class="post-content">
@@ -246,93 +441,19 @@ $('#toc').on('click', 'a', function() {
 <div id="toc"></div>
 
 
-  <p>Cinnamon - является оригинальной графической средой (desktop environment) 
-для <a href="http://linuxmint.com/">Linux Mint</a>.</p>
+  <p>Эта книга посвящена дистрибутиву Linux Mint и одной из его главных рабочих
+сред рабочих сред — десктопу Cinnamon. В ней рассмотрены их особенности,
+средства настройки дистрибутива и среды, системы управления пакетами,
+некоторые прикладные программы. Затронут также ряд более специальных вопросов,
+имеющих отношение не только к Linux Mint, такие, как командная оболочка Zsh,
+использование программных RAID, технологии LVM и системы размещения данных
+ZFS. Заключительным аккордом в ней прозвучит рассказ о создании собственных
+индивидуализированных сборок на базе Linux Mint и Cinnamon.</p>
 
-<p>Данный проект русскоязычной документации по Linux Mint Cinnamon полностью базируется 
-на книге Алексея Федорчука aka <a href="http://alv.me/">Alv</a>: 
-<a href="http://alv.me/?page_id=1627#lmce">Linux Mint и его Cinnamon</a></p>
-
-<p>Читать:</p>
-
-<ul>
-<li><a href="/ru/17-1-Rebecca/index.html">Linux Mint Cinnamon (17.1 Rebecca)</a></li>
-</ul>
-
-<p>Суть данного проекта:</p>
-
-<ul>
-<li>предоставление актуальной и легко сопровождаемой документации по Linux Mint Cinnamon</li>
-<li>консолидация людей работающих на данной ОС</li>
-</ul>
-
-<p>Для этого:</p>
-
-<ul>
-<li>поднятие генерации html на базе системы генерации <a href="http://jekyllrb.com/">Jekyll</a></li>
-<li>дизайн с адаптивной версткой (просмотр на мобильных устройствах)</li>
-<li>перевод книги в MarkDown</li>
-<li>выкладывание на github</li>
-<li>создание для каждой версии Cinnamon - отдельной ветки</li>
-<li>возможность добавленя других языков (не только русского)</li>
-</ul>
-
-<p>Сделано:</p>
-
-<ul>
-<li>создан базовый код и адаптирован html шаблон для Jekyll</li>
-<li>исходный код текста вынесен в отдельный репозиторий (для каждого языка)</li>
-<li>добавлена ветка для 17.1 версии</li>
-<li>оригинальная html книга разбита на html фрагменты по главам</li>
-<li>частично переведены главы в MarkDown</li>
-</ul>
-
-<p>ToDo:</p>
-
-<ul>
-<li>обновить Jekyll (c 2.5.3 на 3.0.1)</li>
-<li>перенести картинки в github</li>
-<li>перевести все главы книги в MarkDown</li>
-<li>закончить по версии Cinnamon 17.1</li>
-<li>&quot;вычистить&quot; html/css тему от лишних артефактов</li>
-<li>возможность навигации между страницами</li>
-<li>добавить ветки 17.2/17.3 - и актуализировать информацию для этих версий (текст, картинки)</li>
-</ul>
-
-<p>Структура папок:</p>
-
-<ul>
-<li><code>linuxmint-cinnamon</code> (сюда генерируется html контент)</li>
-<li><code>linuxmint-cinnamon-jekyll</code> (здесь html/css/js тема, шаблоны, конфиги для Jekyll и симлинк на контент)</li>
-<li><code>linuxmint-cinnamon-ru-17-1-Rebecca</code> (здесь находится контент, согласно языку и версии-ветка)</li>
-</ul>
-
-<p>Исходный код:</p>
-
-<ul>
-<li>https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll</li>
-<li>https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-ru</li>
-</ul>
-
-<p>Установка и работа:</p>
-
-<ul>
-<li>устанавливается Jekyll</li>
-<li>создаются папку, и выкачиваются git репозитории</li>
-<li>создаётся симлинк на контент (из папки с jekyll проектом)</li>
-<li>стартуется Jekyll</li>
-<li>генерирует код в <code>linuxmint-cinnamon</code> папку</li>
-<li>редактируется шаблон или контент</li>
-<li>Jekyll - автоматически перегенерирует папку (секунд 5)</li>
-<li>сгенерированный html выкладывается в https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-manual.github.io</li>
-<li>и становится доступен по адресу http://linuxmint-cinnamon-manual.github.io/</li>
-</ul>
-
-<p>Обсуждение:</p>
-
-<ul>
-<li>гугл группа <a href="https://groups.google.com/forum/#!forum/linuxmint2ru">linuxmint2ru</a></li>
-</ul>
+<p>Книга не является систематическим руководством по данному дистрибутиву и, тем
+более, по Linux вообще. Она ориентирована исключительно на любопытствующих
+применителей любого уровня подготовки, имеющих склонность к экспериментам, с
+одной стороны, и к изящной словесности — с другой.</p>
 
 
 

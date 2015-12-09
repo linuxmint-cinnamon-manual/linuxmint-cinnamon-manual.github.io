@@ -16,82 +16,84 @@
 
 
 
+
+
 index:
   title: "Аннотация"
   url: "index.html"
   link: "<a href='index.html'>Аннотация</a>"
 
 
-01_about_book:
+010_about_book:
   title: "Об этой книге"
-  url: "01_about_book.html"
-  link: "<a href='01_about_book.html'>Об этой книге</a>"
+  url: "010_about_book.html"
+  link: "<a href='010_about_book.html'>Об этой книге</a>"
 
 
 
 
-02_linux_mint_into:
+020_linux_mint_into:
   title: "Введение в Linux Mint"
-  url: "02_linux_mint_into.html"
-  link: "<a href='02_linux_mint_into.html'>Введение в Linux Mint</a>"
+  url: "020_linux_mint_into.html"
+  link: "<a href='020_linux_mint_into.html'>Введение в Linux Mint</a>"
 
 
-03_cinnamon_intro:
+030_cinnamon_intro:
   title: "Введение в Cinnamon"
-  url: "03_cinnamon_intro.html"
-  link: "<a href='03_cinnamon_intro.html'>Введение в Cinnamon</a>"
+  url: "030_cinnamon_intro.html"
+  link: "<a href='030_cinnamon_intro.html'>Введение в Cinnamon</a>"
 
 
 
 
-04_linux_mint_installation:
+040_linux_mint_installation:
   title: "Linux Mint: установка"
-  url: "04_linux_mint_installation.html"
-  link: "<a href='04_linux_mint_installation.html'>Linux Mint: установка</a>"
+  url: "040_linux_mint_installation.html"
+  link: "<a href='040_linux_mint_installation.html'>Linux Mint: установка</a>"
 
 
 
 
-05_mint_and_cinnamon_obzor:
+050_mint_and_cinnamon_obzor:
   title: "Обзор среды"
-  url: "05_mint_and_cinnamon_obzor.html"
-  link: "<a href='05_mint_and_cinnamon_obzor.html'>Обзор среды</a>"
+  url: "050_mint_and_cinnamon_obzor.html"
+  link: "<a href='050_mint_and_cinnamon_obzor.html'>Обзор среды</a>"
 
 
-06_cinnamon_system_config:
+060_cinnamon_system_config:
   title: "Cinnamon и системные настройки"
-  url: "06_cinnamon_system_config.html"
-  link: "<a href='06_cinnamon_system_config.html'>Cinnamon и системные настройки</a>"
+  url: "060_cinnamon_system_config.html"
+  link: "<a href='060_cinnamon_system_config.html'>Cinnamon и системные настройки</a>"
 
 
-07_section_parameters:
+070_section_parameters:
   title: "Секция Параметры"
-  url: "07_section_parameters.html"
-  link: "<a href='07_section_parameters.html'>Секция Параметры</a>"
+  url: "070_section_parameters.html"
+  link: "<a href='070_section_parameters.html'>Секция Параметры</a>"
 
 
-08_devices:
+080_devices:
   title: "Секция Оборудование"
-  url: "08_devices.html"
-  link: "<a href='08_devices.html'>Секция Оборудование</a>"
+  url: "080_devices.html"
+  link: "<a href='080_devices.html'>Секция Оборудование</a>"
 
 
-09_admins:
+090_admins:
   title: "Секция Администрирование"
-  url: "09_admins.html"
-  link: "<a href='09_admins.html'>Секция Администрирование</a>"
+  url: "090_admins.html"
+  link: "<a href='090_admins.html'>Секция Администрирование</a>"
 
 
-10_mint_utils:
+100_mint_utils:
   title: "Mint: фирменный инструментарий"
-  url: "10_mint_utils.html"
-  link: "<a href='10_mint_utils.html'>Mint: фирменный инструментарий</a>"
+  url: "100_mint_utils.html"
+  link: "<a href='100_mint_utils.html'>Mint: фирменный инструментарий</a>"
 
 
-11_other_config:
+110_other_config:
   title: "Прочие настройки"
-  url: "11_other_config.html"
-  link: "<a href='11_other_config.html'>Прочие настройки</a>"
+  url: "110_other_config.html"
+  link: "<a href='110_other_config.html'>Прочие настройки</a>"
 
 
 

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Mint и Cinnamon: обзор среды  | Linux Mint и его Cinnamon (Алексей Alv Федорчук)</title>
+<link rel="stylesheet" type="text/css" href="/css/syntax.css">
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/modern-business.css">
+<link rel="stylesheet" type="text/css" href="/css/lavish-bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/css/customstyles.css">
+<link rel="stylesheet" type="text/css" href="/css/theme-green.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+
+
+
+ 
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </head>
+
+<body>
+  <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Linux Mint и его Cinnamon</span></a>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                <li><a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll" target="_blank">Github Repo</a></li>
+                
+                
+                
+                
+
+
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+
+                <li class="dropdown">
+                    
+                    
+                    
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        
+                        <li><a href="doc_about.html">About this theme</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_support.html">Support</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_troubleshooting.html">Troubleshooting</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+                <!-- special insertion -->
+
+               
+                <!-- Send feedback function -->
+<script>
+function SendLinkByMail(href) {
+var subject= "Linux Mint и его Cinnamon (Алексей Alv Федорчук) feedback";
+var body = "I have some feedback about the Mint и Cinnamon: обзор среды page: ";
+body += window.location.href;
+body += "";
+var uri = "mailto:nemilya@gmail.com?subject=";
+uri += encodeURIComponent(subject);
+uri += "&body=";
+uri += encodeURIComponent(body);
+window.location.href = uri;
+}
+</script>
+
+<li><a href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B" target="_blank"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+
+
+                <li>
+                <!-- start search -->
+                <div id="search-demo-container">
+                <input type="text" id="search-input" placeholder="search...">
+                <ul id="results-container"></ul>
+                </div>
+                <script src="js/jekyll-search.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                SimpleJekyllSearch.init({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                dataSource: 'search.json',
+                searchResultTemplate: '<li><a href="{url}" title="Mint и Cinnamon: обзор среды">{title}</a></li>',
+                noResultsText: 'No results found.',
+                limit: 10,
+                fuzzy: true,
+                })
+                </script>
+                <!-- end search -->
+                </li>
+
+                
+<script language="JavaScript" type="text/javascript">
+
+    $( document ).ready(function() {
+        if (top.location == location)  {
+            $(".escapeMe").remove();
+        }
+
+    });
+
+            function breakout_of_frame() {
+                if (top.location != location) {
+                    window.open(window.location.href, '_blank');
+
+                }
+
+            }
+</script>
+
+<li class="escapeMe">
+    <a href="#" onclick="breakout_of_frame()" ><i class="fa fa-sign-out"></i> Pop-out</a>
+</li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    
+      <!-- Content Row -->
+<div class="row">
+  <!-- Sidebar Column -->
+  <div class="col-md-3">
+    <script>
+      $(document).ready(function() {
+        // Initialize navgoco with default options
+        $("#mysidebar").navgoco({
+          caretHtml: '',
+          accordion: true,
+          openClass: 'active', // open
+          save: false, // leave false or nav highlighting doesn't work right
+          cookie: {
+            name: 'navgoco',
+            expires: false,
+            path: '/'
+          },
+          slide: {
+            duration: 400,
+            easing: 'swing'
+            }
+          });
+
+          $("#collapseAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', true);
+          });
+
+        });
+      </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul id="mysidebar" class="nav">
+      <div class="siteTagline">Linux&nbsp;Mint Cinnamon</div>
+      <div class="versionTagline">version 17.1 (Rebecca)</div>
+
+      
+        
+          <li><a href="#">Вступление</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/index.html">Аннотация</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/010_about_book.html">Об этой книге</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Введение</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/020_linux_mint_into.html">Введение в Linux Mint</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/030_cinnamon_intro.html">Введение в Cinnamon</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Linux Mint: установка</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/040_linux_mint_installation.html">Linux Mint: установка</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Mint и Cinnamon</a>
+            <ul>
+            
+              
+              
+              
+                <li class="active"><a href="/ru/17-1-Rebecca/050_mint_and_cinnamon_obzor.html">Обзор среды</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/060_cinnamon_system_config.html">Cinnamon и системные настройки</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/070_section_parameters.html">Секция Параметры</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/080_devices.html">Секция Оборудование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/090_admins.html">Секция Администрирование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/100_mint_utils.html">Mint: фирменный инструментарий</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/110_other_config.html">Прочие настройки</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+      
+    </ul>
+
+    
+  </div>
+  <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
+  <script>$("li.active").parents('li').toggleClass("active");</script>
+
+    
+    <!-- Content Column -->
+    <div class="col-md-9">
+      <div class="post-header">
+   <h1 class="post-title-main">Mint и Cinnamon: обзор среды</h1>
+</div>
+
+<div class="post-content">
+
+   
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+
+  <p>Предыдущий очерк мы завершили тем, что после удачной установки отправили
+машину на перезагрузку. После которой, проскочив меню GRUB&#39;а (в случае одной
+системы по умолчанию оно не выводится), оказываемся в дисплейном менеджере MDM
+с предложением авторизоваться:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_001.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_001-572x463.png" alt="Изображение23"> </a></p>
+
+<p>По принятии этого предложения перед нами предстаёт рабочий стол Cinnamon с
+экраном приветствия:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_002.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_002-572x463.png" alt="Изображение24"> </a> <a href="http://alv.me/wp-%0Acontent/img/2014/12/cinnamon_002.png"> </a></p>
+
+<p>И о дисплейном менеджере, и об экране приветствия случай поговорить ещё будет.
+Нынешний эе очерк будет посвящён интерфейсу рабочего стола Cinnamon, так как
+именно там в основном будет проходить деятельность применителя, избравшего
+соответствующую редакцию дистрибутива Mint.</p>
+
+<h3 id="cinnamon-Общий-вид">Cinnamon. Общий вид</h3>
+
+<p>При первом своём запуске Cinnamon выглядит более чем традиционно – перед нами
+самый обычный рабочий стол с управляющей панелью, на которой имеется кнопка с
+подписью Меню (или Menu, в зависимости от локализации):</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_003.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_003-572x463.png" alt="Изображение25"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_003.png"> </a></p>
+
+<p>В отличие от GNOME Shell&#39;а или Unity, здесь сразу ясно, что делать дальше. Во-
+первых, можно щёлкнуть правой кнопкой мыши по рабочему столу, чтобы увидеть
+его контекстное меню:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_004.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_004.png" alt="Изображение26">
+</a></p>
+
+<p>Здесь почти всё понятно без комментариев, пару слов можно сказать только про
+два пункта:</p>
+
+<ul>
+<li><p>Добавить десклеты – добавление на рабочий стол мини-приложений (подробнее об этом будет сказано в следующем очерке); </p></li>
+<li><p>Открыть как администратор – вызов, после ввода пароля, файлового менеджера Nemo с правами суперпользователя. </p></li>
+</ul>
+
+<p>Во-вторых, щёлкнув правой же кнопкой мыши по свободному полю управляющей
+панели, можно заняться её настройками (о чём будет разговор в соответствующем
+очерке):</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_005.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_005.png" alt="Изображение27">
+</a></p>
+
+<p>Или, уже с помощью левой кнопки, вызвать одно из приложений, пиктограммы
+запуска которых уже имеются на панели. По умолчанию их не густо – браузер
+Firefox, унаследованный от GNOME терминал и файловый менеджер Nemo:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_006.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_006.png" alt="Изображение28">
+</a></p>
+
+<p>Но пополнить панель иконками приложений первой необходимости труда не составит
+– и со временем я расскажу, как.</p>
+
+<p>Наконец, в-третьих, можно обратиться к главному меню Cinnamon для знакомства
+со всем изобилием установленного софта:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_007.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_007-572x496.png" alt="Изображение29"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_007.png"> </a></p>
+
+<p>Но обзор штатных приложений дистрибутива будет дан в соответствующем очерке.</p>
+
+<p>Как и во всех современных рабочих средах, в Cinnamon&#39;е можно задействовать
+несколько виртуальных рабочих столов. В терминах этой среды они называются
+рабочими областями (Workspaces), и по умолчанию их два. Переключение между
+рабочими областями – комбинациями клавиш <code>Control+Alt+Right</code>/<code>Left</code>.</p>
+
+<p>Есть и другие способы переключения между рабочими областями, и количество их
+можно увеличить до любого разумного предела. Но это относится уже к категории
+настроек, которым будет посвящён отдельный очерк.</p>
+
+<h3 id="Управляющая-панель">Управляющая панель</h3>
+
+<p>Если на рабочем столе (точнее, в рабочих его областях) происходят основные
+события, то управление этими событиями в значительной мере осуществляется с
+панели – в других средах её часто называют главной, или управляющей. Но в
+Cinnamon её принято называть без определений, поскольку здесь она обычно
+имеется в единственном экземпляре. Хотя в принципе в нём может быть включена и
+вторая панель, о чём речь пойдёт в очерке о настройках.</p>
+
+<p>Положение панели по умолчанию – вдоль нижней части экрана, хотя её можно
+переместить и наверх. И разделяется она на следующие части (слева направо):</p>
+
+<ul>
+<li><p>кнопка главного меню (опять же – обычно просто Меню);</p></li>
+<li><p>область запуска приложений (Panel Launcher) с пиктограммами – как уже было сказано, по умолчанию их всего три;</p></li>
+<li><p>область открытых приложений (Window list); </p></li>
+<li><p>область системных сообщений (Notifications); </p></li>
+<li><p>системный лоток (System Tray), куда помещаются пиктограммы «перманентно работающих» приложений; </p></li>
+<li><p>несколько пиктограмм разного назначения – список открытых окон (Windows Quick List) и подключаемых накопителей (Removable Drives), модуль сетевых соединений, регулятор громкости, часы, индикатор раскладки клавиатуры, пиктограмма менеджера обновлений. </p></li>
+</ul>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_008.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_008.png" alt="Изображение30">
+</a></p>
+
+<p>Кроме того, имеется «пользовательская кнопка» – она показывает сведения о
+текущем аккаунте, вызывает системные настройки, через неё блокируется экран и
+переключаются пользователи, осуществляется вход в так называемый «гостевой»
+сеанс, а также выполняется завершение сеанса работы, перезагрузка машины и её
+выключение:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_009.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_009.png" alt="Изображение31">
+</a></p>
+
+<p>Все области и кнопки панели представляют собой так называемые апплеты – мелкие
+программки, не способные к самостоятельному функционированию. Некоторые из
+этих апплетов (Panel Launcher, Window list, System Tray) представляют собой
+контейнеры для помещёния в них других пиктограмм (запуска, открытых окон, и
+так далее), другие же существуют как бы сами по себе.</p>
+
+<p>Апплеты могут добавляться на панель и удаляться с неё. Содержимое апплетов-
+контейнеров добавляется или автоматически (System Tray, Window list), или
+вручную (Panel Launcher). Удаление апплетов-контейнеров приводит к
+исчезновению всего их содержимого. Элементы из лаунчера можно удалять по
+одному, содержимое лотка и области приложений – вместе с закрытием
+соответствующих программ.</p>
+
+<h3 id="Главное-меню">Главное меню</h3>
+
+<p>Центральным (хотя и левым крайним) элементом панели является, безусловно,
+главное меню, с которым и настало время ознакомиться подробнее. На первый
+взгляд оно ничем не отличается от обычных менюшек «пускового» типа, с их
+страшной многоступенчатой иерархией. Однако если вглядеться в соответствующий
+скриншот ещё раз – различия обнаруживаются, и весьма существенные:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_010.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_010-572x495.png" alt="Изображение32"> </a></p>
+
+<p>Перво-наперво, обратим внимание на колонку пиктограмм вдоль левого края поля
+меню:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_011.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_011.png" alt="Изображение33">
+</a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_011.png"> </a></p>
+
+<p>Набор их в сборке Cinnamon для Mint включает иконки для запуска:</p>
+
+<ul>
+<li><p>браузера Firefox; </p></li>
+<li><p>менеджера программ mintinstall; </p></li>
+<li><p>Центра управления (он же – Системные настройки); </p></li>
+<li><p>терминала; </p></li>
+<li><p>файлового менеджера Nemo. </p></li>
+</ul>
+
+<p>Кроме того, имеются значки блокировки экрана, выхода из сеанса и завершения
+работы. Конечно, к последним действиям можно получить доступ и через User
+Applet панели, но там его ещё надо разглядеть и до действий докопаться, а тут
+они всегда на виду.</p>
+
+<p>Не менее примечательна поисковая строка в верхней части экрана – она
+предназначена для поиска приложений. Но не простого, а золотого инкрементного.
+То есть, введя в ней последовательность символов libre, мы получим список
+только тех пунктов меню, которые её содержат, то есть компонентов LibreOffice:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_012.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_012-572x508.png" alt="Изображение34"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_012.png"> </a></p>
+
+<p>То есть строка поиска в меню Cinnamon тихо и скромно, без шума и пыли
+выполняет ту же функцию, что и пресловутый Dash в Unity (и его аналог в GNOME
+3). Правда, с её помощью нельзя устанавливать программы или искать «парнуху» в
+Интернете – но не больно-то и хотелось.</p>
+
+<p>А вот искать по русским словам – с некоторыми ограничениями можно. Введя,
+например, слово редактор, мы увидим приложения, содержащие его в своём имени:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_013.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_013-572x499.png" alt="Изображение35"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_013.png"> </a></p>
+
+<p>А на слово текст ответом будет список приложений, содержащих его и в описании:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_014.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_014-572x502.png" alt="Изображение36"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_014.png"> </a></p>
+
+<p>На мой взгляд, сказанного уже достаточно, чтобы проникнуться величием среды
+Cinnamon. Однако это ещё не всё – оно проявляется и в управлении окнами.
+Однако прежде чем говорить на эту тему – остановимся на вопросе, как эти окна
+открывать.</p>
+
+<h3 id="Вызов-приложений">Вызов приложений</h3>
+
+<p>Открываются окна обычно вместе с запущенными в них приложениями. Способов же
+запуска последних в Cinnamon, как и во всех современных десктопах, несколько.</p>
+
+<p>Первый, наиболее универсальный – запуск из командной строки терминала путём
+ввода соответствующей команды. Однако обычно полноразмерное терминальное окно
+использовать для этого не целесообразно, его вполне можно заменить панелью
+мини-терминала – она вызывается обычной для всех десктопов комбинацией клавиш
+<code>Alt+2</code>:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_015.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_015.png" alt="Изображение37">
+</a></p>
+
+<p>До некоторого времени панель мини-терминала в Cinnamon не блистала
+функциональностью – в ней не было ни автоподолнения, ни истории команд,
+имелась только возможность ввести команду руками или вставить её из буфера.
+Однако в Cinnamon 2.6 все эти прелести появились. Историю команд можно, как и
+в шелле, просмотреть с помощью стрелок <code>Up</code> и <code>Down</code>. И автодополнение команды
+происходит после набора первых трёх символов её имени, в случае альтернатив
+выводя все доступные варианты:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/02/cinnamon_015a.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_015a.png" alt="Изображение38">
+</a></p>
+
+<p>Правда, при вызове панели минитерминала блокируются как любые любые действия
+мышью, так и ввод с клавиатуры. Открывается она всегда по центру, и
+перемещёнию не поддаётся. Так что пользоваться этой панелью не всегда удобно.
+Однако её возможности сполна, а то и с лихвой, заменяются функциями строки
+инкрементного поиска в главном меню, о которой только что говорилось. Именно
+она становится основным инструментом запуска приложений для тех применителей,
+которым, как автору этих строк, проще набрать несколько символов из имени
+программы, нежели, подобно Баяну, «мысью рыскать» в её поисках по менюшному
+древу. Тем более, что привычные программы, вызываемые давно памятными
+командами, в меню, тем более русифицированном, могут носить самые неожиданные
+имена, и потому опознаваться с трудом.</p>
+
+<p>Сразу по вызове главного меню мышью или хоткеем (в Cinnamon, как и в Unity,
+для этого по умолчанию зарезервирована левая win-клавиша, она же <code>Super_L</code>),
+строка поиска находится в фокусе ввода, и можно начинать набор имени
+приложения. Только нужно помнить про раскладку клавиатуры: как бы ни было
+настроено её наследование (о чём речь пойдёт в одном из следующих очерков), в
+этой строке она всегда будет наследоваться от раскладки последнего активного
+окна, а не от раскладки по умолчанию.</p>
+
+<p>Разумеется, для запуска приложений можно пользоваться и главным меню
+непосредственно, тем более что некоторые из них (браузер, терминал, Центр
+управления, файловый менеджер), как только что говорилось, вынесены в нём на
+отдельную панель в виде кнопок быстрого запуска. А вот остальные программы в
+меню уже надо поискать – тем более что, повторяю, там они могут именоваться
+весьма причудливо.</p>
+
+<p>Благо, пиктограммы наиболее востребованных приложений из меню можно поместить
+в Launcher на главной панели, на рабочий стол или в пункт Избранное. Для этого
+достаточно щёлкнуть правой кнопкой на имени нужной программы и из контекстного
+меню выбрать требуемый пункт:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_016.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_016-572x497.png" alt="Изображение39"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_016.png"> </a></p>
+
+<p>Кроме того, иконки приложений можно просто перетаскивать мышью из меню в
+Launcher. Причём – сразу в желаемое его место, тогда как при автоматическом
+помещёнии иконок они попадают в его конец, и их перетасовка потребует
+дополнительных телодвижений.</p>
+
+<p>Как только что было сказано, пиктограммы запуска приложений можно поместить и
+на рабочий стол, и запускать их оттуда. Однако я этим способом никогда не
+пользуюсь — он кажется мне неудобным, и и рабочего стола у меня обычно не
+видать за распахнутыми окнами.</p>
+
+<p>Вот теперь, разобравшись с запуском приложений и открытием вмещающих их окон,
+можно переходить и к управлению последними.</p>
+
+<h3 id="Управление-окнами">Управление окнами</h3>
+
+<p>В предыдущем разделе очерка речь шла о способах запуска приложений, в этом же
+поговорим о способах управления приложениями, которые уже запущены. Поскольку
+мы (пока ещё) живём в системе, которая официально называется <code>X Window System</code>,
+то большая часть приложений запускается в её окнах. Так что в основном
+применителю придётся иметь дело с ними.</p>
+
+<p>Вид окон с запущенными приложениями зависит от темы рабочего стола, стиля окон
+и других индивидуальных настроек. Но по умолчанию они выглядят примерно так:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_017.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_017-572x463.png" alt="Изображение40"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_017.png"> </a></p>
+
+<p>Управление окнами подразумевает в первую очередь переключение между ними. Что
+можно сделать несколькими способами. Первый, напрашивающийся, щелчком любой
+кнопкой мыши в области окна. В этом случае окну передаётся фокус и оно, как
+принято говорить, «поднимается», то есть оказывается на первом плане. Просто
+перевод курсора мыши на другое окно переводит его в фокус (то есть оно может
+скроллироваться), но не поднимает.</p>
+
+<p>Как можно видеть на скриншоте, в одной рабочей области может быть открыто
+несколько окон, которые могут частично или полностью перекрываться. И тогда
+универсальный универсальный способ переключения между окнами, существующий во
+всех графических средах, – комбинация клавиш <code>Alt+Tab</code>. Удержание её в нажатом
+состоянии выводит ленту значков открытых окон, с миниатюрой для окна
+активного:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_018.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_018-572x321.png" alt="Изображение41"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_018.png"> </a></p>
+
+<p>Третий способ переключения между окнами – область Window List на управляющей
+панели:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_019.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_019-572x30.png" alt="Изображение42"> </a></p>
+
+<p>Есть ещё переход в режим масштабирования рабочей области, но по умолчанию этот
+способ отключен, поэтому я вернусь к нему чуть позже.</p>
+
+<p>Сказанное относится к переключению между окнами, расположенными в одной
+рабочей области. Но они могут пребывать и в разных областях – как мы помним,
+по умолчанию их две. И в этом случае один из способов переключения между ними,
+имеющийся «из коробки» – апплет Windows Quick List (в последних версиях
+Cinnamon он помещён на панели по умолчанию):</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_020.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_020-572x321.png" alt="Изображение43"> </a></p>
+
+<p>Второй же – переход в режим Expo через один из «горячих углов», о чём также
+будет говориться вскоре.</p>
+
+<p>Теперь посмотрим, что можно делать с самими окнами. В строке заголовка каждого
+окна, кроме самого заголовка, в правой его части можно видеть три управляющие
+кнопки (слева направо): сворачивания, максимизации/восстановления исходного
+размера, закрытия – назначение их очевидно.</p>
+
+<p>Кое-какие манипуляции с окнами можно выполнять и кликами мыши по строке
+заголовка. Так, двойной щелчок левой её кнопкой вызывает максимизацию окна,
+повторение его – восстанавливает исходный размер. Тот же двойной клик, но уже
+правой кнопкой сворачивает окно на панель задач. Для средней кнопки
+предусмотрен только одинарный клик – он «опускает» окно на задний план.</p>
+
+<p>Лишь закрыть окно нельзя кликами мыши по строке заголовка. Но это делается
+(если не обращаться к штатному меню запущенного в окне приложения) комбинацией
+клавиш <code>Alt+F4</code> – подобно <code>Alt+Tab</code>, она также универсальна для почти всех
+графических сред (или вообще всех современных?). Кроме того, закрыть окно
+можно из его собственного меню – оно вызывается щелчком правой кнопки мыши по
+строке заголовка, и содержит такие пункты:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_021.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_021-572x463.png" alt="Изображение44"> </a></p>
+
+<p>Назначение первых четырёх и последних двух пунктов абсолютно понятно. А вот о
+тёх «средних» пару слов сказать можно. Отметка Закрепить на переднем плане –
+это запрет перекрытия данного окна другими. А пункты Всегда на видимом рабочем
+месте и Только на этом рабочем месте (включён по умолчанию) – альтернативны:
+при включении первого окно будет «кочевать» вслед за перемещёниями
+пользователя по рабочим областям.</p>
+
+<h3 id="Тайлинг-окон">Тайлинг окон</h3>
+
+<p>Всё, что было только что сказано относительно управления окон, не покажется
+чем-то необычным применителю любого современного десктопа и приверженцам
+подавляющего большинства оконных менеджеров. А вот сейчас речь пойдёт о вещи
+более неожиданной – о тайлинге окон. Это – та самая вторая особенность (после
+строки поиска в меню), которая столь восхитила меня в Cinnamon&#39;е.</p>
+
+<p>Для начала – пара слов о том, что такое тайлинг. Он основывается на той же
+идее, что и консольная утилита screen или двухпанельные файловые менеджеры –
+потомки командира Norton&#39;а – расщеплении экрана на ряд независимых областей, в
+каждой из которых локализуется окно с запущенным в нём приложением. Это
+подобно покрытию пола кафелем (tiling), чем и порождена аллюзия.</p>
+
+<p>При этом понятие управления окнами как бы лишается смысла – тайлинговые
+системы управляют не столько окнами, сколько теми самыми областями экрана, в
+которых окна открываются. Области эти (в чём-то они похожи на фреймы, некогда
+популярные среди web-дизайнеров) могут быть статическими, с жёстко
+определёнными размерами, и динамическими, при котором их размеры изменяются
+при масштабировании окон запущенных в них приложений. В Cinnamon реализована
+первая модель.</p>
+
+<p>Конечно, тайлингом удивить пользователей менеджеров окон типа Awesome
+сотоварищи не легче, чем испугать ежа голой... эээ... спиной. Однако во
+времена не очень больших экранов я этой идеей не проникса (парадигма «одно
+приложение – одна рабочая область» была мне ближе). А ко времени мониторов
+больших и широкоэкранных тайлинг подоспел и в десктопах – в Xfce и KDE. Однако
+в сравнении с Cinnamon&#39;овским тайлинг в них выглядит что плотник супротив
+столяра. Ибо предусматривает расщепление экрана только на две области – по
+горизонтали или по вертикали. В Cinnamon&#39;е же возможности тайлинга намного
+богаче.</p>
+
+<p>Начать с того, что в Cinnamon&#39;е окна можно «тайлить» не только на поэкрана –
+например, по вертикали:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_022.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_022-572x321.png" alt="Изображение45"> </a></p>
+
+<p>Или, если хочется, по горизонтали:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_023.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_023-572x321.png" alt="Изображение46"> </a></p>
+
+<p>Но есть и «четвертиночный» вариант разбивки экрана:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_024.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_024-572x321.png" alt="Изображение47"> </a></p>
+
+<p>А подчас даже</p>
+
+<p>...получается в ответе</p>
+
+<p>Два землекопа и две трети</p>
+
+<p>Примерно как на этом скриншоте:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_025.png"> <img src="http://alv.me/wp-%0Acontent/img/im_cin_img/cinnamon_025-572x321.png" alt="Изображение48"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_025.png"> </a></p>
+
+<p>Тайлинг окон не препятствует существованию на его фоне окон обычных:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_026.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_026-572x321.png" alt="Изображение49"> </a></p>
+
+<p>Вот только, к сожалению, средства «тайлить» окна на произвольные области
+экрана на предусмотрено. Однако и без этого область его использования
+достаточно широка, в чём мы убедимся после рассмотрения средств управления
+тайлингом.</p>
+
+<h3 id="Управление-тайлингом">Управление тайлингом</h3>
+
+<p>Тайлинг окон может выполняться двумя способами – посредством мыши и с
+клавиатуры. Как обычно, первый – легче, то есть «ленивей», второй – быстрее и
+эффективней. Замечу в скобках: как обычно, это вовсе не означает оценки в
+терминах товарища Маяковского. Иногда «хорошо» – это лениво развалясь в
+кресле, елозить мышью по экрану, а иногда – напрягать пальцы рады быстроты
+выполнения неких действий.</p>
+
+<p>Рассмотрим сначала тайлинг мышью, выполняемый над окном с положением и
+размерами, соответствующими умолчаниям десктопа:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_027.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_027-572x321.png" alt="Изображение50"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_027.png"> </a></p>
+
+<p>При подтаскивании окна мышью к верхней границе экрана оно занимает верхнюю же
+его половину:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_028.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_028-572x321.png" alt="Изображение51"> </a></p>
+
+<p>Аналогичное движение к нижней границе экрана разворачивает окно на нижнюю его
+половину:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_029.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_029-572x321.png" alt="Изображение52"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_029.png"> </a></p>
+
+<p>Перемещёние окна к боковой стороне экрана «тайлит» его на левую</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_030.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_030-572x321.png" alt="Изображение53"> </a></p>
+
+<p>или правую половины, в зависимости от стороны «подтаскивания»:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_031.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_031-572x321.png" alt="Изображение54"> </a> <a href="http://alv.me/wp-content/img/2014/12/cinnamon_031.png"> </a></p>
+
+<p>Если передвинуть окно в любой из углов дисплея, оно займёт соответствующую его
+«четвертинку»:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/cinnamon_032.png"> <img src="http://alv.me/wp-content/img/im_cin_img/cinnamon_032-572x321.png" alt="Изображение55"> </a></p>
+
+<p>То есть всё просто, но... Предположим, что при сочинении текста в текстовом
+редакторе (или word-процессоре) появилось желание параллельно бросить взгляд
+на картину, призванную этот текст иллюстрировать: в этом случае тайлинг
+посредством мыши потребует отрыва руки от клавиатуры и переноса её на спину
+грызуна. И вот тут-то на помощь и придёт тайлинг с клавиатуры, который
+осуществляется комбинацией из двух пальцев – клавиши <code>Super</code> (она же – левая
+Win) и одной из стрелок управления курсором.</p>
+
+<p>Опять же подвергнем издевательствам исходное окно с умолчальными параметрами.
+Комбинация <code>Super+Right</code> развернёт её на правую половину экрана, <code>Super+Left</code> –
+вернёт в исходное состояния. Из которого комбинацией <code>Super+Left</code> оно
+развернётся на левую половину, а последующий <code>Super+Right</code> – возвратит взад. Из
+положения «половинка справа» комбинация <code>Super+Up</code> превратит окно в
+«четвертинку» в правом верхнем углу, <code>Super+Down</code> – «четвертинку» в правом
+нижнем.</p>
+
+<p>Принцип, я думаю, понятен: <code>Super</code> плюс стрелка в любую сторону – окно на
+соответствующую половинку экрана, <code>Super</code> плюс стрелка в обратную – возврат в
+исходное положение, <code>Super</code> плюс стрелка из «половинного» состояния – перевод в
+состояние «четвертиночное». Запомнить это не сложно, навык до рефлекторного
+уровня приобретается очень быстро. А как его можно применить на практике –
+сейчас увидим.</p>
+
+<h3 id="Тайлинг-на-практике">Тайлинг на практике</h3>
+
+<p>Всё это очень блаародно – вправе сказать читатель, – но в чём преимущество
+тайловых окон перед обычными? Долгое время ответа на этот вопрос у меня не
+было, тем более, что я окнами почти не пользовался: во всё ширь каждого
+десктопа у меня было открыто одно приложение. Пока не опробовал тайловый режим
+– сначала в Xfce 4.10, где он незатейлив, а затем и в среде Cinnamon, в
+которой, как я пытался показать на предыдущих страницах, он куда более
+изощрён.</p>
+
+<p>Тем не менее, объяснить преимущества тайловых окон над масштабированными
+довольно трудно – это надо попробовать самому и оценить. Для меня оно
+выразилось в возможности мгновенно перейти от сочинения текста в полноэкранном
+режиме к режиму параллельного просмотра текста, иллюстраций к нему, файловой
+иерархии и так далее. И сделать это лёгким движением даже не руки, а двух
+пальцев.</p>
+
+<p>Причём параллельным просмотром нескольких окон можно не ограничиваться. А,
+например, перетаскивать мышью или просто копипастить горячими клавишами
+картинки из файлового менеджера или вьювера изображений в word-процессор.
+Аналогичным образом можно перетаскивать из теста документации в командную
+строку терминала примеры командных конструкций. Или, наоборот, команды или
+исходники сценариев – помещать в сочиняемый текст.</p>
+
+<p>Конечно, всё это можно сделать и при традиционном расположении окон, но прошу
+поверить на слово брату незабвенного Голубкова:</p>
+
+<blockquote>
+<p>Так лучше, Лёня.</p>
+</blockquote>
+
+<p>В общем, обращение с содержимым окон становится похожим на работу с
+двухпанельными файловыми менеджерами a la Midnight Commander. Или даже с
+четырёхпанельными: возможно, кое-кому из читателей памятен «пай-мальчик» – Pie
+Commander, незаконный четырёхглазый отпрыск командира Norton&#39;а...</p>
+
+<p>Правда, в двух- и тем более в «четырёхплиточной черепице» становится
+мучительно больно за бесцельно расходуемое экранное пространство, занятое в
+каждом окне строкой меню. И возникает сожаление об отсутствии возможности
+встроить его в главную управляющую панель, как это делается по умолчанию в
+Unity. Но увы – нет в жизни совершенства, ибо нет в Cinnamon такой
+возможности. Иначе он безусловно достиг бы высшей степени совершенства, а его
+разработчики имели бы полное право впасть в нирвану.</p>
+
+<h3 id="Интерфейс-cinnamon-краткий-итог">Интерфейс Cinnamon: краткий итог</h3>
+
+<p>В этом очерке были описаны особенности интерфейса Cinnamon, которые
+представляются мне наиболее существенными. Пора подводить итоги.</p>
+
+<p>В своём современном виде Cinnamon наделён всеми функциями, присущими остальным
+десктопам. Причём реализованными если не идеально, то близко к тому. А две из
+них в сочетании оказываются почти уникальными. Это – строка инкрементного
+поиска в меню и развитый тайлинг. Обе они представлены и в Unity, и Xfce, и в
+KDE. Но в первой среде пресловутый Dash как раз функционально перегружен,
+предусматривая поиск в Интернете не только всякой ерунды, типа программ и
+пакетов, но и весьма важной и разнообразной «парнухи». В Xfce строка поиска по
+меню как раз зарыта в дебрях её минитерминала. Ну а в KDE эта строка есть
+только в «меню современного вида», которое само по себе многим (в том числе и
+автору этих строк) представляется неудобным. Что же до тайлинга – как я уже
+отметил, его реализация в Cinnamon среди всех десктопов превзойдённа.</p>
+
+<p>При этом всё сказанное в этой части касалось особенностей Cinnamon&#39;а по
+умолчанию. Но особенно ярко они заиграют после соответствующих настроек,
+которым будут посвящены следующие очерки.</p>
+
+
+
+<div class="tags">
+    
+</div>
+
+
+
+</div>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-lg-12 footer">
+      2015 Алексей Alv Федорчук.<br />
+       Site last generated: Dec 9, 2015 <br />
+      <p><a href="http://linuxmint.com/"><img title="http://linuxmint.com/" width="50" src="/images/menu.svg"/></a></p>
+    </div>
+  </div>
+</footer>
+
+    </div><!-- /.row -->
+  </div>    <!-- /.container -->
+</body>
+
+</html>
