@@ -96,6 +96,12 @@ index:
   link: "<a href='110_other_config.html'>Прочие настройки</a>"
 
 
+120_cli_base:
+  title: "Основы командного интерфейса"
+  url: "120_cli_base.html"
+  link: "<a href='120_cli_base.html'>Основы командного интерфейса</a>"
+
+
 
 
 
