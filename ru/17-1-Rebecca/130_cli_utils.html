@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Утилиты CLI  | Linux Mint и его Cinnamon (Алексей Alv Федорчук)</title>
+<link rel="stylesheet" type="text/css" href="/css/syntax.css">
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/modern-business.css">
+<link rel="stylesheet" type="text/css" href="/css/lavish-bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/css/customstyles.css">
+<link rel="stylesheet" type="text/css" href="/css/theme-green.css">
+<script src="/js/jquery.2.1.4.min.js"></script>
+<script src="/js/jquery.cookie.1.4.1.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+<script src="/js/bootstrap.3.3.4.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+
+
+
+ 
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </head>
+
+<body>
+  <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Linux Mint и его Cinnamon</span></a>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                <li><a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll" target="_blank">Github Repo</a></li>
+                
+                
+                
+                
+
+
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+
+                <li class="dropdown">
+                    
+                    
+                    
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        
+                        <li><a href="doc_about.html">About this theme</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_support.html">Support</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_troubleshooting.html">Troubleshooting</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+                <!-- special insertion -->
+
+               
+                <!-- Send feedback function -->
+<script>
+function SendLinkByMail(href) {
+var subject= "Linux Mint и его Cinnamon (Алексей Alv Федорчук) feedback";
+var body = "I have some feedback about the Утилиты CLI page: ";
+body += window.location.href;
+body += "";
+var uri = "mailto:nemilya@gmail.com?subject=";
+uri += encodeURIComponent(subject);
+uri += "&body=";
+uri += encodeURIComponent(body);
+window.location.href = uri;
+}
+</script>
+
+<li><a href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B" target="_blank"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+
+
+                <li>
+                <!-- start search -->
+                <div id="search-demo-container">
+                <input type="text" id="search-input" placeholder="search...">
+                <ul id="results-container"></ul>
+                </div>
+                <script src="js/jekyll-search.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                SimpleJekyllSearch.init({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                dataSource: 'search.json',
+                searchResultTemplate: '<li><a href="{url}" title="Утилиты CLI">{title}</a></li>',
+                noResultsText: 'No results found.',
+                limit: 10,
+                fuzzy: true,
+                })
+                </script>
+                <!-- end search -->
+                </li>
+
+                
+<script language="JavaScript" type="text/javascript">
+
+    $( document ).ready(function() {
+        if (top.location == location)  {
+            $(".escapeMe").remove();
+        }
+
+    });
+
+            function breakout_of_frame() {
+                if (top.location != location) {
+                    window.open(window.location.href, '_blank');
+
+                }
+
+            }
+</script>
+
+<li class="escapeMe">
+    <a href="#" onclick="breakout_of_frame()" ><i class="fa fa-sign-out"></i> Pop-out</a>
+</li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    
+      <!-- Content Row -->
+<div class="row">
+  <!-- Sidebar Column -->
+  <div class="col-md-3">
+    <script>
+      $(document).ready(function() {
+        // Initialize navgoco with default options
+        $("#mysidebar").navgoco({
+          caretHtml: '',
+          accordion: true,
+          openClass: 'active', // open
+          save: false, // leave false or nav highlighting doesn't work right
+          cookie: {
+            name: 'navgoco',
+            expires: false,
+            path: '/'
+          },
+          slide: {
+            duration: 400,
+            easing: 'swing'
+            }
+          });
+
+          $("#collapseAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', true);
+          });
+
+        });
+      </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul id="mysidebar" class="nav">
+      <div class="siteTagline">Linux&nbsp;Mint Cinnamon</div>
+      <div class="versionTagline">version 17.1 (Rebecca)</div>
+
+      
+        
+          <li><a href="#">Вступление</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/index.html">Аннотация</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/010_about_book.html">Об этой книге</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Введение</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/020_linux_mint_into.html">Введение в Linux Mint</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/030_cinnamon_intro.html">Введение в Cinnamon</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Linux Mint: установка</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/040_linux_mint_installation.html">Linux Mint: установка</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Mint и Cinnamon</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/050_mint_and_cinnamon_obzor.html">Обзор среды</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/060_cinnamon_system_config.html">Cinnamon и системные настройки</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/070_section_parameters.html">Секция Параметры</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/080_devices.html">Секция Оборудование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/090_admins.html">Секция Администрирование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/100_mint_utils.html">Mint: фирменный инструментарий</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/110_other_config.html">Прочие настройки</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/120_cli_base.html">Основы командного интерфейса</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li class="active"><a href="/ru/17-1-Rebecca/130_cli_utils.html">Утилиты CLI</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+      
+    </ul>
+
+    
+  </div>
+  <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
+  <script>$("li.active").parents('li').toggleClass("active");</script>
+
+    
+    <!-- Content Column -->
+    <div class="col-md-9">
+      <div class="post-header">
+   <h1 class="post-title-main">Утилиты CLI</h1>
+</div>
+
+<div class="post-content">
+
+   
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+
+  <p>В этом очерке будут рассмотрены утилиты командной строки разного назначения — комплекс так называемых классических UNIX-утилит в их современных свободных реализациях, используемых в дистрибутивах Linux, в том числе и в Mint.</p>
+
+<h3 id="Самая-главная-команда">Самая главная команда</h3>
+
+<p>Эта рубрика посвящена самой главной команде — <code>man</code>, а также сопутствующим ей материям. Содержание её — не информация о тех или иных командах, или свойствах системы, а метаинформация: информация о том, как получить нужную информацию. То есть выработке некоторых навыков, которые у применителя Linux должны быть доведены до уровня рефлексов.</p>
+
+<p>Команд в свежеустановленной Linux-системе — немерянное количество, только консольных утилит под тысячу. Да ещё почти каждая команда имеет опции, подчас также в немалом числе. И возникает естественный вопрос: как нормальный человек все это может запомнить? Да никак — последует ответ. Потому что запоминать все это изобилие команд нет не только возможности — но и ни малейшей необходимости: гораздо важнее понимать, каким образом соответствующую информацию можно получить в нужный момент. И тут нам на помощь приходит самая главная команда — команда <code>man</code>.</p>
+
+<p>Команда <code>man</code> предназначена для вызова экранной документации в одноименном формате (Manual Pages, что на Руси ласково переводится как «тетя Маня»). А такая man-документация почти обязательно сопровождает любую уважающую себя программу для POSIX-систем. И устанавливается в принудительном порядке при инсталляции соответствующей программы в любом случае — разворачивается ли она из бинарного тарбалла или собирается из исходников.</p>
+
+<p>Для файлов man-документации предназначен специальный каталог. Обычно это <code>/usr/share/man</code>, разделяемый на подкаталоги, соответствующие восьми нумерованным группам. Назначение этих групп следующее:</p>
+
+<ol>
+<li><p><code>man1</code> — команды и прикладные программы пользователя;</p></li>
+<li><p><code>man2</code> — системные вызовы;</p></li>
+<li><p><code>man3</code> — библиотечные функции;</p></li>
+<li><p><code>man4</code> — драйверы устройств;</p></li>
+<li><p><code>man5</code> — форматы файлов;</p></li>
+<li><p><code>man6</code> — игры;</p></li>
+<li><p><code>man7</code> — различные документы, не попадающие в другие группы (в том числе относящиеся к национальной поддержке);</p></li>
+<li><p><code>man8</code> — команды администрирования системы.</p></li>
+</ol>
+
+<p>Кроме того, имеется несколько подкаталогов с локализованными man-страницами, в том числе и русскоязычными, имеющими ту же структуру, хотя и обычно не полную. Так, подкаталог с русскоязычными страницами, <code>/usr/share/man/ru</code>, включает в себя только группы <code>man1</code>, <code>man5</code>, <code>man7</code> и <code>man8</code>.</p>
+
+<p>Нас, применителей, в первую очередь интересуют команды из 1-й и, поскольку на персоналке каждый юзер — сам себе админ, из 8-й групп, хотя и об остальных категориях забывать не следует, иногда позарез нужные сведения отыскиваются в самой неожиданной из них.</p>
+
+<p>Внутри групповых подкаталогов можно увидеть многочисленные файлы вида <code>filename.#.gz</code>. Последний суффикс свидетельствует о том, что man-страница упакована компрессором <code>gzip</code>. Цифра после имени соответствует номеру группы (то есть в подкаталоге man1 это всегда будет единица). Ну а имя man-страницы совпадает с именем команды, которую она описывает. Если, конечно, речь идет о команде — в разделе 2 оно будет образовано от соответствующего системного вызова, в разделе 2 — от имени функции, и так далее. Но пока нас интересует только информация о командах, так что дальше я этого оговаривать не буду.</p>
+
+<p>Для вызова интересующей документации требуется дать команду man с аргументами — номером группы и именем man-страницы, например:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> man <span class="m">1</span> ls
+</code></pre></div>
+<p>Причём номер группы необходим только в том случае, если одноимённые документы имеются в разных группах. Для пользовательских команд он обычно не нужен, так как все равно просмотр групповых каталогов идёт сначала в man1, затем — в man8, и только потом — во всех остальных (в порядке возрастания номеров). Так что для получения информации, например, по команде ls достаточно ввести следующее:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> man ls
+</code></pre></div>
+<p>после чего можно будет лицезреть примерно такую картину:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">LS(1)   FSF     LS(1)
+
+NAME
+        ls — list directory contents
+
+SYNOPSIS
+        ls [OPTION]... [FILE]...
+
+DESCRIPTION
+        List  information  about
+        the FILEs (the current directory by default).
+        Sort entries alphabetically if none
+        of -cftuSUX nor --sort.
+</code></pre></div>
+<p>То есть в начале man-страницы даются имя команды, которую она описывает (<code>ls</code>), ее групповая принадлежность (<code>1</code> — пользовательские команды) и авторство (в данном случае — FSF, Free Software Foundations), или название системы. После чего обычно дается обобщенный формат вызова (SYNOPSIS) и краткое описание.</p>
+
+<p>Следующая, основная, часть man-страницы — описание опций команды, и условия их применения. Далее иногда (но, к сожалению, не всегда) следуют примеры использования команды (<code>Examples</code>) в разных типичных ситуациях. В заключении, как правило, даются сведения о найденных ошибках (<code>Bug Report</code>) и приведен список man-страниц, тематически связанных с данной (<code>See also</code>), с указанием номера группы, к которой они принадлежат, иногда — историческая справка, а также указываются данные об авторе.</p>
+
+<p>Большинство man-страниц занимают более одного экрана. В этом случае возникает необходимость перемещёния по экранам и строкам — т.е. некоторая навигация. Сама по себе команда <code>man</code> не отвечает не только за навигацию по странице. но даже за ее просмотр. Для этой цели она неявным образом вызывает специальную программу постраничного просмотре — т.н. <code>pager</code> (это — совсем не то, чем дети лохов в песочнице ковыряются). В Linux таковым по умолчанию выступает уже известная нам команда <code>less</code>, но на эту роль можно назначить также <code>more</code> или <code>most</code> — это делается указанием значения соответствующей переменной, например:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">export PAGER=most</span>
+</code></pre></div>
+<p>в конфигурациооном файле пользователя.</p>
+
+<p>Обращение к man-страницам позволяет получить практически исчерпывающую информацию по любым командам, но только в том случае, если пользователь знает название той команды, которая требуется в данном случае. А если он только в общих чертах представляет, что это команда должна делать?</p>
+
+<p>Что ж, тогда можно прибегнуть к поиску man-страниц по ключевым словам, отражающим требуемые функции. Чему призвана служить опция <code>-k</code> команды <code>man</code>. Например, директива</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> man -k print
+</code></pre></div>
+<p>выведет на экран список всех man-страниц, описывающих команды, имеющие отношение к печати (причём не только на принтере, но и к выводу на экран — по английски подчас это тоже будет обозначаться как <code>print</code>).</p>
+
+<p>Исчерпывающим руководством по использованию системы Manual Pages является ее собственная man-страница. Доступ к ней осуществляется по команде</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> man man
+</code></pre></div>
+<p>которая выводит на экран man-страницу, содержащую описание команды man (эко загнул, а?):</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">MAN(1)  FreeBSD General Commands Manual MAN(1)
+
+
+NAME
+        man — format and display the on-line
+        manual pages
+
+SYNOPSIS
+        man [-adfhkotw] [-m machine]
+        [-p string] [-M path] [-P pager]
+        [-S list] [section] name ...
+
+DESCRIPTION
+     Man formats and displays the on-line manual pages.
+        ...
+</code></pre></div>
+<p>С навигационными возможностями команды <code>less</code> можно ознакомиться, нажав клавишу <code>h</code> — вызов встроенной её помощи. Из которой мы и узнаем, что перемещаться по man-странице можно с помощью управляющих последовательностей.</p>
+
+<p>Управляющие последовательности команды <code>less</code> для большинства навигационных действий весьма разнообразны, но в принципе разделяются на две группы: чисто буквенные и состоящие из комбинаций <code>Control+литера</code>. Так, переместиться на одну строку вперед можно просто нажатием клавиши <code>j</code>, на одну строку назад — клавиши <code>k</code>, сместиться на экранную страницу — с помощью клавиш <code>f</code> (вперед) и <code>b</code> (назад). Однако того же результата можно добиться комбинациями клавиш <code>Control+n</code> и <code>Control+p</code> для построчного перемещёния и <code>Control+v</code> и <code>Control+b</code> — для постраничного (вперед и назад, соответственно).</p>
+
+<p>Аналогично и для большинства других действий (смещёние на половину экранной страницы, например: <code>Control+D</code> и <code>d</code> — вперед, <code>Control+U</code> и <code>u</code> — назад) можно обнаружить минимум одну альтернативную пару управляющих последовательностей. Регистр символов обычно значения не имеет. Одно из исключений — нажатие клавиши <code>g</code> перемещает к первой строке man-страницы, клавиши <code>G</code> — к последней.</p>
+
+<p>Наличие двух типов управляющих последовательностей может показаться излишним усложнением, однако имеет глубокое внутреннее обоснование. За исключением некоторых отщепенцев (в числе коих и автор этих строк), подавляющее большинство записных юниксоидов пользуются одним из двух редакторов — <code>Vim</code> или <code>emacs</code>.</p>
+
+<p>Оба эти редактора относятся к категории командных. То есть все действия по редактированию осуществляются в них обычно не выбором пунктов из меню, а прямыми командными директивами, примерно как в командной строке оболочки. Так вот, одно из кардинальных различий между <code>Vim</code> и <code>emacs</code> — различие управляющих последовательностей для навигации по тексту и его редактированию. <code>vi</code>-образный стиль навигации основан на однобуквенных командных аббревиатурах (команды типа <code>j</code> или <code>k</code> пришли в <code>less</code> именно оттуда). Стиль <code>emacs</code> же подразумевает последовательности, образованные сочетанием клавиши <code>Control</code> и различных алфавитно-цифровых комбинаций.</p>
+
+<p>Поскольку эффективное использование любого редактора командного стиля подразумевает доведенное до автоматизма использование управляющих последовательностей, переключение с <code>vi</code>-стиля на стиль <code>emacs</code> в этом деле может быть просто мучительным. Вот и предусмотрели разработчики pager&#39;ов, в своей заботе о человеке, возможность использования и того, и другого стиля — кто к чему привык.</p>
+
+<p>Раз уж зашла речь о стилях управляющих последовательностей... В большинстве командных оболочек такое переключение между стилями управления также возможно. Только не параллельное, а альтернативное. И устанавливается оно в конфигурационных файлах пользовательского шелла.</p>
+
+<p>Возвратимся, однако, к нашей man-документации. Для навигации по странице можно использовать и обычные клавиши управления курсором, клавиши <code>PgUp/PgDown</code>, а также некоторые другие. Например, нажатие <code>Enter</code> приводит к смещёнию на одну строку вперед (аналогично клавише <code>Down</code>, а клавиши <code>Spacebar</code> — на один экран вперед (подобно <code>PgDown</code>).</p>
+
+<p>Однако это — не лучший способ навигации. Потому что управляющие последовательности (не зависимо, в стиле ли <code>vi</code>, или в стиле <code>emacs</code>) обладают дополнительной полезной возможностью: они понимают числовые аргументы. То есть если мы нажмем клавишу с цифрой <code>5</code>, а вслед за ней — клавишу <code>J</code>, то мы сместимся на пять строк вперед, комбинация <code>3+K</code> — на три страницы назад, и так далее.</p>
+
+<p>Есть и возможность поиска внутри man-страницы. Для этого нажимается клавиша прямого слэша (<code>/</code>), после чего вводится искомое слово (последовательность символов). Для выхода из просмотра man-страницы предусмотрена клавиша <code>q</code>. Кроме того, можно использовать и почти универсальную комбинацию для прекращения выполнения программ — <code>Control+C</code>. Заканчивая разговор об управляющих последовательностях, ещё раз подчеркну: все они относятся не к самой команде <code>man</code>, а к той программе-пейджеру, которая ею вызывается для просмотра.</p>
+
+<h3 id="Команда-sudo">Команда sudo</h3>
+
+<p>Команда <code>sudo</code> — вторая по важности команда в <code>Mint</code>. Это — основной способ получения прав администратора обычным пользователем. А по умолчанию — так просто единственный, ибо при инсталляции этого дистрибутива пароль root&#39;а не задаётся и, соответственно, доступа к аккаунту «чистого» суперпользователя нет (хотя при желании его можно получить). Команда эта дополняется утилитами <code>visudo</code> и <code>sudoedit</code>. Это узкоспециализированные средства для редактирования общесистемных конфигурационных файлов (в том числе и конфига самой <code>sudo</code>) обычным пользователем. Главные особенности <code>sudo</code> таковы:</p>
+
+<ol>
+<li><p>во-первых, <code>sudo</code> по умолчанию требует указания пароля того пользователя, который получает права другого, а не пароля того, чьи права приобретаются; правда, это может быть изменено;</p></li>
+<li><p>во-вторых, действие <code>sudo</code> распространяется по умолчанию только на одну команду — ту, которая указывается в качестве ее аргумента; хотя и такое поведение можно изменить с помощью соответствующих опций, о чём будет сказано позднее;</p></li>
+<li><p>в-третьих, <code>sudo</code> обеспечивает более гибкое разграничение доступа пользователей к административным правам — не только разрешая или запрещая получение оных, но и позволяя выполнять только определённый круг действий.</p></li>
+</ol>
+
+<p>Этим достигается две цели: а) возможность выполнения пользователем административных действий без сообщения ему суперпользовательского пароля (и даже, как в <code>Mint</code>, при его отсуствтии), и б) снижение риска повредить систему вследствие забывчивости. Да, есть ещё и третья, дополнительная возможность, предоставляемая <code>sudo</code> — протоколирование действий, выполненных в режиме администратора.</p>
+
+<p>В элементарном виде применение команды <code>sudo</code> — элементарно же просто: требуется лишь указать в качестве ее аргумента имя команды, требующей исполнения, со всеми необходимыми последней опциями и аргументами. После этого запрашивается пароль запустившего её пользователя — и команда исполняется. Например, команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> sudo fdisk -l /dev/sda
+</code></pre></div>
+<p>данная от лица обычного пользователя, выведет информацию об указанном дисковом устройстве точно так же, как и данная root’ом.</p>
+
+<p>В должным образом настроенной оболочке <code>Bash</code> в отношении команд-аргументов и путей — аргументов последних, будет действовать автодополнение по нажатию клавиши <code>Tab</code>. Как добиться от <code>Bash</code> столь образцового поведения — говорилось в предыдущем очерке.</p>
+
+<p>Если от лица алминистратора нужно выполнить подряд несколько команд, делать это следует быстро — введенный первый раз пароль по умолчанию «действует» в течении 5 минут. То есть в течении этого времени в ответ на команду <code>sudo</code> пароль повторно запрашиваться не будет.</p>
+
+<p>Период действия пароля для команды <code>sudo</code> можно увеличить, уменьшить или вообще ликвидировать, чтобы аутентификация запрашивался всегда. Это достигается редактированием конфигурационного файла утилиты, к чему мы вернёмся чуть позже.</p>
+
+<p>Аналогичным образом пользователь может отредактировать общесистемный конфигурационный файл, например:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> sudo nano -w /etc/fstab
+</code></pre></div>
+<p>Впрочем, для редактирования общесистемных конфигов предназначена специальная команда <code>sudoedit</code> (или просто <code>sudo</code> с опцией <code>-e</code>). Она не требует указания имени вызываемого для этой цели редактора: в качестве такового используется значение переменной <code>EDITOR</code> из окружения того пользователя, который ее вызвал. Если эта переменная не определена — а это обычно делается в профильных файлах регистрационной оболочки пользователя, — для редактирования вызывается редактор <code>Vim</code> (в своей упрощенной ипостаси, эмулирующей классический <code>vi</code>).</p>
+
+<p>Как это ни парадоксально, команда <code>sudo</code> не исключает запуска администраторского сеанса внутри обычного пользовательского. Потому что с ее помощью можно запустить <code>su</code>:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> sudo su
+</code></pre></div>
+<p>И это — даже в тех дистрибутивах, где root-аккаунта как бы и нет; точнее, по умолчанию нет его пароля (к ним, как уже было сказано, относится <code>Mint</code>). Но и задать пароль «настоящего» администратора не запрещается — для этого достаточно дать команду</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> sudo passwd
+</code></pre></div>
+<p>чтобы в дальнейшем использовать команду <code>su</code> обычным образом. Правда, не уверен, что это стоит делать. Потому что для перманентного владения правами администратора команда <code>sudo</code> предусматривает «идеологически правильный» метод, и даже не один. Это — опции <code>-s</code> и <code>-i</code>, пролонгирующие, хотя и несколько по разному, действие команды <code>sudo</code> на неопределённый срок, вплоть до завершения «вторичного сеанса» командой <code>exit</code>.</p>
+
+<p>Опция <code>-s</code>, открывая вторичный сеанс root’а, сохраняет все переменные окружения первоначального пользователя. Однако, если к ней добавить опцию <code>-H</code>, то переменные эти будут заново считаны из профильных файлов домашнего каталога администратора, то есть <code>/root</code>, как при запуске интерактивного экземпляра шелла. Однако каталог, бывший текущим в момент ввода команды, при этом не изменится, как не изменится и вид приглашения командной строки.</p>
+
+<p>Опция же <code>-i</code> полностью воспроизводит root-окружение, запуская его командную оболочку как регистрационную (<code>login shell</code>). Разумеется, при этом и текущий каталог меняется на <code>/root</code>, а приглашение командной строки приобретает вид, описанный в соответствующей переменной профильного файла администраторского шелла, то есть <code>/root/.bashrc</code>. Правда, в <code>Mint</code> и его по умолчанию нет.</p>
+
+<p>На практике разница между обеими формами обретения перманентных прав администратора не велика. А вот то, что при использовании опций <code>-H</code> нахождение в перманентно административном режиме никак внешне не проявляется, чревато ошибками. И делает в большинстве случаев применение опции <code>-i</code> предпочтительным.</p>
+
+<p>Возможности <code>sudo</code> не ограничиваются запуском команд от лица администратора: задав опцию <code>-u username</code>, их можно выполнить и от лица того пользователя, чей логин задан в качестве её значения. Это может быть полезным при просмотре или копировании dot-файлов и dot-каталогов другого пользователя, часто открытых для чтения и изменения только их хозяину.</p>
+
+<p>К слову сказать, команду <code>sudo</code> можно запустить так, чтобы она запрашивала пароль пользователя, от имени которого будет выполняться команда (например, администратора), а не того, кто требует его полномочий. Для этого существует опция <code>-targetpw</code>. А чтобы сделать требование root’ового пароля постоянным, достаточно определить, например, псевдоним типа</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">alias sudo=&#39;sudo -targetpw&#39;</span>
+</code></pre></div>
+<p>Команда <code>sudo</code> имеет ещё немало опций — выше я привёл только те, которые мне приходилось использовать. Остальные легко посмотреть в <code>man sudo</code>. Из не перечисленных упомяну ещё опцию <code>-b</code>, предписывающую запускать «подсудную» команду в фоновом режиме. Она может быть полезна при выполнении долговременных действий, например, при копировании образов USB на флэшку командой <code>dd</code>.</p>
+
+<p>Таким образом, команда <code>sudo</code> даёт пользователю практически неограниченные полномочия как для любых общесистемных действий, так и для манипуляции чужими пользовательскими данными. В связи с этим зададимся вопросами:</p>
+
+<ul>
+<li>любой ли пользователь может получить права администратора через команду <code>sudo</code>, и</li>
+<li>все ли действия по администрированию он может ее посредством выполнить?</li>
+</ul>
+
+<p>Если говорить о семействе <code>Ubuntu</code> (в том числе и дистрибутиве <code>Mint</code>), в котором механизм этот был впервые задействован из «коробки» — то «из коробки» же ответ на первый вопрос будет отрицательным, на второй — положительным. А вообще это зависит от настроек программы <code>sudo</code>, которые описываются в файле <code>/etc/sudoers</code>. И в нем можно задать правила, допускающие к исполнению определенных команд только отдельных пользователей. В обобщенном виде это выглядит так:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">username        host = command
+</code></pre></div>
+<p>Здесь, как нетрудно догадаться, <code>username</code> — имя пользователя, для которого устанавливается данное правило, <code>host</code> — имя машины, с которой он может к этому правилу прибегнуть, <code>command</code> — конкретная команда, использование которой разрешается данному пользователю с данной машины. Команда должна быть дана с указанием полного абсолютного пути (то есть <code>/sbin/fdisk</code>, а не <code>fdisk</code>). Поле описания команд может включать несколько значений, разделенных запятыми, например:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">username        ALL = /sbin/fdisk,/bin/mount
+</code></pre></div>
+<p>В Ubuntu’идах по умолчанию правила доступа пользователей к административным привилегиям описываются так:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># User privilege specificationroot
+ALL=(ALL) ALL
+
+# Members of the admin group may gain root privileges
+%admin  ALL=(ALL) ALL
+</code></pre></div>
+<p>То есть пользователь <code>root</code>, как ему и положено, может исполнять любые команды с любых хостов. А вот получить права его могут только пользователи, входящие в группу <code>admin</code>. Пользователь, создаваемый в ходе обычной установки, автоматически становится членом этой группы — и потому все административные права ему доступны без всяких дальнейших настроек. Однако прочие пользователи, чьи аккаунты будут созданы в последствие, этой привилегии лишены. Если, конечно, они не были специально включены в группу <code>admin</code>.</p>
+
+<p>В более иных дистрибутивах, не использующих <code>sudo</code> «из коробки», потребуется редактирование её конфигурационного файла — того самого <code>/etc/sudoers</code>, о котором упоминалось выше.</p>
+
+<p>Файл <code>/etc/sudoers</code> — обычный текстовый, и, соответственно, его можно редактировать в любом текстовом редакторе (или, скажем, средствами <code>ed</code> или <code>sed</code>). Однако при этом существует определённый риск что-нибудь напортачить (за счёт обычных опечаток), вплоть до того, что полностью закрыть самому себе доступ к привилегиям суперпользователя. Конечно, ситуации эти поправимы — например, через перезагрузку в однопользовательском режиме. Однако, лучше в них не попадать. И потому более надёжным средством модификации <code>/etc/sudoers</code> будет использование специально предназначенной для того утилиты — <code>visudo</code>.</p>
+
+<p>Утилита <code>visudo</code> не делает ничего сверхъестественного — она просто открывает <code>/etc/sudoers</code> в текстовом редакторе, описываемом переменной <code>EDITOR</code> суперпользователя (если таковая не определена, им будет опять же классический <code>vi</code> — отсюда и название) и позволяет его отредактировать обычным образом, после чего выйти из редактора с сохранением результатов штатными его средствами. Однако перед этим результат редактирования проверяется на корректность. И если обнаруживается нарушение синтаксиса, принятого для <code>/etc/sudoers</code>, выдается соответствующее предупреждение. После которого можно вернуться к редактированию, отказаться от сделанных изменений или все-таки принять их (разумеется, под личную ответственность).</p>
+
+<p>Утилита <code>visudo</code> не гарантирует стопроцентного успеха редактирования. Так как проверяет только соответствие синтаксиса, но не «правильность самих правил». То есть если ошибка будет допущена в указании пути к нужной для данного правила команде — эта команда через <code>sudo</code> не сработает.</p>
+
+<p>Впрочем, на деле это выглядит обычно гораздо проще и совсем не страшно. Так, можно было бы предоставить себе по блату возможность использовать <code>sudo</code> без пароля. Для этого потребовалось бы придать строке, описывающей привилегии группы <code>admin</code> такой вид:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">%admin        ALL=(ALL)       NOPASSWD: ALL
+</code></pre></div>
+<p>А можно ограничиться более «долгоиграющим» действием пароля, вписав изначально отсутствующую строку</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Defaults    timestamp_timeout=10
+</code></pre></div>
+<p>где значение таймаута указано в минутах. Если же изменить его на ноль --</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Defaults    timestamp_timeout=0
+</code></pre></div>
+<p>то пароль будет запрашиваться каждый раз при обращении к команде <code>sudo</code>.</p>
+
+<p>Можно, напротив, отключить тайаут на действие <code>sudo</code>, ввдя для него отрицательное значение:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Defaults    timestamp_timeout=-1
+</code></pre></div>
+<p>В этом случае пароль будет запрошен только при первом вызове этой команды.</p>
+
+<p>Более пристальное вглядывание в файл <code>/etc/sudoers</code> легко подскажет возможности дать определённым пользователям или группам только ограниченный набор прав. Впрочем, тут уже начинаются тонкости всамделишнего администрирования.</p>
+
+<h3 id="Создание-файлов-и-каталогов">Создание файлов и каталогов</h3>
+
+<p>В следующих мини-очерках будут рассмотрены основные команды, предназначенные для файловых операций, вместе с их наиболее используемыми опциями. Чтобы не повторяться, напомню, что почти все описанные ниже команды имеют три стандартные опции (т.н. GNU Standard Options): <code>--help</code> для получения помощи, <code>--version</code> для вывода информации о текущей версии, и <code>--[пробел]</code>, символизирующая окончание перечня опций (т.е. любой символ или их последовательность после неё интерпретируются как аргумент). Так что далее эти опции в описаниях команд фигурировать не будут.</p>
+
+<p>Для создания обычных (regular) файлов могут использоваться команды <code>touch</code>, <code>cat</code> и <code>tee</code>. Первая из указанных команд в форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> touch filename
+</code></pre></div>
+<p>просто создает файл с именем <code>filename</code> и без всякого содержимого. Кроме того, с помощью специальных опций она позволяет устанавливать временные атрибуты файла, о чем я скажу чуть позже.</p>
+
+<p>Для чего может потребоваться пустой файл? Например, для создания скелета web-сайта с целью проверки целостности ссылок. Поскольку число аргументов команды touch не ограничено ничем (вернее, ограничено только максимальным количеством символов в командной строке), это можно сделать одной командой:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> touch index.html about.html content.html <span class="o">[</span>...<span class="o">]</span>
+</code></pre></div>
+<p>Можно, воспользовавшись приемом группировки аргументов, заполнить файлами все подкаталоги текущего каталога:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> touch dirname1/<span class="o">{</span>filename1,filename2<span class="o">}</span>
+<span class="go">        dirname2/{filename3,filename4}</span>
+</code></pre></div>
+<p>и так далее. Правда, сама команда <code>touch</code> создавать подкаталоги не способна — это следует сделать предварительно командой <code>mkdir</code> (о которой — чуть ниже).</p>
+
+<p>Для создания пустого регулярного файла может быть использована также команда <code>cat</code> (хотя основное ее назначение — слияние нескольких файлов, о чем будет говориться со временем). Для этого нужно просто перенаправить ее вывод в файл:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cat &gt; filename
+</code></pre></div>
+<p>затем создать новую строку (нажатием клавиши <code>Enter</code>) и ввести символ конца файла (комбинацией клавиш <code>Control+Z</code>). Разумеется, предварительно в этот файл можно и ввести какой-нибудь текст, однако это уже относится к управлению контентом, о чем речь будет впереди.</p>
+
+<p>Интересно создание файлов с помощью команды <code>tee</code>. Смысл ее — в раздвоении выходного потока, выводимого одновременно и на стандартный вывод, и в файл, указанный в качестве ее аргумента. То есть если использовать ее для создания файла с клавиатуры, это выглядит, будто строки удваиваются на экране. Но это не так: просто весь вводимый текст копируется одновременно и на экран, и в файл. И потому ее удобно применять в командных конструкциях, когда требуется одновременно и просмотреть результаты исполнения какой-либо команды, и запечатлеть их в файле:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls dir <span class="p">|</span> tee filename
+</code></pre></div>
+<p>По умолчанию команда <code>tee</code> создает новый файл с указанным именем, или перезаписывает одноименный, если он существовал ранее. Однако данная с опцией <code>-a</code>, она добавляет новые данные в конец существующего файла.</p>
+
+<p>Команда <code>mkdir</code> создает файл особого типа — каталог, содержимым которого является список входящих в него файлов. Очевидно, что список этот в момент создания каталога должен быть пуст, однако это не совсем так: любой, даже пустой, каталог содержит две ссылки — на каталог текущий, обозначаемый как <code>./</code> (т.е. сам на себя) и на каталог родительский, <code>../</code> (т.е тот, в список файлов которого он включается в момент создания).</p>
+
+<p>Команда <code>mkdir</code> требует обязательного аргумента — имени создаваемого каталога. Аргументов может быть больше одного — в этом случае будет создано два или больше поименованных каталогов. По умолчанию они создаются как подкаталоги каталога текущего. Можно создать также подкаталог в существующем подкаталоге:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> mkdir parentdir/newdir
+</code></pre></div>
+<p>Если же требуется создать подкаталог в каталоге, отличном от текущего, — путь к нему требуется указать в явном виде, в относительной форме:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> mkdir ../dirname1/dirname2
+</code></pre></div>
+<p>или в форме абсолютной:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> mkdir /home/username/dirname1/dirname2
+</code></pre></div>
+<p>В произвольном, отличном от текущего, каталоге можно одной командой создать несколько подкаталогов, для чего нужно прибегнуть к группировке аргументов:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> mkdir ../parentdir/<span class="o">{</span>dirname1,dirname2,...,dirname#<span class="o">}</span>
+</code></pre></div>
+<p>Такой прием позволяет одной командой создать дерево каталогов проекта. Например, скелет web-сайта, который потом можно наполнить пустыми файлами с помощью команды <code>touch</code>.</p>
+
+<p>А опций у команды <code>mkdir</code> — всего две (за исключением стандартных опций GNU): <code>--mode</code> (или <code>-m</code>) для установки атрибутов доступа и <code>--parents</code> (или <code>-p</code>) для создания как требуемого каталога, так и родительского по отношению к нему (если таковой ранее не существовал). Первая опция используется в форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> mkdir --mode<span class="o">=</span><span class="c">### dirname</span>
+</code></pre></div>
+<p>или</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> mkdir -m <span class="c">### dirname</span>
+</code></pre></div>
+<p>Здесь под <code>###</code> понимаются атрибуты доступа для владельца файла, группы и прочих, заданные в численной нотации (например, <code>777</code> — полный доступ на чтение, изменение и исполнение для всех). Не возбраняется и использование символьной нотации: команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> mkdir -m a+rwx dirname
+</code></pre></div>
+<p>создаст каталог с теми же атрибутами полного доступа для всех.</p>
+
+<p>Опция <code>--parents</code> (она же <code>-p</code>) позволяет создавать иерархическую цепочку подкаталогов любого уровня вложенности. Например,</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> mkdir -p dirlevel1/dirlevel2/dirlevel3
+</code></pre></div>
+<p>в один заход создаст в текущем каталоге цепочку вложенных друг друга подкаталогов. Разумеется, и здесь с помощью группировки аргументов можно создать несколько одноранговых подкаталогов:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> mkdir -p dirlevel1/dirlevel2/<span class="o">{</span>dirlevel31,...,dirlevel3#<span class="o">}</span>
+</code></pre></div>
+<h3 id="Аттрибуция-файлов">Аттрибуция файлов</h3>
+
+<p>Следующая группа команд предназначена для атрибуции файлов. В ней — <code>chmod</code>, <code>chown</code>, <code>chgrp</code>, <code>umask</code>, а также уже затронутая ранее команда <code>touch</code>.</p>
+
+<p>Команды <code>chown</code> и <code>chgrp</code> служат для изменения атрибутов принадлежности файла — хозяину и группе: очевидно, что все, не являющиеся хозяином файла, и не входящие в группу, к которой файл приписан, автоматически попадают в категорию прочих (other).</p>
+
+<p>Формат команды <code>chown</code> — следующий:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chown newowner filename
+</code></pre></div>
+<p>По соображениям безопасности, достаточно очевидным, изменить хозяина файла может только суперпользователь. Пользователь обычный в подавляющем большинстве случаев автоматически становится хозяином всех им созданных (и скопированных) файлов, и избавиться от этого бремени, как и от родительского долга, не в состоянии.</p>
+
+<p>А вот изменить групповую принадлежность своих файлов (т.е. тех, в атрибутах принадлежности он прописан как хозяин) пользователь вполне может. Команда:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chgrp newgroup filename
+</code></pre></div>
+<p>от его лица припишет файл <code>filename</code> к группе <code>newgroup</code>. Однако и здесь есть ограничение — результат будет достигнут, только если хозяин файла является членом группы <code>newgroup</code>, иначе опять придется прибегнуть к полномочиям администратора.</p>
+
+<p>Можно также одной командой сменить (только суперпользователю, конечно) и хозяина файла, и группу, к которой он приписан. Делается это так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chown newowner:newgroup filename
+</code></pre></div>
+<p>Или так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chown newowner.newgroup filename
+</code></pre></div>
+<p>Где, понятное дело, под именем newowner выступает новый хозяин файла, а под именем newgroup — новая группа, к которой он приписан.</p>
+
+<p>В обеих командах вместо имени хозяина и группы могут фигурировать их численные идентификаторы (<code>UID</code> и <code>GID</code>, соответственно). Это имеет смысл, например, при совместном использовании файлов в разных операционных системах. Так, даже единственный пользователь <code>имя_рек</code> в каком-либо варианте <code>Linux</code> и в <code>BSD</code> по умолчанию имеет разные идентификаторы, и чтобы сделать его владельцем неких файлов и там, и там, именно численный идентификатор должен фигурировать в качестве параметра команды <code>chown</code>.</p>
+
+<p>Для команд <code>chown</code> и <code>chgrp</code> поддерживается один и тот же набор опций. Наиболее интересны (и важны) две из них. Опция <code>--reference</code> позволяет определить хозяина файла и его принадлежность к группе не явным образом, а по образу и подобию файла, имя которого выступает в качестве значения опции. Так, команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chown --reference<span class="o">=</span>ref_filename filename
+</code></pre></div>
+<p>установит для файла <code>filename</code> те же атрибуты принадлежности (хозяина и группу), что были ранее у файла <code>ref_filename</code>. Это весьма полезно при массовой реатрибуции файлов, полученных из разных источников.</p>
+
+<p>Опция <code>-R</code> (или <code>--recursive</code>) распространяет действие обеих команд не только на файлы текущего каталога (излишне напоминать, что в качестве аргументов команд могут использоваться маски типа <code>*</code>, <code>*.ext</code>, <code>name.*</code> и т.д.), но и на все вложенные подкаталоги, вместе с входящими в них файлами. То есть пользователь может поменять групповую принадлежность всех файлов в своем домашнем каталоге одной командой:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chgrp -R newgroup ~/*
+</code></pre></div>
+<p>А суперпользователь тем же способом может установить единообразные атрибуты принадлежности «по образцу» для всех компонентов любого каталога:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chown -R --reference<span class="o">=</span>ref_filename
+<span class="go">        /somepath/somecat/*</span>
+</code></pre></div>
+<p>Как и следует из ее имени, команда <code>chmod</code> предназначена для смены атрибутов доступа — чтения, изменения и исполнения. В отношении единичного файла делается это просто:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chmod <span class="o">[</span>атрибуты<span class="o">]</span> filename
+</code></pre></div>
+<p>Атрибуты доступа могу устанавливаться с использование как символьной, так и цифровой нотации. Первый способ — указание, для каких атрибутов принадлежности (хозяина, группы и всех остальных) какие атрибуты доступа задействованы. Атрибуты принадлежности обозначаются символами <code>u</code> (от <code>user</code>) для хозяина файла, <code>g</code> (от <code>group</code>) — для группы, <code>o</code> (от <code>other</code>) для прочих и <code>a</code> (от <code>all</code>) — для всех категорий принадлежности вообще. Атрибуты доступа символизируются литерами <code>r</code> (от <code>read</code>), дающей право чтения, <code>w</code> (от <code>write</code>) — право изменения и <code>x</code> (от <code>execute</code>) — право исполнения.</p>
+
+<p>Атрибуты принадлежности соединяются с атрибутами доступа символами <code>+</code> (присвоение атрибута доступа), <code>-</code> (отнятие атрибута) или <code>=</code> (присвоение только данного атрибута доступа с одновременным отнятием всех остальных). Одновременно в строке можно указать (подряд, без пробелов) более чем один из атрибутов принадлежности и несколько (или все) атрибуты доступа.</p>
+
+<p>Для пояснения сказанного приведу несколько примеров. Так, команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chmod u+w filename
+</code></pre></div>
+<p>установит для хозяина (<code>u</code>) право изменения (<code>+w</code>) файла filename, а команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chmod a-x filename
+</code></pre></div>
+<p>отнимет у всех пользователей вообще (<code>a</code>) право его исполнения (<code>-x</code>). В случае, если некоторый атрибут доступа присваивается всем категориям принадлежности, символ a можно опустить. Так, команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chmod +x filename
+</code></pre></div>
+<p>в противоположность предыдущей, присвоит атрибут исполнения файла <code>filename</code> всем категориям принадлежности (и хозяину, и группе, и прочим).</p>
+
+<p>С помощью команды</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chmod <span class="nv">go</span><span class="o">=</span>rx filename
+</code></pre></div>
+<p>можно присвоить группе принадлежности файла <code>filename</code> и всем прочим (не хозяину и не группе) право на его чтение и исполнение с одновременным отнятием права изменения.</p>
+
+<p>Наконец, команда <code>chmod</code> в состоянии установить и дополнительные атрибуты режима для файлов, такие, как биты <code>SUID</code> и <code>GUID</code>, или, скажем, атрибут <code>sticky</code>.</p>
+
+<p>Приведенные примеры можно многократно умножить, но, думается, их достаточно для понимания принципов работы команды <code>chmod</code> с символьной нотацией атрибутов.</p>
+
+<p>Цифровая нотация — ещё проще. При ней достаточно указать сумму присваиваемых атрибутов в восьмеричном исчислении (<code>4</code> — атрибут чтения, <code>2</code> — атрибут изменения и <code>1</code> — атрибут исполнения; <code>0</code> символизирует отсутствие любых атрибутов доступа) для хозяина (первая позиция), группы (вторая позиция) и прочих (третья позиция). Все атрибуты доступа, оставшиеся вне этой суммы, автоматически отнимаются у данного файла. То есть команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chmod <span class="m">000</span> filename
+</code></pre></div>
+<p>означает снятие с файла <code>filename</code> всех атрибутов доступа для всех категорий принадлежности (в том числе и хозяина) и эквивалентна команде</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nv">chmod</span> <span class="o">=</span>rwx filename
+</code></pre></div>
+<p>в символьной нотации. А команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chmod <span class="m">777</span> filename
+</code></pre></div>
+<p>напротив, устанавливает для всех полный доступ к файлу <code>filename</code>. Для установки дополнительных атрибутов доступа в численной нотации потребуется указать значение четвертого, старшего, регистра. Так, команда для рассмотренного выше примера — присвоения атрибута суидности исполнимому файлу <code>X</code>-сервера, — в численной нотации будет выглядеть как</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chmod <span class="m">4711</span> /usr/X11R6/bin/XFree86
+</code></pre></div>
+<p>Как и для команд <code>chown</code> и <code>chgrp</code>, наиболее значимые опции команды <code>chmod</code> — это <code>--reference</code> и <code>-R</code>. И смысл их тот же самый. Первая устанавливает для файла (файлов) атрибуты доступа, идентичные таковым референсного файла, вторая — распространяет действие команды на все вложенные подкаталоги и входящие в них файлы.</p>
+
+<p>Рекурсивное присвоение атрибутов доступа по образцу требует внимания. Так, если рекурсивно отнять для всего содержимого домашнего каталога атрибут исполнения (а он без соблюдения некоторых условий монтирования автоматом присваивается любым файлам, скопированным с носителей файловой структуры <code>FAT</code> или <code>ISO9660</code> без расширения <code>RockRidge</code>, что подчас мешает), то тем самым станет невозможным вход в любой из вложенных подкаталогов. Впрочем, в параграфе про утилиту find будет показан один из способов борьбы с таким безобразием.</p>
+
+<p>Как было упомянуто в предшествующей главе, для всех вновь создаваемых данным пользователем файлов можно установить некие умолчальные атрибуты доступа. Этой цели служит команда <code>umask</code> — в отличие от прочих, не самостоятельная утилита, а встроенная команда оболочки. Данная без аргумента, она выведет текущее значение субтрактивных (то есть отнимаемых от суммы) прав доступа для новообразуемых файлов:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">umask</span>
+
+<span class="go">22</span>
+</code></pre></div>
+<p>Вывод прав дается в символьной нотации, нули (то есть отсутствие «отъёма» прав у кого-либо) игнорируется. Если же в качестве аргумента указать «отнимаемые» права — все вновь создаваемые файлы будут иметь новые атрибуты доступа. Например, команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">umask </span>000
+</code></pre></div>
+<p>приведет к тому, что новые файлы будут иметь всю совокупность атрибутов доступа (чтения, изменения и исполнения) для хозяина, группы и прочих.</p>
+
+<p>Действие команды <code>umask</code>, данной таким образом, распространяется только на текущий сеанс работы. Поэтому обычно она включается в профильный файл пользовательской командной оболочки, определяя умолчальные права доступа на вечные времена.</p>
+
+<p>Кроме атрибутов принадлежности и доступа, файлам свойственны ещё и атрибуты времени — времени доступа (<code>atime</code>), времени изменения метаданных (<code>ctime</code>) и времени изменения данных (<code>mtime</code>) файла. Они устанавливаются автоматически, в силу самого факта открытия файла (<code>atime</code>), смены любых атрибутов, например, доступа (<code>ctime</code>) или редактирования содержимого файла (<code>mtime</code>).</p>
+
+<p>Однако бывают ситуации, когда автоматически установленные временные атрибуты требуется изменить. Причиной может быть сбой системных часов, в результате которого временные атрибуты создаваемых и модифицируемых файлов перестанут соответствовать действительности.</p>
+
+<p>Казалось бы, чего страшного? Ан нет, фактор времени играет в <code>Unix</code>-системах очень существенную роль. Во-первых, команда <code>make</code> (а под ее управлением компилируются программы из исходников) проверяет временные атрибуты файлов (в первую очередь — атрибут <code>mtime</code>) и при их несоответствии может работать с ошибками. Ну и более обычная ситуация — на основе временных меток файлов можно эффективно осуществлять, скажем, резервное копирование. И потому желательно, чтобы они отражали реальное время создания и модификации файла.</p>
+
+<p>Так вот, для изменения временных атрибутов файлов и предназначена в первую очередь команда <code>touch</code>, которую ранее мы использовали просто для создания пустого файла. Данная же с именем существующего файла в качестве аргумента -</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> touch exist_file
+</code></pre></div>
+<p>она присвоит всем его временным атрибутам (<code>atime</code>, <code>ctime</code>, <code>mtime</code>) значения текущего момента времени. Изменение временных атрибутов можно варьировать с помощью опций. Так, если указать только одну из опций <code>-a</code>, <code>-c</code>, или <code>-m</code>, то текущее значение времени будет присвоено только атрибуту <code>atime</code>, <code>ctime</code> или <code>mtime</code>, соответственно. Если при этом использовать ещё и опцию <code>-d [значение]</code>, то любому из указанных атрибутов (или им всем) можно присвоить любую временную метку, в том числе и из далёкого будущего. А посредством опции <code>-r filename</code> файл-аргумент получит временные атрибуты, идентичные таковым референсного файла <code>filename</code>.</p>
+
+<h3 id="Навигация-по-файловой-системе">Навигация по файловой системе</h3>
+
+<p>Следующее, что необходимо применителю после создания файлов — ориентация среди существующего их изобилия.</p>
+
+<p>Для начала при неплохо определиться со своим текущим положением в файловой системе. Этому послужит команда <code>pwd</code>. В ответ на нее выводится полный путь к текущему каталогу. Например, если текущим является домашний каталог пользователя, в ответ на:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">pwd</span>
+</code></pre></div>
+<p>последует</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">/home/username
+</code></pre></div>
+<p>Команда <code>pwd</code> имеет всего две опции: <code>-L</code> и <code>-P</code>. Первая выводит т.н. логический путь к текущему каталогу. То есть, таковым является, скажем, каталог <code>/usr/src/vboxhost-4.3.20</code>, являющий собой символическую ссылку на каталог <code>/usr/share/virtualbox/src/vboxhost</code>, то в ответ на</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">pwd</span> -L
+</code></pre></div>
+<p>так и будет выведено</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">/usr/src/vboxhost-4.3.20
+</code></pre></div>
+<p>Впрочем, тот же ответ последует и на команду <code>pwd</code> без опций вообще. Если же дать эту команду в форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">pwd</span> -P
+</code></pre></div>
+<p>то будет выведен путь к физическому каталогу, на который ссылается текущий, например:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">/usr/share/virtualbox/src/vboxhost
+</code></pre></div>
+<p>Далее, по каталогам неплохо как-то перемещаться. Что делается командой <code>cd</code>. В отличие от прочих команд, рассматриваемых в этом разделе, это — внутренняя команда, встроенная во все командные оболочки — бесполезно было бы искать соответствующий ей исполняемый файл. Однако это не уменьшает ее важности. Использование ее очень просто —</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">cd </span>pathname
+</code></pre></div>
+<p>где <code>pathname</code> — путь к искомому каталогу в абсолютной (относительно корня) или относительной (относительно текущего каталога) форме.</p>
+
+<p>Определить местоположение команды (и вообще исполняемых файлов) в структуре файловой системы можно с помощью команды <code>which</code> (это также встроенная команда оболочки). В качестве аргумента ее можно указать одно или несколько имен файлов, в ответ на что будет выведен полный путь к каждому из них:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> which tcsh zsh bash
+
+<span class="go">/bin/tcsh</span>
+<span class="go">/bin/zsh</span>
+<span class="go">/bin/bash</span>
+</code></pre></div>
+<p>При наличии одноимённых исполняемых файлов в разных каталогах по умолчанию будет выведен путь только к первому из них: для вывода всех файлов-«тезок» можно прибегнуть к опции <code>-a</code>. При этом не важно, будут это жёсткие или символические ссылки.</p>
+
+<p>Более широкие возможности поиска — у команды <code>whereis</code>. По умолчанию, без опций, она для заданного в качестве аргумента имени выводит список бинарных файлов, man-страниц и каталогов с исходными текстами:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> whereis zsh
+
+<span class="go">zsh: /bin/zsh /etc/zsh /usr/lib/zsh /usr/share/zsh</span>
+<span class="go">/usr/man/man1/zsh.1.gz /usr/share/man/man1/zsh.1.gz</span>
+</code></pre></div>
+<p>Соответствующими опциями можно задать поиск файлов одного из этих типов: <code>-b</code> — бинарных, <code>-m</code> — страниц руководств, <code>-s</code> — каталогов с исходниками. Дополнительные опции <code>-B</code>, <code>-M</code>, <code>-S</code> (в сочетании с опцией <code>-f</code>) позволяют определить исходные каталоги для их поиска.</p>
+
+<p>Команды <code>locate</code> и <code>mlocate</code> осуществляют поиск всех файлов и каталогов, содержащих компонент имени, указанный в качестве аргумента и осуществляют вывод содержимого найденных каталогов. Так, в ответ на команду</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> locate zsh
+</code></pre></div>
+<p>будет выведен список вроде следующего:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">/bin/zsh
+/bin/zsh-4.0.6
+/etc/zsh
+/etc/zsh/zlogin
+/etc/zsh/zshenv
+/etc/zsh/zshrc
+</code></pre></div>
+<p>и так далее. Команда <code>mlocate</code> действует точно так же. Обе они при этом обращаются к базе данных <code>/var/lib/mlocate/mlocate.db</code>. Исходно эта база данных пуста — и перед использованием команды <code>locate</code> или <code>mlocate</code> должна быть наполнена содержанием. Для этого предназначен сценарий <code>/usr/bin/updatedb.mlocate</code>. Он извлекает сведения из базы данных установленных пакетов — <code>/var/lib/dpkg</code>. В <code>Mint</code> этот сценарий автоматически запускается ежедневно посредством <code>cron</code>, обеспечивая регулярное обновление поисковой базы.</p>
+
+<h3 id="Информация-о-файлах">Информация о файлах</h3>
+
+<p>Наиболее универсальным средством получения практически исчерпывающей информации о файлах является команда <code>ls</code>. Однако для этой цели существуют и другие команды.</p>
+
+<p>Общая форма запуска команды <code>ls</code> —</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls <span class="o">[</span>options<span class="o">]</span> names
+</code></pre></div>
+<p>где в качестве аргумента <code>names</code> могут выступать имена файлов или каталогов в любом количестве. Команда эта имеет многочисленные опции, основные из которых мы и рассмотрим.</p>
+
+<p>Начать с того, что команда <code>ls</code>, данная без всяких опций, по умолчанию выводит только имена файлов, причём опуская т.н. <code>dot</code>-файлы, имена которых начинаются с точки (это — некие аналоги скрытых файлов в <code>MS DOS</code> и <code>Windows</code>). Кроме того, если в качестве аргумента указано имя каталога (или аргумент не указан вообще, что подразумевает текущий каталог), из списка имен его файлов не выводятся текущий (<code>.</code>) и родительский (<code>..</code>) каталог.</p>
+
+<p>Для вывода всех без исключения имен файлов (в том числе и скрытых) предназначена опция <code>-a</code>. Смысл опции <code>-A</code> близок — она выводит список имен всех файлов, за исключением символов текущего (<code>.</code>) и родительского (<code>..</code>) каталога.</p>
+
+<p>Кроме имени, любой файл идентифицируется своим номером <code>inode</code>. Для его вывода используется опция <code>-i</code>:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls -i
+
+<span class="go">12144 content.html</span>
+</code></pre></div>
+<p>и так далее. Как и многие другие, команда <code>ls</code> обладает способностью рекурсивной обработки аргументов, для чего предназначена опция <code>-R</code>, выводящая список имен файлов не только текущего каталога, но и всех вложенных подкаталогов:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls -R
+
+<span class="go">unixforall:</span>
+<span class="go">about/  apps/     diffimages/  distro/  signature.html  sys/</span>
+<span class="go">anons/  content/  difftext/    gentoo/  statistics/     u4articles/</span>
+
+<span class="go">unixforall/about:</span>
+<span class="go">about_lol.html  about_lol.txt  index.html</span>
+
+<span class="go">unixforall/anons:</span>
+<span class="go">anons_dc.html</span>
+</code></pre></div>
+<p>Опция же <code>-d</code>, напротив, запрещает вывод содержимого вложенных подкаталогов.</p>
+
+<p>В выводе команды <code>ls</code> по умолчанию имена файлов разных типов даются абсолютно одинаково. Для их визуального различия используется опция <code>-F</code>, завершающая имена каталогов символом слэша, исполнимых файлов — символом звездочки, символических ссылок — «собакой»; имена регулярных файлов, не имеющих атрибута исполнения, никакого символа не включают:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls -F
+
+<span class="go">dir1/   dir2/   dir3@   file1   file2*  file3@</span>
+</code></pre></div>
+<p>Другое средство для визуального различия типов файлов — колоризация, для чего применяется опция <code>-G</code>. Цвета шрифта, воспроизводящего имена, по умолчанию — синий для каталогов, лиловый (magenta) для символических ссылок, красный — исполнимых файлов, и так далее. Для файлов устройств, исполнимых файлов с атрибутом «суидности», каталогов, имеющих атрибут <code>sticky</code>, дополнительно колоризуется и фон, на котором выводится шрифта, воспроизводящий их имена. Подробности можно посмотреть в секции <code>ENVIRONMENT</code> man-страницы для команды <code>ls</code>. Впрочем, колоризация работает не на всех типах терминалов (и не во всех командных оболочках).</p>
+
+<p>По умолчанию команда <code>ls</code> выводит список файлов в порядке <code>ASCII</code>-кодов первого символа имени. Однако есть возможность его сортировки в порядке времени модификации (<code>-t</code>), изменения статуса (<code>-c</code>) или времени доступа (<code>-tu</code>), а также в порядке, обратном любому из перечисленных (<code>-r</code>). Кроме того, опция <code>-f</code> отменяет какую-либо сортировку списка вообще.</p>
+
+<p>Информацию об объёме файлов можно получить, используя опцию <code>-s</code>, выводящую для имени каждого файла его размер в блоках, а также суммарные объём всех выведенных файлов:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls -s ../book
+
+<span class="go">total 822</span>
+
+<span class="go">656 book.html</span>
+<span class="go">4 content1.html</span>
+<span class="go">86 var_part2.html</span>
+<span class="go">24 command.html</span>
+<span class="go">38 part2.html</span>
+<span class="go">6 command.txt</span>
+<span class="go">8 shell_tmp.html</span>
+</code></pre></div>
+<p>Добавление к опции <code>-s</code> ещё и опции <code>-k</code> (то есть <code>ls -sk</code>) выведет всю ту же информацию в килобайтах.</p>
+
+<p>Как можно видеть из всех приведённых выше примеров, списки файлов по команде <code>ls</code> выводится в многоколоночном виде (чему соответствует опция <code>-C</code>, однако указывать ее нет необходимости — многоколоночный вид принят для краткого формата по умолчанию). Но можно задать и одноколоночное представление списка посредством опции <code>-1</code>:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls -1
+
+<span class="go">dir1</span>
+<span class="go">dir2</span>
+<span class="go">dir3</span>
+<span class="go">file1</span>
+<span class="go">file2</span>
+<span class="go">file3</span>
+</code></pre></div>
+<p>До сих пор речь шла о кратком формате вывода команды <code>ls</code>. Однако более информативным является т.н. длинный ее формат, вывод в котором достигается опцией <code>-l</code> и автоматически влечет за собой одноколоночное представление списка:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls -l
+
+<span class="go">total 8</span>
+
+<span class="go">drwxr-xr-x  2 alv  alv  512  8 май 18:04 dir1</span>
+<span class="go">drwxr-xr-x  3 alv  alv  512  8 май 17:43 dir2</span>
+<span class="go">lrwxr-xr-x  1 alv  alv    4  9 май 07:59 dir3 -&gt; dir2</span>
+<span class="go">-rw-r--r--  1 alv  alv   14  8 май 10:39 file1</span>
+<span class="go">-rwxr-xr-x  1 alv  alv   30  9 май 08:02 file2</span>
+<span class="go">lrwxr-xr-x  1 alv  alv    2  8 май 10:57 file3 -&gt; f1</span>
+</code></pre></div>
+<p>Можно видеть, что по умолчанию в длинном формате выводятся:</p>
+
+<ul>
+<li>сведения о типе файла (<code>-</code> — регулярный файл, <code>d</code> — каталог, <code>l</code> — символическая ссылка, <code>c</code> — файл символьного устройства, <code>b</code> — файл блочного устройства) и атрибуты доступа для различных атрибутов принадлежности (о чем было сказано достаточно);</li>
+<li>количество жёстких ссылок на данный идентификатор <code>inode</code>;</li>
+<li>имя пользователя — владельца файла, и группы пользователей, которой файл принадлежит;</li>
+<li>размер файла в блоках;</li>
+<li>время модификации файла с точностью до месяца, дня, часа и минуты (в формате, принятом в данной <code>locale</code>);</li>
+<li>имя файла и (для символических ссылок) имя файла-источника.</li>
+</ul>
+
+<p>Однако это ещё не всё. Добавив к команде <code>ls -l</code> ещё и опцию <code>-i</code>, можно дополнительно получить идентификатор <code>inode</code> каждого файла, опция <code>-n</code> заменит имя владельца и группу на их численные идентификаторы (<code>UID</code> и <code>GUID</code>, соответственно), а опция <code>-T</code> выведет в поле времени модификации ещё и годы, и секунды:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls -linT
+
+<span class="go">total 8</span>
+
+<span class="go">694402 drwxr-xr-x  2 1000  1000  512  8 май 18:04:56 2002 dir1</span>
+<span class="go">694404 drwxr-xr-x  3 1000  1000  512  8 май 17:43:31 2002 dir2</span>
+<span class="go">673058 lrwxr-xr-x  1 1000  1000    4  9 май 07:59:08 2002 dir3 -&gt; dir2</span>
+<span class="go">673099 -rw-r--r--  1 1000  1000   14  8 май 10:39:38 2002 file1</span>
+<span class="go">673059 -rwxr-xr-x  1 1000  1000   30  9 май 08:02:23 2002 file2</span>
+<span class="go">673057 lrwxr-xr-x  1 1000  1000    2  8 май 10:57:07 2002 file3 -&gt; f1</span>
+</code></pre></div>
+<p>Разумеется, никто не запрещает использовать в длинном формате и опции визуализации (<code>-F</code> и <code>-G</code>), и опции сортировки (<code>-r</code>, <code>t</code>, <code>tu</code>), и любые другие, за исключением опции <code>-C</code> — указание ее ведет к принудительному выводу списка в многоколоночной форме, что естественным образом подавляет длинный формат представления.</p>
+
+<p>Я столь подробно остановился на описании команды <code>ls</code> потому, что это — основное средство визуализации файловых систем любого <code>Unix</code>, при умелом использовании ничуть не уступающее развитым файловым менеджерам (типа <code>Midnight Commander</code> или <code>Konqueror</code>) по своей выразительности и информативности. И отнюдь не требующее для достижения таковых вбивания руками многочисленных опций: со временем будет показано, что соответствующей настройкой последних можно добиться любого «умолчального» вывода команды <code>ls</code>.</p>
+
+<p>Существуют и другие команды для получения информации о файлах. Например, команда под характерным именем <code>file</code> с аргументом в виде имени файла в состоянии определить тип его, а также характер содержания с большой детальностью. Так, для регулярных файлов она распознает:</p>
+
+<ul>
+<li>исполняемые бинарные файлы с указанием их формата (например, <code>ELF</code>), архитектуры процессора, для которых они скомпилированы, характер связи с разделяемыми библиотеками (статический или динамический);</li>
+<li>исполняемые сценарии с указанием оболочки, для которой они созданы;</li>
+<li>текстовые и <code>html</code>-документы, часто с указанием используемого набора символов.</li>
+</ul>
+
+<p>Последнему, впрочем, для русскоязычных документов доверять особо не следует: кодировка <code>KOI8-R</code> в них вполне может быть обозвана <code>ISO-8859</code>.</p>
+
+<p>Определяет она также каталоги, символические ссылки, специальные файлы устройств, указывая для последних старшие и младшие номера устройств.</p>
+
+<p>Наконец, команда <code>stat</code> (это — встроенная команда оболочки), с именем файла в качестве аргумента, выводит большую часть существенных сведений о файле в удобном для восприятия виде, например, включая идентификатор <code>inode</code>, режим доступа (в символьной форме), идентификаторы владельца и группы, временные атрибуты, количество жёстких и символических ссылок.</p>
+
+<h3 id="Манипулирование-файлами">Манипулирование файлами</h3>
+
+<p>Перейдем к манипуляциям с существующими файлами — копированию, перемещёнию, переименованию, удалению.</p>
+
+<p>Начнем с копирования — это выполняется очень простой командой, <code>cp</code>, имеющей, однако, весьма разнообразные аспекты применения. В самом простом своем виде она требует всего двух аргументов — имени файла-источника на первом месте и имени целевого файла — на втором:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cp file_source file_target
+</code></pre></div>
+<p>Этим в текущем каталоге создается новый файл (<code>file_target</code>), идентичный по содержанию копируемому (<code>file_source</code>). То есть область данных первого будет дублировать таковую последнего. Однако области метаданных у них будут различны изначально. Целевой файл — это именно новый файл, со своим иднетификатором <code>inode</code>, заведомо иными временными атрибутами; его атрибуты доступа и принадлежности в общем случае также не обязаны совпадать с таковыми файла-источника.</p>
+
+<p>Новый файл может быть создан и в произвольном каталоге, к которому пользователь имеет соответствующий доступ: для этого следует только указать полный путь к нему:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cp file_source dir/subdir/file_target
+</code></pre></div>
+<p>Если в качестве второго аргумента команды указано просто имя каталога, то новый файл будет создан в нем с именем, идентичным имени файла-источника. Однако подчеркну, что в любом случае копирования создается именно новый файл, никак после этого не связанный с файлом исходным.</p>
+
+<p>Если в качестве последнего аргумента выступает имя каталога, он может предваряться любым количеством аргументов — имен файлов:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cp file1 file2 ... file3 dir/
+</code></pre></div>
+<p>В этом случае в целевом каталоге <code>dir/</code> будут созданы новые файлы, идентичные по содержанию файлам <code>file1</code>, <code>file2</code> и т.д.</p>
+
+<p>Если в целевом (или текущем) каталоге уже имеется файл с именем, совпадающим с именем вновь создаваемого файла, он в общем случае будет без предупреждения заменен новым файлом. Единственное средство для предотвращения этого — задание опции <code>-i</code> (от <code>interactive</code>) — при ее наличии последует запрос на перезапись существующего файла:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cp -i file1 file2
+
+<span class="go">overwrite file2? (y/n [n])</span>
+</code></pre></div>
+<p>Как говорилось в предыдущем очерке, командная оболочка может быть настроена так, чтобы по умолчанию не допускать перезаписи существующих файлов. Однако если такая потребность осознанно возникнет, это можно выполнить с помощью опции <code>-f</code> (от <code>force</code>). К слову сказать, она также аннулирует действие опции <code>-i</code>, например, при использовании ее в псевдониме команды <code>cp</code>.</p>
+
+<p>Имя каталога может выступать и в качестве первого аргумента команды <code>cp</code>. Однако это потребует опции <code>-R</code> (иногда допустима и опция <code>-r</code> — в обоих случаях от <code>recursive</code>). В этом случае второй аргумент также будет воспринят как имя каталога, который не только будет создан при этом, но в нем также будет рекурсивно воспроизведено содержимое каталога источника (включая и вложенные подкаталоги).</p>
+
+<p>При копировании файлов, представляющих собой символические ссылки, они будут преобразованы в регулярные файлы, копирующие содержимое файлов — источников ссылки. Однако при рекурсивном копировании каталогов, содержащих символические ссылки, возможно их воспроизведение в первозданном виде. Для этого вместе с опцией <code>-R</code> должна быть указана одна из опций <code>-H</code> или <code>-L</code>. Однако обе они при отсутствии <code>-R</code> игнорируются.</p>
+
+<p>Как уже было сказано, создаваемые при копировании целевые файлы по умолчанию получают атрибуты доступа и времени, не зависящие от таковых файла-источника. Обычно они определяются значением переменной <code>umask</code>, заданной глобально, в профильном файле командной оболочки пользователя. Однако при желании атрибуты исходного файла можно сохранить в файле целевом — для этого предназначена опция <code>-p</code>. Разумеется, атрибуты эти будут сохранены только в том случае, это это допустимо целевой файловой системой: не следует ожидать, что атрибуты доступа и принадлежности будут сохранены при копировании на носитель с файловой системой <code>FAT</code>.</p>
+
+<p>Для выполнения операции копирования файла он должен иметь атрибут чтения для пользователя, выполняющего копирование; кроме того, последний должен обладать правом на изменение каталога, в который производится копирование.</p>
+
+<p>Следующие две часто используемые файловые операции — переименование и перемещёние, — выполняются одной командой, <code>mv</code>.</p>
+
+<p>Как и при копировании, при перемещёнии и переименовании одноименные файлы, ранее существовавшие в целевом каталоге, затираются, замещаясь файлами-источниками без предупреждения. Чтобы этого не случилось, используется опция <code>-i</code>, требующая запрос на подтверждение действия. Напротив, опция <code>-f</code> в принудительном порядке перезаписывает существующий файл.</p>
+
+<p>Операции копирования и перемещёния/переименования выглядят сходными, однако по сути своей глубоко различны. Начать с того, что команда <code>mv</code> не совершает никаких действий с перемещаемыми или переименовываемыми файлами — она модифицирует каталоги, к которым приписаны имена этих файлов. Это имеет два важных следствия. Во-первых, при перемещёнии/переименовании файлы сохраняют первозданными атрибуты доступа, принадлежности и даже времени изменения метаданных (<code>ctime</code>) и модификации данных (<code>mtime</code>) — ведь ни те, ни другие при перемещёнии/переименовании файла не изменяются.</p>
+
+<p>Во-вторых, для выполнения этих действий можно не иметь никаких вообще прав доступа к файлам — достаточно иметь право на изменение каталогов, в которых они переименовываются или перемещаются: ведь имя файла фигурирует только в составе каталога, и нигде более.</p>
+
+<p>Файлы приходится не только создавать, но иногда и удалять. Смысл удаления файлов аналогичен их перемещнию — с самими файлами при этом ничего не происходит, а изменяются содержащие их каталоги. Удаление файлов выполняется командой</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> rm filename
+</code></pre></div>
+<p>в которой аргументов, означающих имена подлежащих удалению файлов, может быть произвольное количество. Как и при перемещёнии, при этом не затрагиваются ни метаданные, ни данные файлов, а только удаляются их имена из родительских каталогов. И потому для удаления файлов опять же не обязательно иметь какие-либо права в их отношении — достаточно прав на изменение содержащих их каталогов.</p>
+
+<p>Командой <code>rm</code> файлы-аргументы будут удалены в общем случае без предупреждения. Подобно командам <code>cp</code> и <code>mv</code>, для команды <code>rm</code> предусмотрены опции <code>-i</code> (запрос на подтверждение) и <code>-f</code> (принудительное удаление вне зависимости от настроек оболочки).</p>
+
+<p>Интересный момент — удаление случайно созданных файлов с именами, «неправильными» с точки зрения системы или командной оболочки. Примером этого могут быть имена, начинающиеся с символа дефиса. Если попробовать сделать это обычным образом</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> rm -file
+</code></pre></div>
+<p>в ответ последует сообщение об ошибке типа</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">rm: illegal option — l
+</code></pre></div>
+<p>то есть имя файла будет воспринято как опция. Для предотвращения этого такое «неправильное» имя следует предварить символом двойного дефиса и пробелом, означающими конец списка опций:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> rm -- -file
+</code></pre></div>
+<p>В принципе, команда <code>rm</code> ориентирована на удаление обычных и прочих файлов, но не каталогов. Однако с опцией <code>-d</code> она в состоянии справиться и с этой задачей — в случае, если удаляемый каталог пуст. Наконец, опция <code>-R</code> (или <code>-r</code>) производит рекурсивное удаление каталогов со всеми их файлами и вложенными подкаталогами.</p>
+
+<p>Это делает использование опции <code>-R</code> весьма опасным: возможно, набивший оскомину пример</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> rm -R /
+</code></pre></div>
+<p>когда при наличии прав суперпользователя уничтожается вся файловая система, и утрирован, но в локальном масштабе такая операция более чем реальна.</p>
+
+<p>Специально для удаления каталогов предназначена команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> rmdir
+</code></pre></div>
+<p>которая способна удалить только пустой каталог. Кроме того, с опцией <code>-p</code> она может сделать это и в отношении каталогов родительских — но также только в том случае, если они не содержат файлов.</p>
+
+<p>Кроме простого копирования файлов, существует команда для копирования с преобразованием — <code>dd</code>. Обобщенный ее формат весьма прост:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> dd <span class="o">[</span>options<span class="o">]</span>
+</code></pre></div>
+<p>то есть она просто копирует файл стандартного ввода в файл стандартного вывода, а опции описывают условия преобразования входного потока данных в выходной. Реально основными опциями являются <code>if=file1</code>, подменяющая стандартный ввод указанным файлов, и <code>of=file2</code>, проделывающая ту же операцию со стандартным выводом.</p>
+
+<p>А далее — прочие условия преобразования, весьма обильные. Большинство из них принимают численные значения в блоках:</p>
+
+<ul>
+<li>опции <code>ibs=n</code> и <code>obs=n</code> устанавливают размер блока для входного и выходного потоков, <code>bs=n</code> — для обоих сразу;</li>
+<li>опция <code>skip=n</code> указывает, сколько блоков нужно пропустить перед записью входного потока;</li>
+<li>опция <code>count=n</code> предписывает скопировать из входного потока лишь указанное количество блоков, отсчитываемых с начала файла-источника.</li>
+</ul>
+
+<p>Сфера применения команды dd далеко выходит за рамки простого копирования файлов. Например, именно с ее помощью изготавливаются загрузочные флешки и SD-карты, точные копии CD в файловой системе на винчестере, преобразуются шрифтовые файлы из одного формата в другой, и ещё многое. Эта же команда может применяться для резервного копирования данных.</p>
+
+<h3 id="Архивация…">Архивация…</h3>
+
+<p>Для пользователя <code>Windows</code>, привыкшего к программам типа <code>Zip/WinZip</code> и <code>Rar/WinRar</code>, архивация и компрессия неразрывны, как лошади в упряжке. Однако это — вполне разные действия.</p>
+
+<p>Архивация — это сборка группы файлов или каталогов в единый файл, содержащий не только данные файлов-источников, но и информацию о них — имена файлов и каталогов, к которым они приписаны, атрибуты принадлежности, доступа и времени, что позволяет восстановить как данные, так и их структуру из архива в первозданном виде. Компрессия же предназначена исключительно для уменьшения объёма, занимаемого файлами на диске (или ином носителе).</p>
+
+<p>Для архивации и компрессии предназначены самостоятельные команды. Хотя архивацию и компрессию можно объединить в одной конструкции или представить так, будто они выполняются как бы в едином процессе.</p>
+
+<p>Традиционное и самое распространённое средство архивации в <code>Unix</code>-системах — утилита <code>tar</code>. Обобщенный формат ее таков:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar <span class="o">[</span>options<span class="o">]</span> archiv_name <span class="o">[</span>arguments<span class="o">]</span>
+</code></pre></div>
+<p>где <code>archiv_name</code> — обязательный аргумент, указывающий на имя архивного файла, с которым производятся действия, определяемые главными опциями. Формы указания опций для команды <code>tar</code> очень разнообразны. Исторически первой была краткая форма без предваряющего дефиса, что поддерживается и поныне. Однако в текущих версиях команды в целях единообразия утверждена краткая форма с предваряющим дефисом или дублирующая ее полная форма, предваряемая двумя дефисами. Некоторые опции (например <code>--help</code> — получение справки об использовании команды) предусмотрены только в полной форме.</p>
+
+<p>Главные опции и указывают на то, какие действия следует выполнить над архивом в целом:</p>
+
+<ul>
+<li>создание архива (опция <code>c</code>, <code>-c</code> или <code>--create</code>);</li>
+<li>просмотр содержимого существующего архива (опция <code>t</code>, <code>-t</code> или <code>--list</code>);</li>
+<li>распаковка архива (опция <code>x</code>, <code>-x</code>, <code>--extract</code> или <code>--get</code>).</li>
+</ul>
+
+<p>Легко понять, что при работе с архивом как целым одна из этих главных (т.н. функциональных) опций обязательна. При манипулировании же фрагментами архива они могут подменяться другими функциональными опциями, как то:</p>
+
+<ul>
+<li><code>r</code> (или <code>--append</code>) - добавление новых файлов в конец архива;</li>
+<li><code>u</code> (или <code>--update</code>) - обновление архива с добавлением не только новых, но и модифицированных (с меньшим значением атрибута <code>mtime</code>) файлов;</li>
+<li><code>-A</code> (<code>--catenate</code> или <code>--concatenate</code>) - присоединение одного архива к другому;</li>
+<li><code>--delete</code> - удаление именованных файлов из архива;</li>
+<li><code>--compare</code> - сравнение архива с его источниками в файловой системе.</li>
+</ul>
+
+<p>Прочие (очень многочисленные) опции можно отнести в разряд дополнительных — они определяют условия выполнения основных функций команды. Однако одна из таких дополнительных опций — <code>f</code> (<code>-f</code> или <code>--file</code>), значение которой — имя файла (в том числе файла устройства, и не обязательно на локальной машине), также является практически обязательной. Дело в том, что команда <code>tar</code> (от <code>tape archiv</code>) изначально создавалась для прямого резервного копирования на стриммерную ленту, и именно это устройство подразумевается в качестве целевого по умолчанию. Так что если это не так (а в нынешних условиях — не так почти наверняка), имя архивного файла в качестве значения опции <code>f</code> следует указывать явно.</p>
+
+<p>Проиллюстрируем сказанное несколькими примерами. Так, архив из нескольких файлов текущего каталога создается следующим образом:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar cf arch_name.tar file1 ... file#
+</code></pre></div>
+<p>Если задать дополнительную опцию <code>v</code>, ход процесса будет отображаться на экране — это целесообразно, и в дальнейших примерах эта опция будет использоваться постоянно.</p>
+
+<p>С помощью команды <code>tar</code> можно заархивировать и целый каталог, включая его подкаталоги любого уровня вложенности, причём - двояким образом. Так, если дать команду</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar cvf arch_name.tar <span class="se">\*</span>
+</code></pre></div>
+<p>файлы каталога текущего каталога (включая подкаталоги) будут собраны в единый архив, но без указания имени каталога родительского. А командой</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar cvf arch_name.tar dir
+</code></pre></div>
+<p>каталог dir будет упакован с полным сохранением его структуры.</p>
+
+<p>С помощью команды</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar xvf arch_name.tar
+</code></pre></div>
+<p>будет выполнена обратная процедура — распаковка заархивированных файлов в текущий каталог. Если при архивировании в качестве аргумента было указано имя каталога, а не набора файлов (пусть даже в виде шаблона) - этот каталог будет восстановлен в виде корневого для всех разархивируемых файлов.</p>
+
+<p>При извлечении файлов из архива никто не обязывает нас распаковывать весь архив — при необходимости это можно сделать для одного нужного файла, следует только указать его имя в качестве аргумента:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar xvf arch_name.tar filename
+</code></pre></div>
+<p>Правда, если искомый файл находился до архивации во вложенном подкаталоге, потребуется указать и путь к нему — от корневого для архива каталога, который будет различным для двух указанных схем архивации. Ну а для просмотра того, каким образом был собран наш архив, следует воспользоваться командой</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar tf arch_name.tar
+</code></pre></div>
+<p>Если архив собирался по первой схеме (с именами файлов в качестве аргументов, вывод ее будет примерно следующим:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">dir2/
+dir2/file1
+example
+new
+newfile
+tee.png
+</code></pre></div>
+<p>При втором способе архивации мы увидим на выводе нечто вроде</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">dir1/
+dir1/example
+dir1/new
+dir1/newfile
+dir1/tee.png
+dir1/dir2/
+dir1/dir2/file1
+</code></pre></div>
+<p>В данном примере опция <code>v</code> была опущена. Включение ее приведет к тому, что список файлов будет выведен в длинном формате, подобном выводу команды <code>ls -l</code>:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">drwxr-xr-x alv/alv      0 10 май 11:03 2002 dir2/
+-rw-r--r-- alv/alv      0 10 май 11:03 2002 dir2/file1
+...
+</code></pre></div>
+<p>Команда <code>tar</code> имеет ещё множество дополнительных опций, призванных предотвращать перезапись существующих файлов, осуществлять верификацию архивов, учитывать при архивации разного рода временные атрибуты, вызывать для исполнения другие программы. К некоторым опциям я ещё вернусь после рассмотрения команд компрессии, другие же предлагается изучить самостоятельно, воспользовавшись страницей экранной документации man <code>tar</code>.</p>
+
+<p>Здесь уместно добавить пару слов об утилите <code>ar</code>, предназначенной для создания архивов, их модификации, частичной экстракции из них файлов и полного развёртывания. Подобно <code>tar</code>, это — чистый архиватор, не выполняющий никакой компрессии. И, насколько я знаю, практически не используемый для архивирования данных, в частности, для резервного копирования. Но исторически сложилось так, что именно утилитой <code>ar</code> в конечном счёте упаковываются компоненты пакетов <code>deb</code>-формата, используемого в <code>Mint</code> (и многих других дистрибутивах).</p>
+
+<h3 id="…-и-компрессия">… и компрессия</h3>
+
+<p>Утилита <code>gzip</code> — это традиционный компрессор <code>Unix</code>-систем, сменивший в сей роли более старую утилиту <code>compress</code>. Простейший способ её использования таков:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> gzip filename
+</code></pre></div>
+<p>где в качестве аргументов будет выступать имя файла. При этом (внимание!) исходный несжатый файл подменяется своей сжатой копией, которой автоматически присваивается расширение <code>*.gz</code>.</p>
+
+<p>В качестве аргументов может выступать и произвольное количество имен файлов — каждый из них будет заменен сжатым файлом <code>*.gz</code>. Более того, посредством опции <code>-r</code> может быть выполнено рекурсивное сжатие файлов во всех вложенных подкаталогах. Подчеркну, однако, что никакой архивации команда <code>gzip</code> не производит, обрабатывая за раз только единичный файл. Фактически форма</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> gzip file1 file2 ... file#
+</code></pre></div>
+<p>просто эквивалент последовательности команд</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> gzip file1
+<span class="gp">$</span> gzip file2
+<span class="go">...</span>
+<span class="gp">$</span> gzip file#
+</code></pre></div>
+<p>Правда, объединение компрессированных файлов возможно методом конкатенации (с помощью команды <code>cat</code>) или посредством архивирования командой <code>tar</code>.</p>
+
+<p>Команда <code>gzip</code> имеет и другие опции, указываемые в краткой (однобуквенной) или полной нотации. В отличие от <code>tar</code>, знак дефиса (или, соответственно, двойного дефиса) обязателен в обоих случаях. Так, опциями <code>-1</code> … <code>-9</code> можно задать степень сжатия и, соответственно, время исполнения процедуры: <code>-1</code> соответствует минимальному, но быстрому сжатию, <code>-9</code> - максимальному, но медленному. По умолчанию в команде <code>gzip</code> используется опция <code>-6</code>, обеспечивающая разумный компромисс между скоростью и компрессией.</p>
+
+<p>Благодаря опции <code>-d</code> (<code>--decompress</code>) команда <code>gzip</code> может выполнить развертывание сжатого файла, заменяя его оригиналом без расширения <code>*.gz</code>. Хотя в принципе для этого предназначена команда <code>gunzip</code>:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> gunzip file.gz
+</code></pre></div>
+<p>Использование этой команды настолько прозрачно, что я задерживаться на ней не буду. Замечу только, что утилита <code>gzip</code> интегрирована в архиватор <code>tar</code>, вызвываясь из него опцией <code>z</code>. То есть для создания компрессированного архива потребуется такая команда:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar czf archive.tar.gz path2/
+</code></pre></div>
+<p>А для декомпрессии и развёртывания архива — такая:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar xzf archive.tar.gz
+</code></pre></div>
+<p>В обоих случаях не принесёт вреда добавление опции <code>v</code> — она обеспечит вывод на экран сообщеня о ходе процесса.</p>
+
+<p>В относительно недавнее время некоторое распространение получил компрессор <code>bzip2</code>, обеспечивающий большую (на 10-15%) степень сжатия, хотя и менее быстродействующий. Использование его практически идентично <code>gzip</code>, с деталями его можно ознакомиться с помощью страницы экранной документации <code>man bzip2</code>.</p>
+
+<p>Итоговый компрессированный файл получает имя вида <code>*.bz2</code> и может быть распакован командой <code>bunzip2</code> (или командой <code>bzip2 -d</code>). Следует только помнить, что форматы <code>*.gz</code> и <code>*.bz2</code> не совместимы между собой. Соответственно, первый не может быть распакован программой <code>bunzip2</code>, и наоборот.</p>
+
+<p>Как и <code>gzip</code>, утилита <code>bzip2</code> может быть вызвана из архиватора <code>tar</code> — при создании компрессированного архива так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar cjf archive.tar.bz2 path2/
+</code></pre></div>
+<p>А при развёртывании оного — эдак:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar xjf archive.tar.bz2
+</code></pre></div>
+<p>Особо задерживаться на этой утилите не хочется ещё и потому, что, мне кажется, вскоре она выйдет из употребеления. Ибо, обеспечивая меньшую степень сжатия по сравнению с форматом <code>xz</code> (о котором сейчас будет речь), <code>bzip2</code> отнюдь не превосходит его по скорости компрессии и декомпрессии. И там, где критично именно время упаковки (а также универсальность), будет по прежнему использоваться старый добрый <code>gzip</code>. Там же, где на первый план выходит степень сжатия, карты в руки новому формату <code>xz</code>. Который, кстати, на мощных машинах по скорости создания и распаковки вплотную приближается к <code>gzip</code>.</p>
+
+<p>Реализацией формата <code>xz</code> является набор утилит <code>XZ Utils</code>, основанный на алгоритме <code>LZMA</code> (<code>Lempel-Ziv-Markov chain-Algorithm</code>). Сам по себе метод сжатия <code>LZMA</code> существует достаточно давно: он был разработан нашим соотечественником Игорем Павловым с использованием достижений предшественников, разработавших алгоритмы <code>LZ77</code>, <code>LZ78</code> и <code>LZV</code> — что, впрочем, могло бы составить предмет отдельной истории, которую когда-нибудь кто-нибудь напишет.</p>
+
+<p>А метод <code>LZMA</code> был задействован его автором в собственной же разработке — утилите компрессии <code>7-Zip</code> для <code>Windows</code>, быстро снискавшей славу несравненного «сжимателя» файлов. Инструментарий для разработки программ, использующих данный метод (<code>LZMA SDK</code>) распространялся сначала на условиях лицензии <code>GPL</code>, что позволяло использовать его в соответствующих проектах (например, в <code>GNU tar</code>). Однако в конце 2008 года Игорь Павлов превратил его в общественное достояние (<code>Public Domain</code>). Вслед за чем был создан основанный на этом методе пакет <code>LZMA Utils</code>, немедленно встроенный в <code>tar</code>. Что сделало этот метод компрессии столь же простым и обыденным, как <code>gzip</code> или <code>bzip2</code>. И с тех пор эта возможность, после установки соответствующего пакета, присутствует во всех дистрибутивах <code>Linux</code>.</p>
+
+<p>Правда, вслед за тем появился <code>LZMA2</code>, улучшенная версия того же алгоритма, обеспечивающий более высокую степень сжатия и лучшую поддержку многопоточности. А на его основе был создан пакет <code>XZ Utils</code> — именно он в настоящее время используется в <code>Mint</code> по умолчанию. И включает в себя такие команды:</p>
+
+<ul>
+<li><code>xz</code> — компрессор и, при указании опции <code>--decompress</code>, декомпрессор;</li>
+<li><code>unxz</code> — собственно декомпрессор;</li>
+<li><code>xzcat</code> осуществляет декомпрессию на стандартный вывод;</li>
+<li><code>xzmore</code> и <code>xzless</code> — pager&#39;ы для <code>lzma</code>-компрессированных текстовых файлов;</li>
+<li><code>xzgrep</code>, <code>xzegrep</code>, <code>xzfgrep</code> — поиск текстовых фрагментов в <code>xz</code>-компрессированных файлах.</li>
+</ul>
+
+<p>Последние три утилиты работают аналогично командам <code>xzgrep</code>, <code>xzegrep</code>, <code>xzfgrep</code>, применённым к некомпрессированным файлам. А команда <code>xzcat</code> является аналогом утилиты <code>cat</code>. Об этих четырёх командах будет подробно говориться в ближайших разделах.</p>
+
+<p>Утилиты пакета <code>XZ Utils</code> могут, с некоторыми ограничениями, работать с файлами, запакованными старым методом <code>LZMA1</code> (но не наоборот). Хотя сами по себе пакеты <code>XZ Utils</code> и <code>LZMA Utils</code> между собой конфликтуют.</p>
+
+<p>Разумеется, поддержка <code>XZ</code> была немедленно встроена и в <code>tar</code>. Так что теперь для применения компрессии <code>LZMA2</code> при создании <code>tar</code>-архива достаточно указать соответствующую опцию:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar --create --xz --file filename.tar.xz path2/arch_dir
+</code></pre></div>
+<p>Или, в более употребимой простыми людьми краткой форме, так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar cJf filename.tar.lzma path2/arch_dir
+</code></pre></div>
+<p>где опция <code>J</code> и представляет собой алиас для полной формы <code>-xz</code>. Если присваивать архивному файлу суффикс по правилам утилиты <code>tar</code>, опцию <code>J</code> можно заменить на <code>a</code> (что эквивалентно полной форме <code>--auto-compress</code>), обеспечивающей определение типа компрессии по «расширению» <code>*.xz</code>. Более того, скажу по секрету: если архив именован по правилам, то можно опустить даже опцию <code>--auto-compress</code> — она и так будет задействована по умолчанию.</p>
+
+<p>Распаковка <code>xz</code>-компрессированного архива выполняется в обратном порядке:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar xJf filename.tar.xz
+</code></pre></div>
+<p>или </p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar xaf filename.tar.xz
+</code></pre></div>
+<p>Метод <code>LZMA</code> и особенно <code>LZMA2</code> вследствие эффективности компрессии быстро нашёл себе применение в сборке дистрибутивных пакетов: именно с его помощью в настоящее время сжимаются <code>deb</code>-пакеты <code>Mint</code> (и всех других дистрибутивов, использующих этот формат пакетов).</p>
+
+<h3 id="Утилита-find-и-xargs-при-ней">Утилита find и xargs при ней</h3>
+
+<p>На этих страницах речь пойдет о пакете, известном в проекте <code>GNU</code> как <code>findutils</code>. И в первую голову — о команде <code>find</code> (как, впрочем, и о тесно связанной с ней команде <code>xargs</code>). Столь высокая честь выпадает им потому, что посредством этих двух команд можно выполнить если не все, то изрядную задач, возникающих при работе с файлами.</p>
+
+<p>Итак, апофеоз командного файлового менеджмента — утилита <code>find</code>. Строго говоря, вопреки своему имени, команда эта выполняет не поиск файлов как таковой, но — рекурсивный обход дерева каталогов, начиная с заданного в качестве аргумента, отбирает из них файлы в соответствие с некоторыми критериями и выполняет над отбракованным файловым хозяйством некоторые действия. Именно эту ее особенность подчеркивает резюме команды <code>find</code>, получаемое (в некоторых системах) посредством</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> whatis find
+
+<span class="go">find(1)                  — walk a file hierarchy</span>
+</code></pre></div>
+<p>что применительно случаю можно перевести как «прогулка по файловой системе».</p>
+
+<p>Команда <code>find</code> по своему синтаксису существенно отличается от большинства прочих <code>Unix</code>-команд. В обобщенном виде формат ее можно представить следующим образом:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find аргумент <span class="o">[</span>опция_поиска<span class="o">]</span> <span class="o">[</span>значение<span class="o">]</span> <span class="o">[</span>опция_действия<span class="o">]</span>
+</code></pre></div>
+<p>В качестве аргумента здесь задается путь поиска, то есть каталог, начиная с которого следует совершать обход файловой системы, например, корень ее:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find / <span class="o">[</span>опция_поиска<span class="o">]</span> <span class="o">[</span>значение<span class="o">]</span>
+<span class="go">        [опция_действия]</span>
+</code></pre></div>
+<p>или домашний каталог пользователя:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find ~/ <span class="o">[</span>опция_поиска<span class="o">]</span> <span class="o">[</span>значение<span class="o">]</span>
+<span class="go">        [опция_действия]</span>
+</code></pre></div>
+<p>Опция поиска — критерий, по которому следует отбирать файл (файлы) из определенных в аргументе частей файловой системы. В качестве таковых могут выступать имя файла (<code>-name</code>), его тип (<code>-type</code>), атрибуты принадлежности, доступа или времени.</p>
+
+<p>Ну а опция действия определяет, что же надлежит сделать с отобранными файлом или файлами. А сделать с ними, надо заметить, можно немало — начиная с вывода на экран (<code>-print</code>, опция действия по умолчанию) и кончая передачей в качестве аргументов любой другой команде (<code>-exec</code>).</p>
+
+<p>Как можно видеть из примера, опция поиска и опция действия предваряются знаком дефиса, значение первой отделяется от ее имени пробелом.</p>
+
+<p>Однако начнём по порядку. Опции поиска команды <code>find</code> позволяют выполнить отбор файлов по следующим критериям (символ дефиса перед опциями ниже опущен, но не следует забывать его ставить):</p>
+
+<ul>
+<li><code>name</code> — поиск по имени файла или по маске имени; в последнем случае метасимволы маски должны обязательно экранироваться (например, — name <code>\*.tar.gz</code>) или заключаться в кавычки (одинарные или двойные, в зависимости от ситуации); этот критерий чувствителен к регистру, но близкий по смыслу критерий <code>iname</code> позволяет производить поиск по имени без различения строчных и заглавных букв;</li>
+<li><code>type</code> — поиск по типу файла; этот критерий принимает следующие значения: <code>f</code> (регулярный файл), <code>d</code> (каталог), <code>s</code> (символическая ссылка), <code>b</code> (файл блочного устройства), <code>c</code> (файл символьного устройства);</li>
+<li><code>user</code> и <code>group</code> — поиск по имени или идентификатору владельца или группы, выступающим в качестве значения критерия; существует также критерии <code>nouser</code> и <code>nogroup</code> — они отыскивают файлы, владельцев и групповой принадлежности не имеющие (то есть тех, учетные записи для которых отсутствую в файлах <code>/etc/passwd</code> и <code>/etc/group</code>); последние два критерия в значениях, разумеется, не нуждаются;</li>
+<li><code>size</code> — поиск по размеру, задаваемому в виде числа в блоках или в байтах — в виде числа с последующим символом <code>c</code>; возможны значения <code>n</code> (равно <code>n</code> блоков), <code>+n</code> (более <code>n</code> блоков), <code>-n</code> (менее <code>n</code> блоков);</li>
+<li><code>perm</code> — поиск файлов по значениям их атрибутов доступа, задаваемых в символьной форме;</li>
+<li><code>atime</code>, <code>ctime</code>, <code>mtime</code> — поиск файлов с указанными временными атрибутами; значения временных атрибутов указываются в сутках (точнее, в периодах, кратных 24 часам); возможны формы значений этих атрибутов: <code>n</code> (равно указанному значению <code>n*24</code> часа), <code>+n</code> (ранее <code>n*24</code> часа), <code>-n</code> (позднее <code>n*24</code> часа);</li>
+<li><code>newer</code> — поиск файлов, измененных после файла, указанного в качестве значения критерия (то есть имеющего меньшее значение <code>mtime</code>);</li>
+<li><code>maxdepth</code> и <code>mindepth</code> позволяют конкретизировать глубину поиска во вложенных подкаталогах — меньшую или равную численному значению для первого критерия и большую или равную — для второго;</li>
+<li><code>depth</code> — производит отбор в обратном порядке, то есть не от каталога, указанного в качестве аргумента, а с наиболее глубоко вложенных подкаталогов; смысл этого действия — получить доступ к файлам в каталоге, для которого пользователь не имеет права чтения и исполнения;</li>
+<li><code>prune</code> — позволяет указать подкаталоги внутри пути поиска, в которых отбора файлов производить не следует.</li>
+</ul>
+
+<p>Кроме этого, существует ещё одна опция поиска — <code>fstype</code>, предписывающая выполнять поиск только в файловой системе указанного типа; очевидно, что она может сочетаться с любыми другими опциями поиска. Например, команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find / -fstype ext3 -name zsh*
+</code></pre></div>
+<p>будет искать файлы, имеющие отношение к оболочке <code>Z-Shell</code>, начиная с корня, но только — в пределах тех разделов, на которых размещёна файловая система <code>Ext3fs</code> (на моей машине — это именно чистый корень, за вычетом каталогов <code>/usr</code>, <code>/opt</code>, <code>/var</code>, <code>/tmp</code> и, конечно же, <code>/home</code>.</p>
+
+<p>Критерии отбора файлов могут группироваться практически любым образом. Так, в форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find ~/ -name *.tar.gz newer filename
+</code></pre></div>
+<p>она выберет в домашнем каталоге пользователя все компрессированные архивы, созданные после файла с именем <code>filename</code>. По умолчанию между критериями отбора предполагается наличие логического оператора <code>AND</code> (логическое «И»). То есть будут отыскиваться файлы, удовлетворяющие и маске имени, и соответствующему атрибуту времени. Если требуется использование оператора OR (логическое «ИЛИ»), он должен быть явно определен в виде дополнительной опции <code>-o</code> между опциями поиска. Так, команда:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find ~/ -mtime -2 -o newer filename
+</code></pre></div>
+<p>призвана отобрать файлы, созданные менее двух суток назад, или же — позднее, чем файл <code>filename</code>.</p>
+
+<p>Особенность <code>GNU</code>-реализации команды <code>find</code> (как, впрочем, и ее тезки из числа <code>BSD</code>-утилит) — то, что она по умолчанию выводит список отобранных в соответствии с заданными критериями файлов на экран, не требуя дополнительных опций действия. Однако, как говорят, в других <code>Unix</code>-системах (помнится, даже и в некоторых реализациях <code>Linux</code> мне такое встречалось) указание какой-либо из таких опций — обязательно. Так что рассмотрим их по порядку.</p>
+
+<p>Для выведения списка отобранных файлов на экран в общем случае предназначена опция <code>-print</code>. Вывод этот имеет примерно следующий вид:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find . -name f* -print
+
+<span class="go">./file1</span>
+<span class="go">./file2</span>
+<span class="go">./dir1/file3</span>
+</code></pre></div>
+<p>Сходный смысл имеет и опция <code>-ls</code>, однако она выводит более полные сведения о найденных файлах, аналогично команде <code>ls</code> с опциями <code>-dgils</code>:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find / -fstype ext3 -name zsh -ls
+
+<span class="go">88161  511 -rwxr-xr-x   1 root  root    519320 Ноя 23 15:50 /bin/zsh</span>
+</code></pre></div>
+<p>Важное, как мне кажется, замечание. Если команда указанного вида будет дана от лица обычного пользователя (не root-оператора), кроме приведенной выше строки вывода, последуют многочисленные сообщения вроде</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">find: /root: Permission denied</span>
+</code></pre></div>
+<p>указывающие на каталоги, закрытые для просмотра обычным пользователем, и весьма мешающие восприятию результатов поиска. Чтобы подавить их, следует перенаправить вывод сообщения об ошибках в файл <code>/dev/null</code>, то есть указать им «Дорогу никуда»:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find / -fstype ext3 -name zsh -ls 2&gt; /dev/null
+</code></pre></div>
+<p>Идем далее. Опция <code>-delete</code> уничтожит все файлы, отобранные по указанным критериям. Так, командой</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find ~ -atime +100 -delete
+</code></pre></div>
+<p>будут автоматически стерты все файлы, к которым не было обращения за последние 100 дней (из молчаливого предположения, что раз к ним три месяца не обращались — значит, они и вообще не нужны). Истреблению подвергнутся файлы в подкаталогах любого уровня вложенности — но не включающие их подкаталоги (если, конечно, последние сами не подпадают под критерии отбора).</p>
+
+<p>И, наконец, опция <code>-exec</code> — именно ею обусловлено величие утилиты <code>find</code>. В качестве значения ее можно указать любую команду с необходимыми опциями — и она будет выполнена над отобранными файлами, которые будут рассматриваться в качестве ее аргументов. Проиллюстрируем это на примере.</p>
+
+<p>Использовать для удаления файлов опцию <code>-delete</code>, как мы это только что сделали — не самое здоровое решение, ибо файлы при этом удаляются без запроса, и можно случайно удалить что-нибудь нужное. И потому достигнем той же цели следующим образом:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find ~/ -atime +100 -exec rm -i <span class="o">{}</span> <span class="se">\;</span>
+</code></pre></div>
+<p>В этом случае (вне зависимости от настроек псевдонимов командной оболочки) на удаление каждого отобранного файла будет запрашиваться подтверждение.</p>
+
+<p>Обращаю внимание на последовательность символов <code>{} \;</code> (с пробелом между закрывающей фигурной скобкой и обратным слэшем) в конце строки. Пара фигурных скобок <code>{}</code> символизирует, что свои аргументы исполняемая команда (в примере — <code>rm</code>) получает от результатов отбора команды <code>find</code>, точка с запятой означает завершение команды-значения опции <code>-exec</code>, а обратный слэш экранирует ее специальное значение от интерпретации командной оболочкой.</p>
+
+<p>Кроме опции действия <code>-exec</code>, у команды <code>find</code> есть ещё одна, близкая по смыслу, опция — <code>-ok</code>. Она также вызывает некую произвольную команду, которой в качестве аргументов передаются имена файлов, отобранные по критериям, заданным опцией (опциями) поиска. Однако перед выполнением каждой операции над каждым файлом запрашивается подтверждение.</p>
+
+<p>Приведенный на предыдущей странице пример, хотя и вполне жизненный, достаточно элементарен. Рассмотрим более сложный случай — собирание в один каталог всех скриншотов в формате PNG, разбросанных по древу домашнего каталога:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find ~/ -name *.png -exec cp <span class="o">{}</span> imagesdir <span class="p">;</span>
+</code></pre></div>
+<p>В результате все png-файлы будут изысканы и скопированы (или — перемещёны, если воспользоваться командой <code>mv</code> вместо <code>cp</code>) в одно место.</p>
+
+<p>А теперь — вариант решения задачи, которая казалась мне некогда трудно разрешимой: рекурсивное присвоение необходимых атрибутов доступа в разветвленном дереве каталогов — различных для регулярных файлов и каталогов.</p>
+
+<p>Зачем и отчего это нужно? Поясню на примере. Как-то раз, обзаведясь огромным по тем временам (40 Гбайт) винчестером, я решил собрать на него все нужные мне данные, рассеянные по дискам <code>CD-R/RW</code> (суммарным объёмом с полкубометра) и нескольким сменным винчестерам, одни из которых были отформатированы в <code>FAT16</code>, другие — в <code>FAT32</code>, третьи — вообще в <code>ext2fs</code> (к слову сказать, рабочей моей системой в тот момент была <code>FreeBSD</code>). Сгрузив все это богачество в один каталог на новом диске, я создал в нем весьма неприглядную картину.</p>
+
+<p>Ну, во-первых, все файлы, скопированные с <code>CD</code> и <code>FAT</code>-дисков, получили (исключительно из-за неаккуратности монтирования, с помощью должных опций этого можно было бы избежать, но — спешка, спешка...) биты исполняемости, хотя были это лишь файлы данных. Казалось бы, мелочь, но иногда очень мешающая; в некоторых случаях это не позволяет, например, просмотреть <code>html</code>-файл в <code>Midnight Commander</code> простым нажатием <code>Enter</code>. Во-вторых, для некоторых каталогов, напротив, исполнение не было предусмотрено ни для кого — то есть я же сам перейти в них не мог. В третьих, каталоги (и файлы) с CD часто не имели атрибута изменения — а они нужны мне были для работы (в т.ч. и редактирования). Конечно, от всех этих артефактов можно было бы избавиться, предусмотрев должные опции монтирования накопителей (каждого накопителя — а их число, повторяю, измерялось уже объёмом занимаемого пространства), да я об этом и не подумал — что выросло, то выросло. Так что ситуация явно требовала исправления, однако проделать вручную такую работу над данными более чем в 20 Гбайт виделось немыслимым.</p>
+
+<p>Да так оно, собственно, и было бы, если б не опция <code>-exec</code> утилиты <code>find</code>. Каковая позволила изменить права доступа требуемым образом. Итак, сначала отбираем все регулярные файлы и снимаем с них бит исполнения для всех, заодно присваивая атрибут изменения для себя, любимого:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find ~/dir_data -type f
+<span class="go">        -exec chmod a-x,u+w {} ;</span>
+</code></pre></div>
+<p>Далее — поиск каталогов и обратная процедура над итоговой выборкой:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find ~/dir_data -type d
+<span class="go">        -exec chmod a+xr,u+w {} ;</span>
+</code></pre></div>
+<p>И дело — в шляпе, все права доступа стали единообразными (и теми, что мне нужны). Именно после этого случая я, подобно митьковскому Максиму, проникся величием философии марксизма (пардон, утилиты <code>find</code>). А ведь это ещё не предел ее возможностей — последний устанавливается только встающими задачами и собственной фантазией...</p>
+
+<p>Так, с помощью команды <code>find</code> легко наладить периодическое архивирование результатов текущей работы. Для этого перво-наперво создаем командой <code>tar</code> полный архив результатов своей жизнедеятельности:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tar cvf alldata.tar ~/*
+</code></pre></div>
+<p>А затем в меру своей испорченности (или, напротив, аккуратности), время от времени запускаем команду</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find ~/ -newer alldata.tar
+<span class="go">        -exec tar uvf alldata.tar {} ;</span>
+</code></pre></div>
+<p>ещё один практически полезный вариант использования команды <code>find</code> в мирных целях — периодическое добавление отдельно написанных фрагментов к итоговому труду жизни (например, собственным мемуарам). Впрочем, чтобы сделать это, необходимо сначала ознакомиться с командами обработки файлов, к которым мы вскоре обратимся.</p>
+
+<p>А пока — об ограничении возможностей столь замечательной сцепки команды <code>find</code> с опцией действия <code>-exec</code> (распространяющиеся и на опцию <code>-ok</code>). Оно достаточно очевидно: вызываемая любой из этих опций команда выполняется в рамках самостоятельного процесса, что на слабых машинах, как говорят, приводит к падению производительности (должен заметить, что на машинах современных заметить этого практически невозможно).</p>
+
+<p>Тем не менее, ситуация вполне разрешима. И сделать это призвана команда <code>xargs</code>. Она определяется как построитель и исполнитель командной строки со стандартного ввода. А поскольку на стандартный ввод может быть направлен вывод команды <code>find</code> — <code>xargs</code> воспримет результаты ее работы как аргументы какой-либо команды, которую, в свою очередь, можно рассматривать как аргумент ее самоё (по умолчанию такой командой-аргументом является <code>/bin/echo</code>).</p>
+
+<p>Использование команды <code>xargs</code> не связано с созданием изобилия процессов (дополнительный процесс создается только для нее самой). Однако она имеет другое ограничение — лимит на максимальную длину командной строки. Во всех <code>BSD</code>-системах, которые мне довелось видеть, этот лимит составляет <code>65536</code>, что определяется командой следующего вида:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> sysctl -a <span class="p">|</span> grep kern.argmax
+</code></pre></div>
+<p>И способы изменить этот лимит мне не известны — был бы благодарен за соответствующую информацию.</p>
+
+<h3 id="Команды-обработки-текстов-введение">Команды обработки текстов: введение</h3>
+
+<p>Только что речь шла о командах, которые манипулируют файлами как целыми, не затрагивая их содержания (и, в общем случае, от такового не зависящих). Ныне же речь пойдет о командах, создающих и изменяющих внутреннее содержание файлов, правда, только текстовых.</p>
+
+<p>Конечно, само по себе манипулирование файлами (копирование, перемещёние и т.д.) также подразумевает изменение содержания некоторых файлов, но только одного-единственного типа (а именно - каталогов), однако собственно внутренняя сущность обычных файлов при этом не изменяется. Предметом же настоящей интермедии будут штатные средства <code>POSIX</code>-систем, позволяющие в той или иной мере учитывать контент файлов и манипулировать им. Разумеется, манипулирование контентом возможно только для регулярных файлов. При этом многие их разновидности (бинарные файлы, файлы графических форматов и word-процессоров) требуют для изменения своего содержания специальных средств - а именно, компиляторов и прикладных программ, в которых они создавались. Однако здесь о них разговора не будет - ибо целью моей было продемонстрировать мощь обычных команд для решения многих пользовательских задач. Правда, на самом деле команды модификации контента действенны преимущественно для файлов текстовых.</p>
+
+<p>Однако круг объектов таких команд не столь уж узок, как может показаться. Ведь именно в виде обычных текстовых файлов в ОС POSIX-семейства хранится масса общесистемной информации, исполняемых сценариев, баз данных атрибутов самых разных объектов. Далее - собственно нарративные тексты любого содержания: ведь чисто текстовый формат для них куда роднее, чем всякого рода <code>*.doc</code> и <code>*.rtf</code>. Ну и никем не возбраняется использовать такие команды в отношении текстов с разметкой - <code>HTML</code> ли, <code>XML</code>, <code>TeX</code> или ещё чего. Так что поле приложения рассматриваемых команд - достаточно обширно.</p>
+
+<h3 id="Просмотр-файлов">Просмотр файлов</h3>
+
+<p>Однако прежде чем как-то манипулировать контентом файлов, желательно этот самый контент некоторым образом просмотреть. И тут можно вспомнить о команде <code>cat</code>, посредством которой мы некогда создавали файлы. Данная с именем файла в качестве аргумента, она выведет его содержимое на экран. Можно использовать и конструкцию перенаправления:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cat &lt; filename
+</code></pre></div>
+<p>Не смотря на то, что в принципе это разные вещи, результат будет тот же - вывод содержимого файла на экран.</p>
+
+<p>Недостаток команды <code>cat</code> как средства просмотра - невозможность перемещёния по телу файла: выведя содержимое, она завершает свою работу. Конечно, «пролистывание» выведенного возможно, но - средствами системной консоли, а не самой команды.</p>
+
+<p>Поэтому обычно для просмотра содержимого файлов используются специальные программы постраничного просмотра - т.н. pager&#39;ы, очередной пример того, что передача этого термина исконно русским словом «пейджер» (а мне попадалось и такое) может создать совершенно превратное представление о сути дела.</p>
+
+<p>В Unix-системах имеется две основные программы pager&#39;а - <code>more</code> и <code>less</code>. Первая из них допускает только однонаправленный (вперед) просмотр и имеет слабые интерактивные возможности. Почему ныне и представляет лишь исторический интерес, так что о ней я говорить не буду. Тем более, что в современных свободных POSIX-системах она как таковая отсутствует: файл с именем <code>/usr/bin/more</code>, который можно обнаружить во <code>FreeBSD</code> и некоторых дистрибутивах <code>Linux</code>, на самом деле представляет собой жёсткую или символическую ссылку на ту же самую программу, что и команда <code>less</code>. Хотя эта программа проявляет несколько различные свойства, в зависимости от того, какой из указанных команд она вызвана, функции ее от этого не меняются. Так что дальше я буду говорить только о команде <code>less</code>.</p>
+
+<p>Самый простой способ вызова команды</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> less filename
+</code></pre></div>
+<p>после чего на экран выводится содержимое файла, указанного в качестве аргумента, по которому можно перемещаться в обоих направлениях, как построчно, так и постранично. В нижней строке экрана можно видеть символ двоеточия - приглашения для ввода команд различного назначения. В частности, нажатие клавиши <code>h</code> выводит справку по использованию <code>less</code>, а клавиши <code>q</code> - выход из программы просмотра (или из просмотра справочной системы, если она была перед этим вызвана). Если команда была вызвана как <code>more</code> (это достигается ещё и специальной опцией - <code>less -m</code>), вместо символа двоеточия в нижней строке будет выведено имя файла с указанием процента просмотра:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">command.txt 3%
+</code></pre></div>
+<p>что, однако, не воспрещает и здесь давать ее встроенные команды — вводом символа двоеточия (<code>:</code>) и закрепленной за командой литеры (или их сочетания).</p>
+
+<p>Большинство встроенных команд <code>less</code> предназначено для навигации по телу файла. Осуществляется она несколькими способами:</p>
+
+<ul>
+<li>с помощью стандартных клавиш управления курсором: <code>PageDown</code> или <code>Spacebar</code> (вперед на один экран), <code>PageUp</code> (назад на один экран), <code>Down</code> или <code>Enter</code> (вперед на одну строку), <code>Up</code> (назад на одну строку), <code>Right</code> (на пол-экрана вправо), <code>Left</code> (на пол-экрана влево);</li>
+<li>с помощью предопределенных клавишных комбинаций, сходных с управляющими клавиатурными последовательностями командных оболочек и таких текстовых редакторов, как <code>emacs</code> и <code>joe</code> (хотя и не всегда с ними совпадающими): <code>Control+V</code> (на один экран вперед), <code>Escape-V</code> (на один экран назад), <code>Control+N</code> (на одну строку вперед), <code>Control+P</code> (на одну строку назад);</li>
+<li>с помощью фиксированных символьных клавиш, иногда подобных таковым командного режима редактора <code>vi</code>: <code>z</code> и <code>w</code> (вперед и назад на один экран), <code>e</code> и <code>y</code> (вперед и назад на одну строку, можно использовать также привычные по <code>vi</code> клавиши <code>j</code> и <code>k</code>, соответственно), <code>d</code> и <code>u</code> (вперед и назад на пол-экрана).</li>
+</ul>
+
+<p>Последний способ интересен тем, что допускает численные аргументы перед символьной командой: так, нажатие <code>3e</code> приведет к перемещёнию на три строки вперед, а <code>2w</code> - на два экрана назад.</p>
+
+<p>Помимо «плавной», так сказать, навигации, можно перемещаться по файлу и скачками (<code>jumping</code>): нажатие клавиши с символом <code>g</code> (или последовательности <code>Escape-&lt;</code>) позволяет переместиться к первой строке файла, клавиши <code>G</code> (регистр важен! дублирующий вариант - <code>Escape-&gt;</code>) - к последней его строке, клавиши <code>p</code> - к началу файла.</p>
+
+<p>Кроме навигации, имеется и возможность двустороннего поиска - в направлении как конца, так и начала файла. Для поиска вперед требуется ввести символ прямого слэша (<code>/</code>) и за ним - искомое сочетание символов. Поиск в обратном направлении предваряется символом вопроса (<code>?</code>). В обоих случаях в шаблоне поиска можно использовать стандартные регулярные выражения <code>*</code>, <code>?</code>, <code>[список_символов]</code> или <code>[диапазон_символов]</code>. Нажатие клавиши <code>n</code> (в нижнем регистре) приводит к повторному поиску в заданном ранее направлении, клавиши <code>N</code> (в верхнем регистре) - к поиску в направлении противоположном.</p>
+
+<p>Управляющие комбинации команды <code>less</code> могут быть переопределены с помощью команды <code>lesskey</code>. Формат ее</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> lesskey -o output input
+</code></pre></div>
+<p>В качестве входных данных выступает простой текстовый файл (по умолчанию - <code>~/.lesskey</code>, однако его следует создать самостоятельно), описывающий клавишные последовательности в следующем, например, виде:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#command
+\r        forw-line
+\n        forw-line
+...
+k         back-line
+...
+</code></pre></div>
+<p>Выходные данные - создаваемый из текстового двоичный файл, который собственно и используется командой <code>less</code>. Стандартное для него имя - <code>~/.less</code>.</p>
+
+<p>Команда <code>less</code> допускает одновременный просмотр нескольких файлов. Для этого ее следует вызвать в форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> less file1 file2 ... file#
+</code></pre></div>
+<p>после чего между открытыми файлами можно переключаться посредством <code>:n</code> (к следующему файлу), <code>:p</code> (к предыдущему файлу), <code>:x</code> (к первому файлу). Путем нажатия <code>:d</code> текущий файл исключается из списка просмотра. Символ двоеточия во всех этих случаях вводится с клавиатуры в дополнение к приглашению на ввод 
+команд.</p>
+
+<p>Команда <code>less</code> имеет великое множество опций - описание их на странице экранной документации занимает более дюжины страниц, поэтому задерживаться на них я не буду. Следует заметить только, что опции эти могут использоваться не только в командоной строке при запуске <code>less</code>, но и интерактивно - после символа дефиса в приглашении ввода. Так, указав там <code>-m</code>, можно включить т.н. промежуточный формат приглашения (с отображением процентов просмотренного объёма файла), а с помощью <code>-M</code> - длинный (<code>more</code>-подобный) формат, при котором в приглашении дополнительно указываются имя файла, его положение в списке загруженных файлов, просматриваемые ныне строки:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">command.html (file 2 of 10) lines 1-29/1364 2%
+</code></pre></div>
+<p>Значение команд постраничного просмотра файлов ещё и в том, что именно с их помощью осуществляется доступ к экранной документации (man-страницам). Команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> man cmd_name
+</code></pre></div>
+<p>как было описано в предыдущей интермедии, на самом деле вызывает определенный по умолчанию <code>pager</code> для просмотра соответствующего файла <code>/usr/share/man/man#/cmd_name.gz</code>. Какой именно - определяется переменной <code>PAGER</code> в пользовательских настройках.</p>
+
+<p>Кроме команд постраничного просмотра, существуют команды для просмотра фрагментарного. Это - <code>head</code> и <code>tail</code>, выводящие на экран некоторую фиксированную порцию файла, указанного в качестве их аргумента, с начала или с конца, соответственно. По умолчанию эта порция для обеих команд составляет десять строк (включая пустые). Однако ее можно переопределить произвольным образом, указав опции <code>-n [число_линий]</code> или <code>-c [количество_байт]</code>. Например, команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> head -n <span class="m">3</span> filename
+</code></pre></div>
+<p>выведет три первые строки файла <code>filename</code>, а команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> tail -c <span class="m">100</span> filename
+</code></pre></div>
+<p>его последние 100 байт. При определении выводимого фрагмента в строках название опции (<code>n</code>) может быть опущено - достаточно числа после знака дефиса.</p>
+
+<p>Существуют и средства просмотра компрессированных файлов. Для файлов, сжатых программой <code>gzip</code>, можно использовать команды <code>zcat</code> и <code>zmore</code>, для спрессованных командой <code>bzip2</code> - команду <code>bzcat</code>. Использование их ничем не отличается от аналогов для несжатых файлов - в сущности, именно они и вызываются для обеспечения просмотра. В случае команды <code>zmore</code>, как нетрудно догадаться, на самом деле используется команда <code>less</code> (сама по себе она аналога для компрессированных файлов не имеет).</p>
+
+<h3 id="Сравнение-объединение-и-деление-файлов">Сравнение, объединение и деление файлов</h3>
+
+<p>Следующая важная группа операций над контентом файлов - сравнение файлов по содержанию и различные формы объединения файлов и их фрагментов. Начнем со сравнения. Простейшая команда для этого - <code>cmp</code> в форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cmp file1 fil2
+</code></pre></div>
+<p>производит построчное сравнение файлов, указанных как первый и второй аргументы (а более их и не предусмотрено, все указанное после второго аргумента игнорируется). В случае идентичности сравниваемых файлов не происходит ничего, кроме возврата приглашения командой строки. Если же между файлами имеются различия, выводится номер первого различающегося символа и номер строки, в которой он обнаружен:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">file1 file2 differ: char 27, line 4
+</code></pre></div>
+<p>Это означает, что различия между файлами начинаются с 27-го от начала файла символа (включая пробелы, символы конца строк и т.д.), который имеет место быть в строке 4. С помощью опций <code>-l</code> и <code>-z</code> можно заставить команду <code>cmp</code> вывести номера всех различающихся символов в десятичном или шестнадцатеричном формате, соответственно.</p>
+
+<p>Более информативный вывод обеспечивает команда <code>diff</code>. Она также осуществляет построчное сравнение двух файлов, но выводит список строк, в которых обнаружены отличия. Например, для двух файлов вида</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> less file1
+
+<span class="go">line 1</span>
+<span class="go">line 2</span>
+<span class="go">line 3</span>
+<span class="go">line 4</span>
+<span class="go">line 5</span>
+</code></pre></div>
+<p>и</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> less file2
+
+<span class="go">line 1</span>
+<span class="go">line 2</span>
+<span class="go">line 3</span>
+<span class="go">line 3a</span>
+<span class="go">line 4</span>
+<span class="go">line 5</span>
+</code></pre></div>
+<p>это будет выглядеть следующим образом:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> diff file1 file2
+
+<span class="go">3a4</span>
+<span class="gp">&gt;</span> line 3a
+</code></pre></div>
+<p>Если различия будут выявлены более чем в одной строке, для каждого расхождения будет выведен аналогичный блок. Смысл его - в том, какие строки первого файла должны быть преобразованы, и как именно, для того, чтобы файлы стали идентичными. Первая линия блока вывода содержит номер строки первого файла, подлежащей преобразованию, номер соответствующей строки второго файла и обозначенное буквенным символом преобразование, во второй линии приведена собственно строка - предмет преобразования. Символы преобразования - следующие:</p>
+
+<ul>
+<li><code>a</code> (от <code>append</code>) указывает на строку, отсутствующую в первом файле, но присутствующую во втором;</li>
+<li><code>c</code> (от <code>change</code>) фиксирует строки с одинаковым номером, но разным содержанием;</li>
+<li><code>d</code> (от <code>delete</code>) определяет строки, уникальные для первого файла.</li>
+</ul>
+
+<p>То есть в данном примере для преобразования <code>file1</code> в <code>file2</code> в него после строки 3 должна быть вставлена строка 4 из второго файла, что символизирует вторая линия блока - <code>&gt; line 3a</code>, где <code>&gt;</code> означает строку из первого сравниваемого файла. Если же аргументы команды <code>diff</code> дать в обратном порядке, вывод ее будет выглядеть следующим образом:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> diff file2 file1
+
+<span class="go">4d3</span>
+<span class="go">&lt; line 3a</span>
+</code></pre></div>
+<p>показывающим, что для достижения идентичности из <code>file2</code> должна быть удалена четвертая строка (<code>&lt; line 3a</code>, где <code>&lt;</code> означает строку из второго файла). Если же произвести сравнение <code>file1</code> с <code>file3</code>, имеющим вид</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> less file3
+
+<span class="go">line 1</span>
+<span class="go">line 2</span>
+<span class="go">line 3a</span>
+<span class="go">line 4</span>
+<span class="go">line 5</span>
+</code></pre></div>
+<p>то вывод команды</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> diff file1 file3
+
+<span class="go">3c3</span>
+<span class="go">&lt; line 3</span>
+<span class="go">---</span>
+<span class="gp">&gt;</span> line 3a
+</code></pre></div>
+<p>будет означать необходимость замены третьей строки из <code>file1</code> (символ <code>&lt;</code>) на третью строку из <code>file3</code> (символ <code>&gt;</code>).</p>
+
+<p>Такая форма вывода команды <code>diff</code> называется стандартной. С помощью опции <code>-c</code> можно задать т.н. контекстную форму вывода, при которой на экран направляется не только различающиеся строки, но и строки, их окружающие (то есть контекст, в котором они заключены):</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">diff -c file1 file2</span>
+
+<span class="go">*** file1       Sun May 12 11:44:44 2002</span>
+<span class="go">--- file2       Mon May 13 15:17:27 2002</span>
+
+<span class="go">***************</span>
+
+<span class="go">*** 1,5 ****</span>
+
+<span class="go">--- 1,6 ----</span>
+
+<span class="go">  line 1</span>
+<span class="go">  line 2</span>
+<span class="go">  line 3</span>
+<span class="go">+ line 3a</span>
+<span class="go">  line 4</span>
+<span class="go">  line 5</span>
+</code></pre></div>
+<p>Количество строк контента задается опцией <code>-C</code>:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">diff -C 1 file1 file2                                      ttyv1</span>
+
+<span class="go">*** file1       Sun May 12 11:44:44 2002</span>
+<span class="go">--- file2       Mon May 13 15:17:27 2002</span>
+
+<span class="go">***************</span>
+
+<span class="go">*** 3,4 ****</span>
+
+<span class="go">--- 3,5 ----</span>
+
+<span class="go">  line 3</span>
+<span class="go">+ line 3a</span>
+<span class="go">  line 4</span>
+</code></pre></div>
+<p>В этом примере значение опции <code>-C</code> (единица) предписывает вывод по одной строке контекстного окружения вокруг различающейся строки. Сами же различающиеся строки помечаются следующим образом: знаком <code>-</code> (минус, или дефис) - строки, подлежащие удалению из первого файла, знаком <code>+</code> (как в примере) - строки, которые должны быть добавлены, знаком <code>!</code> - просто различающиеся строки.</p>
+
+<p>Кроме контекстного формата, используется ещё и вывод в унифицированном формате, что предписывается опцией <code>-U [значение]</code>, в качестве значения указывается число строк. В нем для обозначения изменяемых строк используются только символы <code>+</code> и <code>-</code>, а сам вывод чуть короче, чем при использовании контекстного формата.</p>
+
+<p>С помощью многочисленных опций команды <code>diff</code> сравнение файлов может быть детализовано и конкретизировано. Так, опция <code>-b</code> предписывает игнорировать «пустые» символы пробелов и табуляции в конце строк, а опция <code>-w</code> - вообще «лишние» пробелы (и те, и другие обычно имеют случайное происхождение). При указании опции <code>-B</code> игнорируются пустые строки, то есть не содержащие никаких иных символов, кроме перевода каретки; строки с символами табуляции или пробела как пустые не рассматриваются, для их игнорирования требуется опция <code>-w</code>. Благодаря опции <code>-i</code> при сравнении не принимается во внимание различие регистров символов, а опция <code>-I regexp</code> определяет регулярные вырвжения, строки с которыми также игнорируются при сравнении.</p>
+
+<p>В качестве аргументов команды <code>diff</code> (одного или обоих) могут выступать также каталоги. Если каталогом является только один из аргументов, для сравнения в нем отыскивается файл, одноименный второму аргументу. Если же оба аргумента суть каталоги, в них происходит сравнение всех одноимённых файлов в алфавитном порядке (вернее, в порядке <code>ASCII</code>-кода первого символа имени, разумеется). Благодаря опции <code>-r</code> сравнение файлов может осуществляться и во вложенных подкаталогах.</p>
+
+<p>Вывод команды <code>diff</code> может быть перенаправлен в файл. Такие файлы различия именуются <code>diff</code>-файлами или, применительно к исходным текстам программ, патчами (<code>patches</code>), о которых будет сказано несколько позже. Именно с помощью таких патчей обычно распространяются изменения к программам (дополнения, исправления ошибок и т.д.).</p>
+
+<p>В принципе, команда <code>diff</code> и придумана была именно для сравнения файлов исходников, над которыми ведут работу несколько (в пределе - неограниченное количество, как в случае с <code>Linux</code>) человек. Однако невозбранно и ее использование в мирных целях - то есть для сравнения просто повествовательных текстов. Единственное, что следует понимать при этом абсолютно ясно - то, что <code>diff</code> выполняет именно построчное сравнение. То есть: сравнение последовательностей символов, ограниченных символами конце строки с обеих сторон. И, соответственно, непрерывная абзацная строка в стиле <code>emacs</code> и <code>vi</code> - совсем не то же самое, что строка, образуемая в редакторе <code>joe</code> на границе экрана. Впрочем, это - вопрос, к которому ещё не раз придется возвращаться.</p>
+
+<p>Как уже было отмечено, команда <code>diff</code> осуществляет сравнение двух файлов (или - попарное сравнение файлов из двух каталогов). Однако, поскольку Бог, как известно, любит троицу, есть и команда <code>diff3</code>, позволяющая сранить именно три файла, указываемые в качестве ее аргументов. По действию она не сильно отличается от двоичного аналога. И потому изучение ее особенностей предлагается в качестве самостоятельного упражнения приверженцам троичной идеологии.</p>
+
+<p>Существуют и средства для сравнения сжатых файлов. Это - <code>zcmp</code> и <code>zdiff</code>. Подобно командам просмотра, ими просто вызываются соотвествтующие команды <code>cmp</code> и <code>diff</code>. И потому использование их не имеет никаких особенностей.</p>
+
+<p>От вопроса сравнения файлов плавно перейдем к рассмотрению способов их объединения. Для этого существует немало команд, из которых по справедливости первой должна идти команда <code>cat</code>, поскольку именно сие есть ее титульная функция (<code>cat</code> — от concatenation, сиречь объединения). Ранее уже упоминалось, что она способна добавлять информацию со стандартного ввода в конец существующего файла. Однако дело этим не ограничивается. В форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cat file1 file2 ... file# &gt; file_all
+</code></pre></div>
+<p>она создает новый файл, включающий в себя содержимое всех файлов-аргументов (и именно в том порядке, в каком они приведены в командной строке). Операция, казалось бы, нехитрая - однако представьте, сколько действий потребовалось бы в текстовом процессоре (например, в Word&#39;е) для того, чтобы создать синтетический вариант из полутора десятков фрагментов, раскиданных по разным каталогам?</p>
+
+<p>А вот команда <code>patch</code> выступает в качестве диалектической пары для команды <code>diff</code>, именно она вносит в файл те изменения, которые документируются последней. Выглядит эта команда примерно так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> patch file1 diff_file
+</code></pre></div>
+<p>в ответ на что последует нечто вроде следующего вывода:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Hmm...  Looks like a normal diff to me...
+Patching file file1 using Plan A...
+Hunk #1 succeeded at 4.
+done
+</code></pre></div>
+<p>В результате исходная версия <code>file1</code> будет сохранена под именем <code>file1.orig</code>, а сам он преобразован в соответствие с описанием <code>diff</code>-файла. Возможна и форма</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">patch &lt; diff_file
+</code></pre></div>
+<p>В этом случае команда <code>patch</code> попытается сама определить имя файла-оригинала, и, если это ей не удастся, даст запрос на его ввод. Обращаю внимание на символ перенаправления ввода, поскольку если его опустить, имя <code>dif</code>-файла будет воспринято как первый аргумент команды (то есть имя файла-оригинала).</p>
+
+<p>В качестве второго аргумента команды <code>patch</code> могут использоваться <code>dif</code>-файлы не только в стандартном, но и в контекстном или унифицированном формате. Это следует указать посредством опции <code>-c</code> или <code>-u</code>, соответственно.</p>
+
+<p>Сочетание команд <code>diff</code> и <code>patch</code> очень широко используется при внесении изменений в исходные тексты программы. В частности, они применяются для внесения дистрибутив-специфичных изменений в <code>deb</code>-пакеты репозиториев <code>Ununtu</code> и <code>Mint</code>.</p>
+
+<p>Не менее часто, чем в слиянии, возникает и необходимость в разделении файлов на части. Цели этой служит команда <code>split</code>. Формат ее:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> split <span class="o">[</span>options<span class="o">]</span> filename <span class="o">[</span>prefix<span class="o">]</span>
+</code></pre></div>
+<p>В результате исходный файл будет разбит на несколько отдельных файлов вида <code>prefixaa</code>, <code>prefixab</code> и так далее. Значение аргумента <code>prefix</code> по умолчанию - <code>x</code> (то есть без его указания итоговые файлы получат имена <code>xaa</code>, <code>xab</code> и т.д.).</p>
+
+<p>Опции команды <code>split</code> задают размер выходных файлов - в байтах (опция <code>-b</code>) или количестве строк (опция <code>-l</code>). Первой опцией в качестве единицы, кроме байтов, могут быть заданы также килобайты или мегабайты - добавлением после численного значения обозначения <code>k</code> или <code>m</code>, соответственно.</p>
+
+<p>Команда <code>split</code> может использоваться для разбиения файлового архива на фрагменты, соответствующие размеру резервных носителей. Так, в форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> split -b <span class="m">1474560</span> arch_name
+</code></pre></div>
+<p>она обеспечит разбиение архива на части, какждая из которых может быть записана на стандартную трехдюймовую дискету. А посредством</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> split -b 650m arch_name
+</code></pre></div>
+<p>архив можно подготовить к записи на носители <code>CD-R/RW</code>. Легко догадаться, что обратное слияние таких фрагментированных файлов можно выполнить командой <code>cat</code>.</p>
+
+<p>В <code>BSD</code>-реализации команды <code>split</code> имеется опция <code>-p</code> (от <code>pattern</code> — шаблон), благодаря которой файл может быть разделена на фрагменты, ограниченные строками, содержащими текст, приведенный в качестве значения шаблона. <code>Linux</code>-реализация команды <code>split</code> таким свойством не обладает. Однако взамен этому в <code>Linux</code> есть команда <code>csplit</code>, именно для разделения файла по шаблону и предназначенная.</p>
+
+<p>Показать, как она работает, проще всего на конкретном примере. Предположим, у нас имеется книга в формате <code>Plain Text</code>, состоящая из введения и 23 глав, которую надо разбить на соответствующее количество фрагментов. Для этого сочиняется такая командная конструкция:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> csplit -f chapter mybook.txt <span class="s1">&#39;/Глава/&#39;</span> <span class="o">{</span>23<span class="o">}</span>
+</code></pre></div>
+<p>Здесь опция <code>-f</code> задаёт маску имён файлов, на которые будет разбит исходный текст (то есть файл <code>mybook.txt</code>). Шаблон, по которому будет выполняться разбиение — слово <code>Глава</code> ограничено прямыми слэшами и заключено в «строгие» кавычки. А число в фигурных скобках указывает, сколько раз надо повторить процедуру разбиения по заданному шаблону. И в результате мы получаем серию файлов вида <code>chapter##</code>, где файл <code>chapter00</code> будет включать текст от начала до первой строки со словом <code>Глава</code> (которая, как ни странно, будет главой первой), <code>chapter01</code> — от строки <code>Глава первая</code> до <code>Главы второй</code>, и так далее. Исходный файл при этом останется в неприкосновенности.</p>
+
+<h3 id="Поиск-в-файлах-grep-сотоварищи">Поиск в файлах: grep сотоварищи</h3>
+
+<p>В одном из предыдущих разделов говорилось о поиске файлов посредством команды <code>find</code>. Ныне же речь пойдет о поиске внутри файлового контента - то есть поиске текстовых фрагментов. Для этого в <code>POSIX</code>-системах используется семейство утилит <code>grep</code> — собственно <code>grep</code>, <code>egrep</code> и <code>fgrep</code>, несколько различющихся функционально. Впрочем, в большинстве систем все это суть разные имена (жёсткие ссылки) одной и той же программы, именуемой <code>GNU</code>-реализацией <code>grep</code>, включающей ряд функций, свойственных ее расширенному аналогу, <code>egrep</code>. Соответственно, поиск текстовых фрагментов в файлах может быть вызван любой из этих команд, хотя в каждом случае функциональность их будет несколько различаться.</p>
+
+<p>Однако начнем по порядку. Самой простой формой команды <code>grep</code> является следующая:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> grep pattern files
+</code></pre></div>
+<p>где <code>pattern</code> - искомая последовательность символов, а <code>files</code> - файлы, среди которых должен производиться поиск (или - просто одиночный файл). В указании имен файлов допустимы обычные маски, например, командой</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> grep line ./*
+</code></pre></div>
+<p>будут найдены строки вида <code>line</code> во всех файлах текущего каталога. Шаблон для поиска не обязан быть односложным. Правда, если в нем используются последовательности символов, разделенные пробелами, последние должны тем или иным способом экранироваться, иначе в качестве шаблона будет воспринято только первое слово. Например, каждый пробел может предваряться символом обратного слэша (<code>\</code>), или просто все искомое выражение заключается в одинарные или двойные кавычки.</p>
+
+<p>Шаблоны могут включать в себя регулярные выражения. причём список таковых для команды <code>grep</code> существенно шире, чем для команд манипулирования файлами. Так, кроме маски любой последовательности символов (<code>*</code>), любого одиночного символа (<code>?</code>), списка и диапазона символов (<code>[a...z]</code> и <code>[a-z]</code>), могут встречаться:</p>
+
+<ul>
+<li><code>.</code> (точка) - маска любого одиночного (но, в отличие от маски <code>?</code>, обязательно присутствующего) символа; то есть при задании шаблона <code>lin.</code> будут найдены строки, содержашие <code>line</code> или <code>lins</code>, но не <code>lin</code>;</li>
+<li><code>^</code> и <code>$</code> - маски начала и конца строки, соответственно: по шаблону <code>^line</code>, будут найдены строки, начинающиеся с соответствующего слова, по шаблону же <code>line$</code> - им заканчивающиеся;</li>
+<li>маски повторения предыдущего шаблона, <code>\{n\}</code> - ровно <code>n</code> раз, <code>\{n,\}</code> - не менее <code>n</code> раз, <code>\{,m\}</code> - не более <code>m</code> раз, <code>\{n,m\}</code> - не менее <code>n</code> раз и не более <code>m</code> раз.</li>
+</ul>
+
+<p>Маски повторения относятся к так называемым расширенным регулярным выражениям. Для их использования команда <code>grep</code> должна быть дана с опцией <code>-e</code> или в форме <code>egrep</code> — последняя часто определяется в общесистемном или пользовательском профильном файле как псевдоним команды <code>grep</code>:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">alias grep=&#39;egrep -s&#39;</span>
+</code></pre></div>
+<p>или</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">alias grep egrep</span>
+</code></pre></div>
+<p>в оболочках семейств <code>shell</code> и <code>csh</code>, соответственно.</p>
+
+<p>При этом становятся доступными и другие возможности поиска - например, нескольких текстовых фрагментов (соедниненных логическим оператором «ИЛИ») одновременно. Делается это двояко. Первый способ - просто перечисление искомых фрагментов, каждый из которых предваряется опцией <code>-e</code> (и при необходимости экранируется кавычками):</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> grep -e pattern1 -e pattern2 files
+</code></pre></div>
+<p>При втором способе оператор между искомыми шаблонами задается в явном виде:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> egrep <span class="s1">&#39;pattern1|pattern2&#39;</span> files
+</code></pre></div>
+<p>Таким способом очень легко, например, составить оглавление для длинного текста (при наличии некоторой системы рубрикации в нем, разумеется). Для этого достаточно дать команду вроде следующей:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> egrep <span class="s1">&#39;Часть|Глава|Раздел|Параграф&#39;</span> filename
+</code></pre></div>
+<p>Для текста, включающего <code>html-</code> или <code>TeX-</code>разметку, роль рубрик могут выполнять соответствующие ее элементы, например:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> egrep <span class="s1">&#39; &lt;h1&gt;|&lt;h2&gt;|&lt;h3&gt;|&lt;h4&gt;&#39;</span> filename
+</code></pre></div>
+<p>Вывод команды <code>grep</code> может быть перенаправлен в файл, а при необходимости и предварительно отсортирован с помощью соответствующих командных конструкций перенаправления и конвейеризации.</p>
+
+<p>Разумеется, тем же способом можно создать общее оглавление для серии фрагментов, записанных в виде самостоятельных файлов — для этого достаточно только перечислить их имена в качестве аргументов команды. Так, например, если есть необходимость составления детальной карты сайта, включающей ссылки на подрубрики внутри отдельных <code>html</code>-документов, следует применить конструкцию типа:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> egrep <span class="s1">&#39;&lt;h1&gt;|&lt;h2&gt;|&lt;h3&gt;|&lt;h4&gt;&#39;</span> path/*.html &gt; sitemap.html
+</code></pre></div>
+<p>ещё одно замечательное свойство команды <code>grep</code> (и <code>egrep</code>) - возможность получения шаблона не со стандартного ввода (то есть не путем набора его с клавиатуры), а из файла. Так, если для приведенного выше случая создать простой текстовый файл <code>shablon</code>, содержащий строку</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">Часть|Глава|Раздел|Параграф
+</code></pre></div>
+<p>выполнять операцию по сборке оглавления впредь (и в любом тексте, хоть частично совпадающем по структуре с рассмотренным) можно будет выполнять таким образом:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> egrep -f shablon filename
+</code></pre></div>
+<p>Опция <code>-f</code> и указывает команде, что список параметров должен извлекаться из файла, указанного в качестве значения опции.</p>
+
+<p>Список опций команды <code>grep</code> не исчерпывается указанными выше. Так, опция <code>-i</code> предписывает игнорировать различие регистров внутри искомого выражения, опция <code>-h</code> - подавляет вывод имен файлов (выводится только содержание найденных строк), тогда как опция <code>-l</code>, напротив, выводит только имена файлов, содержащих найденный шаблон, но не текстовый фрагмент, опция <code>-n</code> выводит номера найденных строк в соответствующих файлах. Весьма важной представляется опция <code>-v</code>, обеспечивающая инверсию поиска: при указании ее выводятся строки, не содержащие шаблона поиска.</p>
+
+<p>Команда <code>grep</code> имеет и аналоги для поиска в сжатых файлах - команду <code>zgrep</code> и семейство команд <code>xzgrep</code>, о которых говорилось в миниочерке про архивацию и компрессию.</p>
+
+<h3 id="Поиск-в-файлах-утилита-search">Поиск в файлах: утилита search</h3>
+
+<p>В дистрибутиве <code>Mint</code> имеется фирменная утилита для поиска текстовых фрагментов в файлах — <code>search</code>. Она входит в состав пакета <code>mintsystem</code> (о котором подробней говорится в очерке об утилите <code>apt</code>) и располагается в каталоге <code>/usr/local/bin/</code>. Формат её вызова таков:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> search <span class="k">for</span> <span class="o">[</span>искомый фрагмент<span class="o">]</span> in <span class="o">[</span>каталог для поиска<span class="o">]</span>
+</code></pre></div>
+<p>Например, в форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> search <span class="k">for</span> <span class="s1">&#39;дистрибутив Mint&#39;</span> in /home/current/alv.me
+</code></pre></div>
+<p>она отыщет все абзацы с вхождением дистрибутив <code>Mint</code> во всех файлах указанного каталога и выведёт их в таком виде:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">/home/current/alv.me/mint/mint17-cin/mint17-02.txt:9:В числе родственников... нет, не примазавшихся, а настоящих, но пошедших другим путём, был и дистрибутив Mint. Сейчас не время обсуждать его взаимоотношения с прародительской Ububtu, но программу установки он унаследовал от неё практически без изменений. По крайней мере, до недавнего времени макроскопических различий в инсталляторах этих систем не наблюдалось.
+
+...
+</code></pre></div>
+<p>Команда <code>search</code> не является полной заменой утилит семейства <code>grep</code>, в частности, она не поддерживает регулярные выражения. Но вполне может служить более простой в использовании альтернативой во многих тривиальных случаях, столь частых в практике применителей-текстовиков.</p>
+
+<h3 id="sed-средство-потокового-редактирования">Sed: средство потокового редактирования</h3>
+
+<p>Весьма часто при обработке текстов встает такая задача: заменить одно слово (или последовательность слов) на другое сразу во многих файлах. Как она решается «подоконными» средствами? Обычно - открытием всех подлежащих изменению документов в word-процессоре и применением функции поиска/замены последовательно в каждом из них.</p>
+
+<p>Таким же способом можно воспользоваться и в <code>POSIX</code>-мире. Это просто, но уж больно скучно. Тем паче, что здесь есть очень эффективная альтернатива — средства потокового (неинтерактивного ) редактирования, примером которых является <code>sed</code>, с которым мы уже слегка познакомились в очерке о программах в автозапуске.</p>
+
+<p>Потоковое, или неинтерактивное, редактирование не требует загруки документа в память (то есть открытия), как в обычных текстовых редакторах и word-процессорах. Нет, при нем подлежащий изменению файл (или группа файлов) обрабатываются построчно с помощью соответствующих команд, задаваемых как опции единой командной директивы. В наши дни это выглядит анахронизмом, однако в ряде случаев оказывается чрезвычайно эффективным. Каких? - ответ легко дать на нескольких конкретных примерах.</p>
+
+<p>Так, при настройке системы нередко требуется внести мелкие однотипные изменения в серию конфигурационных файлов. Именно с такой ситуацией мы столкнулись, когда захотели увидеть все автоматически запускаемые при старте <code>Cinnamon</code> приложения. И тогда было самое время вспомнить про <code>sed</code>, с помощью которого эта задача была решена одной командой — не откажу себе в удовольствии напомнить её:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> sudo sed -i <span class="s1">&#39;s/NoDisplay=true/NoDisplay=false/&#39;</span> /etc/xdg/autostart/*
+</code></pre></div>
+<p>Другой случай - во многих десятках, а то и сотнях файлов требуется изменить одну-единственную строку, причём — одинаковым образом (например, заменить копирайт <code>Васи Пупкина</code> на <code>Петю Лавочкина</code>). Неужто для этой цели нужно вызывать мощный текстовый редактор, грузить в него немерянное количество документов, перемещаться тем или иным способом перемещаться к нужному фрагменту, вносить требуемое изменение? Отнюдь, ибо <code>sed</code> поможет и здесь, позволив выполнить изменение любого количества файлов в пакетном режиме.</p>
+
+<p>Во всем блеске <code>sed</code> показывает себя при редактировании очень больших файлов (одно пролистывание которых требует немалого времени). А также — при редактировании сложных символьных последовательностей в нескольких файлах. Однажды, после очередной реконструкции моего сайта, передо мной встала задача тотальной модификации всех внутренних ссылок. Долго я с ужасом размышлял, как буду делать это в текстовом редакторе, и сколько ошибок при этом насажаю. Пока, раскинув мозгами, не нашел, как сделать это с помощью <code>sed</code> - быстро и, главное, безошибочно.</p>
+
+<p>В самом общем виде <code>sed</code> требует двух аргументов — указания встроенной его команды и имени файла, к которому она должны быть применена. Впрочем, в качестве аргумента можно задать только простую команду, мало-мальски сложное действие (а команды поиска/замены принадлежат к числу сложных) необходимо определить через значения опции <code>-e</code>, заключенные в кавычки (одинарные или двойные - по ситуации). Что же касается имен файлов — то их в качестве аргументов можно указать сколько угодно, в том числе и с помощью масок типа <code>*</code>, <code>*.txt</code> и так далее. Правда, <code>sed</code> не обрабатывает содержимое вложенных подкаталогов, но это — дело поправимое (как — скоро увидим). Так что поиск и замена слова или их последовательности выполняются такой конструкцией:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> sed -e <span class="s1">&#39;s/Вася Пупкин/Петя Лавочкин/&#39;</span> *
+</code></pre></div>
+<p>Здесь <code>s</code> - это команда поиска, <code>Вася Пупкин</code> - искомый текст, а <code>Петя Лавочкин</code> - текст для замены. В приведенной форме команда выполнит поиск и замену только первого вхождения искомого текста. Чтобы заменить текст по всему файлу, после последнего слэша (он обязателен в любом случае, без него <code>sed</code> не распознает конца заменяющего фрагмента) нужно указать флаг <code>g</code> (от <code>global</code>). Важно помнить, что если оставить заменяющее поле пустым, искомый текст будет просто удален.</p>
+
+<p>По умолчанию sed выводит результаты своей работы на стандартный вывод, не внося изменений в файлы аргументы. Так где же здесь редактирование? Оно обеспечивается другой опцией - <code>-i</code>, указание которой внесет изменения непосредственно в обрабатываемый файл. В результате команда для замены, например, всех вхождений <code>html</code> на <code>shtml</code> во всех файлах текущего каталога будет выглядеть так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> sed -i -e <span class="s1">&#39;s/html/shtml&#39;</span> *
+</code></pre></div>
+<p>А что делать, если таким же образом нужно обработать файлы во всех вложенных подкаталогах? Придется вспомнить об универсальной команде <code>find</code>, о которой мы не так давно говорили. В форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find . -name * -exec sed -i -e <span class="s1">&#39;s/html/shtml&#39;</span> * <span class="o">{}</span> <span class="se">\</span>
+</code></pre></div>
+<p>она с успехом справится с этой задачей.</p>
+
+<p>Я привел лишь элементарные примеры использования sed. На самом деле возможности его много шире, но их описание далеко выходит за рамки этого краткого введения.</p>
+
+
+  <br />
+      <div class='row'>
+        <div class='col-sm-4 col-xs-6'>
+          <a href='/ru/17-1-Rebecca/120_cli_base.html'>&larr; Основы командного интерфейса</a>
+        </div>
+        <div class='col-sm-4 hidden-xs' style='text-align: center'>
+          | <b>Утилиты CLI</b> |
+        </div>
+        <div class='col-sm-4 col-xs-6' style='text-align: right'>
+          
+        </div>
+      </div>
+
+</div>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-lg-12 footer">
+      2015 Алексей Alv Федорчук.<br />
+       Site last generated: Feb 9, 2016 <br />
+      <p><a href="http://linuxmint.com/"><img title="http://linuxmint.com/" width="50" src="/images/menu.svg"/></a></p>
+    </div>
+  </div>
+</footer>
+
+    </div><!-- /.row -->
+  </div>    <!-- /.container -->
+</body>
+
+</html>

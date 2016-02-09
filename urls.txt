@@ -102,6 +102,12 @@ index:
   link: "<a href='120_cli_base.html'>Основы командного интерфейса</a>"
 
 
+130_cli_utils:
+  title: "Утилиты CLI"
+  url: "130_cli_utils.html"
+  link: "<a href='130_cli_utils.html'>Утилиты CLI</a>"
+
+
 
 
 
