@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Текстовый редактор nano  | Linux Mint и его Cinnamon (Алексей Alv Федорчук)</title>
+<link rel="stylesheet" type="text/css" href="/css/syntax.css">
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/modern-business.css">
+<link rel="stylesheet" type="text/css" href="/css/lavish-bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/css/customstyles.css">
+<link rel="stylesheet" type="text/css" href="/css/theme-green.css">
+<script src="/js/jquery.2.1.4.min.js"></script>
+<script src="/js/jquery.cookie.1.4.1.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+<script src="/js/bootstrap.3.3.4.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+
+
+
+ 
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </head>
+
+<body>
+  <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Linux Mint и его Cinnamon</span></a>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                <li><a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll" target="_blank">Github Repo</a></li>
+                
+                
+                
+                
+
+
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+
+                <li class="dropdown">
+                    
+                    
+                    
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        
+                        <li><a href="doc_about.html">About this theme</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_support.html">Support</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_troubleshooting.html">Troubleshooting</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+                <!-- special insertion -->
+
+               
+                <!-- Send feedback function -->
+<script>
+function SendLinkByMail(href) {
+var subject= "Linux Mint и его Cinnamon (Алексей Alv Федорчук) feedback";
+var body = "I have some feedback about the Текстовый редактор nano page: ";
+body += window.location.href;
+body += "";
+var uri = "mailto:nemilya@gmail.com?subject=";
+uri += encodeURIComponent(subject);
+uri += "&body=";
+uri += encodeURIComponent(body);
+window.location.href = uri;
+}
+</script>
+
+<li><a href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B" target="_blank"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+
+
+                <li>
+                <!-- start search -->
+                <div id="search-demo-container">
+                <input type="text" id="search-input" placeholder="search...">
+                <ul id="results-container"></ul>
+                </div>
+                <script src="js/jekyll-search.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                SimpleJekyllSearch.init({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                dataSource: 'search.json',
+                searchResultTemplate: '<li><a href="{url}" title="Текстовый редактор nano">{title}</a></li>',
+                noResultsText: 'No results found.',
+                limit: 10,
+                fuzzy: true,
+                })
+                </script>
+                <!-- end search -->
+                </li>
+
+                
+<script language="JavaScript" type="text/javascript">
+
+    $( document ).ready(function() {
+        if (top.location == location)  {
+            $(".escapeMe").remove();
+        }
+
+    });
+
+            function breakout_of_frame() {
+                if (top.location != location) {
+                    window.open(window.location.href, '_blank');
+
+                }
+
+            }
+</script>
+
+<li class="escapeMe">
+    <a href="#" onclick="breakout_of_frame()" ><i class="fa fa-sign-out"></i> Pop-out</a>
+</li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    
+      <!-- Content Row -->
+<div class="row">
+  <!-- Sidebar Column -->
+  <div class="col-md-3">
+    <script>
+      $(document).ready(function() {
+        // Initialize navgoco with default options
+        $("#mysidebar").navgoco({
+          caretHtml: '',
+          accordion: true,
+          openClass: 'active', // open
+          save: false, // leave false or nav highlighting doesn't work right
+          cookie: {
+            name: 'navgoco',
+            expires: false,
+            path: '/'
+          },
+          slide: {
+            duration: 400,
+            easing: 'swing'
+            }
+          });
+
+          $("#collapseAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', true);
+          });
+
+        });
+      </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul id="mysidebar" class="nav">
+      <div class="siteTagline">Linux&nbsp;Mint Cinnamon</div>
+      <div class="versionTagline">version 17.1 (Rebecca)</div>
+
+      
+        
+          <li><a href="#">Вступление</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/index.html">Аннотация</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/010_about_book.html">Об этой книге</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Введение</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/020_linux_mint_into.html">Введение в Linux Mint</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/030_cinnamon_intro.html">Введение в Cinnamon</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Linux Mint: установка</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/040_linux_mint_installation.html">Linux Mint: установка</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Mint и Cinnamon</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/050_mint_and_cinnamon_obzor.html">Обзор среды</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/060_cinnamon_system_config.html">Cinnamon и системные настройки</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/070_section_parameters.html">Секция Параметры</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/080_devices.html">Секция Оборудование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/090_admins.html">Секция Администрирование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/100_mint_utils.html">Mint: фирменный инструментарий</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/110_other_config.html">Прочие настройки</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/120_cli_base.html">Основы командного интерфейса</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/130_cli_utils.html">Утилиты CLI</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li class="active"><a href="/ru/17-1-Rebecca/140_nano.html">Текстовый редактор nano</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+      
+    </ul>
+
+    
+  </div>
+  <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
+  <script>$("li.active").parents('li').toggleClass("active");</script>
+
+    
+    <!-- Content Column -->
+    <div class="col-md-9">
+      <div class="post-header">
+   <h1 class="post-title-main">Текстовый редактор nano</h1>
+</div>
+
+<div class="post-content">
+
+   
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+
+  <p>Только что я попытался показать мощь неинтерактивного редактирования, доступную благодаря потоковому редактору <code>sed</code>. Однако, как бы силён он не был, иногда при всякого рода конфигурировании возникает необходимость и в настоящем текстовом редакторе, интерактивном. Причём желательно способном работать и в терминальном окне графического сеанса, и в «чёрной» консоли.</p>
+
+<p>Записные линуксоиды обычно в таких случаях советуют начинающим применителям <code>Vim</code> или <code>Emacs</code>, в зависимости от собственной религиозной ориентации. Напрочь забывая о том, что эффективная работа в обоих этих редакторах возможна только при доведённых до автоматизма навыках, и к тому же навыках, постоянно тренируемых — иначе они утрачиваются очень быстро. При необходимости же поправить пару строк в конфиге раз или два в месяц приобретать такие навыки просто не имеет смысла.</p>
+
+<p>А вот редактор <code>Nano</code> вполне может сыграть роль своего рода амортизатора для начинающего применителя. Да, это не <code>Vim</code>, не <code>Emacs</code>, и даже не <code>joe</code>. Но с задачей конфигурирования справляется успешно. А в освоении и обращении — прост, как грабли. Не случайно во многих дистрибутивах Linux он по умолчанию предлагается в качестве общесистемного. В том числе и в таких юзерофильных, как семейство <code>Ubuntu</code>, представители которого, с одной стороны, имеют штатные, мощные и удобные, инструменты редактирования в своих интегрированных средах, с другой — и Vim&#39;ом эти системы не обделены, да и Emacs им устанавливать не возбраняется. Но даже в этих «борброжелательных» дистрибутивах иногда возникает потребность в простом и лёгком консольном редакторе. А многие ли из начинающих применителей способны сразу же смотреть на <code>Vim</code> и <code>Emacs</code> без содрогания?</p>
+
+<p>Столь длинное вступление направлено к тому, что затратить толику времени на освоение <code>Nano</code> — дело стоящее для многих линуксоидов, в том числе и начинающих применителей <code>Mint</code>. Тем более, что, как уже было сказано, в освоении он прост, а возможностей у него больше, чем может показаться на первый взгляд.</p>
+
+<p>Итак, представляю: редактор <code>Nano</code>, или, точнее, <code>GNU nano</code>. Характеризуется авторами как маленький и дружелюбный. Что в целом соответствует истине. Официальным местопребыванием имеет сайт <a href="http://www.nano-editor.org/">http://www.nano-editor.org</a>, где его текущая стабильная версия (2.2.6) доступна в виде тарбалла исходников и бинарников в форматах <code>rpm</code> и <code>deb</code>.</p>
+
+<p>Впрочем, применителям <code>Mint</code> заботиться о скачивании бинарников и тем более исходников не придётся: <code>Nano</code> имеется в официальном репозитории этого дистрибутива и, более того, устанавливается по умолчанию с инсталляционного Live-носителя, после чего немедленно готов к работе.</p>
+
+<p>Запускается <code>Nano</code> из командной строки консоли или терминального окна одноименной командой, можно — с указанием имени файла, существующего или нового (в последнем случае, как обычно, файл с таким именем будет создан). Поддерживается несколько опций командной строки, как то: <code>-T #</code>, устанавливающей величину (в символах) табуляции, <code>-i</code>, включающей автоматические отступы, <code>-w</code>, отключающей режим жёсткого переноса строк на границе экрана (что очень важно при редактировании конфигурационных файлов), <code>-$</code>, напротив, включающей режим переноса «мягкого» (так называемый softwrap), при котором визуальный перенос осуществляется без разрыва строки, и так далее. Полный список стартовых опций можно посмотреть посредством</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> man <span class="m">1</span> nano
+</code></pre></div>
+<p>Кроме того, практически все эти опции могут быть прописаны в конфигурационном файле в качестве умолчальных.</p>
+
+<p>Общесистемный конфигурационный файл редактора — <code>/etc/nanorc</code>. Его можно скопировать в свой домашний каталог</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cp /etc/nanorc ~/.nanorc
+</code></pre></div>
+<p>После чего редактировать в своё удовольствие. Кроме того, в каталоге <code>/usr/share/nano</code> имеется большое количество примеров конфигов, адаптированных для разных языков программирования и разметки, а также специально для некоторых дистрибутивов (<code>Gentoo</code>, <code>Debian</code>).</p>
+
+<p>Впрочем, умолчальный конфиг кажется мне вполне соответствующим своим задачам. Единственное вносимое мной в него изменение — это включение режима «мягких» переносов по умолчанию. Для чего нужно снять комментарий со строки</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">set softwrap
+</code></pre></div>
+<p>И, напротив, закрыть комментарием строку</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#set nowrap
+</code></pre></div>
+<p>После этого <code>Nano</code> становится равно пригодным и для редактирования конфигурационных файлов (которые, как известно, не любят произвольных разрывов строк), и для сочинения «мирных» текстов, в которых уходящие за горизонт экрана строки очень мешают, а жёсткие их разрывы также не полезны, ибо затрудняют в дальнейшем поиск.</p>
+
+<p>Поиск, кстати, осуществляется комбинацией клавиш <code>Control+w</code> с последующим нажатием на <code>Enter</code>, повторямыми, сколько требуется. А для замены, в том числе глобальной, используется комбинация <code>Control</code> плюс обратный слэш (<code>\</code>) или <code>Meta+R</code>.</p>
+
+<p>После запуска <code>Nano</code> с указанием существующего файла в качестве аргумента (например, его собственного «домашнего» конфига) перед глазами возникает примерно такая картина:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/nano_001.png"><img src="http://alv.me/wp-content/img/im_cin_img/nano_001-539x572.png" alt="Изображение234"></a></p>
+
+<p>Вверху — титульная строка, в которой выводятся номер версии программы, имя открытого файла и, в правом углу, сообщение о том, что файл был изменен. В нижней части экрана можно видеть зону подсказки — список основных управляющих клавишных последовательностей (образованных сочетанием <code>Control+литера</code>) с пояснениями на языке установленной локали.</p>
+
+<p>Главнейшей из управляющих последовательностей на первых порах знакомства с редактором будет <code>Control+g</code> (литерные клавиши последовательностей к регистру не чувствительны). Она вызывается весьма подробную справку, в том числе и о тех последовательностях, которые не уместились в двух нижних строках рабочей области. Та же самая справка вызывается и клавишей <code>F1</code> — если она не перехватывается средой, как это имеет место быть в <code>GNOME Terminal</code>&#39;е, который <code>Cinnamon</code> юзает вместо отсутствующего родного.</p>
+
+<p>Вообще поначалу удобно разместить рядом два терминальных окна, и в одном открывать текст для набора или редактирования, а в другом — вызвать справку и постоянно с ней сверяться:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/nano_002.png"><img src="http://alv.me/wp-content/img/im_cin_img/nano_002-572x321.png" alt="Изображение235"></a></p>
+
+<p>Потому что, повторяю, управляющих последовательностей в <code>Nano</code> довольно много — больше, чем можно запомнить с одного просмотра, и все они полезны в практической работе.</p>
+
+<p>А ещё они бывают двух видов — в сочетании с клавишей <code>Control</code> и с клавишей <code>Meta</code>. Последней на современных клавиатурах не найти — она эмулируется либо нажатием клавиши <code>Alt</code>, либо нажатием и отпусканием клавиши <code>Escape</code>, хотя поледний способ и не всегда срабатывает..</p>
+
+<p>Собственно управляющие последовательности, <code>Control+литера</code>, предназначены в основном для редактирования текста и операций с файлами. Управляющие последовательности частично дублируются функциональными клавишами <code>F1–F16</code>. Отсутствующие на клавиатуре функциональные клавиши с <code>F13</code> по <code>F16</code> вызываются посредством сочетания <code>Shift+F1–F4</code>.</p>
+
+<p><code>Meta-последовательности</code> (то есть сочетания <code>Meta+литера</code>) теоретически предназначены в основном для временого изменения настроек редактора (тот же результат достигается и опциями командной строки). Однако порою клавиша <code>Meta</code> выступает в роли «усилителя» <code>Control-последовательности</code>.</p>
+
+<p>К слову сказать, в «голой» консоли и <code>Control-</code>, и <code>Meta-последовательности</code> работают при любой раскладке клавиатуры, что латинской, что русской. А вот в терминальных окнах <code>Cinnamon</code> Meta-последовательности при русской раскладке клавиатуры выполнять свои функции отказываются.</p>
+
+<p>Описывать все управляющие и <code>Meta-последовательности</code> не буду — это сделано в той самой экранной подсказке, да в тому же в локализованной системе — на русском языке. Замечу только, что ничего страшного в них нет. Кейбиндинги для навигации по тексту и его редактирования — так называемые <code>Emacs-подобные</code>, примерно такие же, как в шеллах типа <code>Bash</code> или <code>Zsh</code>. И применителю любой из <code>Sh-подобных</code> командных оболочек могут показаться непривычными только те последовательности, которые отражают специфические функции <code>Nano</code> как редактора. Вот эти-то функции рассмотреть стоит.</p>
+
+<p>Как нетрудно догадаться, текстовый редактор может вводить и редактировать тексты, и <code>Nano</code> тут не исключение. Причём он умеет делать это в нескольких документах параллельно — каждый из них открывается в собственном так называемом буфере. Для чего сначала нужно включить мультибуферный режим — делается это <code>meta-последовательностью</code> <code>Meta+F</code>. Затем каждый новый буфер открывается с помощью комбинации <code>Control+R</code>, либо введя имя файла непосредственно в появившейся строке, либо, нажав <code>Control+T</code>, перейти в режим визуального выбора файла:</p>
+
+<p><a href="http://alv.me/wp-content/img/2014/12/nano_003.png"><img src="http://alv.me/wp-content/img/im_cin_img/nano_003-521x572.png" alt="Изображение236"></a></p>
+
+<p>Число открытых буферов вроде бы ничем не ограничено — разве что объёмом памяти. Переключение между ними — с помощью <code>Meta+&gt;</code> (вперёд) и <code>Meta+&lt;</code> (назад).</p>
+
+<p>Если при задйствовании нескольких буферов отключить мультибуферный режим (это делается повторением комбинации <code>Meta+F</code>), то открытые буфера никуда не деваются, и переключаться между ними можно по прежнему, но вот открыть новый буфер уже не получится до повторного включения мультибуферного режима. А в днобуферном режиме комбинация <code>Control+R</code> после выбора файла вместо открытия втсавит его содержимое в позиции курсора текущего документа.</p>
+
+<p>Между буферами возможен обмен данными. Так, строка, скопированная (посредством <code>Meta+6</code>) или вырезанная (комбинацией <code>Control+K</code>) в одном буфере, может быть вставлена (с помощью <code>Control+U</code>) в другом. Ну и в «родном», разумеется, тоже.</p>
+
+<p>Надо заметить, что в <code>Nano</code> есть и другой способ одновременного редактирования нескольких файлов. Комбинация клавиш <code>Meta+Z</code> приостанавливает работу редактора (точнее, переводит его в фоновый режим), возвращая приглашение командной строки, в которой <code>Nano</code> можно запустить заново. Но это будет уже другой его экземпляр, и обмен между ними через буфер невозможен — это можно сделать только «мышиным» выделением и вставкой кликом средней её кнопкой. Однако в этой временной командной строке можно выполнить какие-либо команды, а результаты через то же «мышиное» выделение поместить в редактируемый документ. Возврат в который из командной строки — по команде <code>fg</code>.</p>
+
+<p>Очень полезная особенность <code>Nano</code> — возможность включения режима мягкого переноса слов (точнее, символов — <code>softwrap</code>), о которой я уже говорил. Здесь же добавлю, что это можно сделать не только через конфиг или опцию запуска <code>Nano</code>, но и прямо в его сеансе — последовательностью <code>Meta+$</code>. Я уделяю этому вопросу столько внимания, потому что такая, казалось бы, мелочь очень важна для сочинителя нарративных текстов — и не только при доводке их в word-процессоре или программе вёрстки, где лишние разрывы строк — вечный повод для головной боли. Не меньше они мешаются при поиске в архивах собственной нетленки по смутно запомнившимся её фрагментам.</p>
+
+<p>Думаю, важность подстветки синтаксиса понимают не только программисты и профессиональные web-разработчики. Ибо мода сочинять конфиги в XML-формате затронула многие рабочие среды. А разобраться в XML-файле без подсветки — проще удавиться. Да и сочинителям нарративных текстов, не брезгующим одновременно их разметкой (в <code>HTML</code> ли, или в <code>TeX</code>) это тоже лишним не покажется. И Nano поддерживает оную с давних пор, а с некоторого времени эта фича включена в нём по умолчанию. Список поддерживаемых языков программирования и разметки, а также дистрибутив-специфичных файлов можно посмотреть так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls /usr/share/nano
+</code></pre></div>
+<p>И выглядит он следующим образом:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">asm.nanorc      groff.nanorc     nanorc.nanorc  ruby.nanorc
+
+awk.nanorc      html.nanorc      objc.nanorc    sh.nanorc
+
+cmake.nanorc    java.nanorc      ocaml.nanorc   tcl.nanorc
+
+c.nanorc        makefile.nanorc  patch.nanorc   tex.nanorc
+
+css.nanorc      man.nanorc       perl.nanorc    xml.nanorc
+
+debian.nanorc   mgp.nanorc       php.nanorc
+
+fortran.nanorc  mutt.nanorc      pov.nanorc
+
+gentoo.nanorc   nano-menu.xpm    python.nanorc
+</code></pre></div>
+<p>Правда, возможно, цветовая гамма в них не всем покажется идеальной. Но, как известно, на цвет товарищей нет, и никто не мешает отредактировать её вкусу своих фломастеров.</p>
+
+<p>Далее — проверка орфографии, которая одинаково важна для всех применителей, даже тех, кто, подобно автору этих строк, ею подчас манкирует. Для обеспечения оной в файле <code>~/nanorc</code> нужно снять комментарий со строки</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">set speller &quot;aspell -x -c&quot;
+</code></pre></div>
+<p>После чего по комбинации <code>Control+T</code> (или по клавише <code>F12</code>, если та не задействована для других целей, например, вызова выпадающего терминала) для спеллинга будет вызываться программа <code>aspell</code> — если она, конечно, установлена и снабжена словарем для требующегося языка. В <code>Mint</code> пакет <code>aspell</code> устанавливается по умолчанию, но сопровождается только английским словарём. Так что для обеспечения проверки орфографии в русскоязычных текстах надо установить пакет <code>aspell-ru</code>.</p>
+
+<p>И, наконец, остается только сделать <code>Nano</code> редактором по умолчанию — чтобы использовать его по умолчанию в командах типа <code>sudoedit</code> и <code>visudo</code> (а также везде, где потребуется впредь). Для чего воспользуемся им самим же, открыв в нем конфигурационный файл своей пользовательской командной оболочки. Например, для <code>Bash</code> — так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> nano ~/.bashrc
+</code></pre></div>
+<p>И вписав в него такую вот строку:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">export EDITOR=nano
+</code></pre></div>
+<p>определяющую переменную среды <code>EDITOR</code>. Теперь редактор nano будет вызываться при редактировании системных конфигов, например, командой <code>sudoedit</code>.</p>
+
+<p>Функциональные возможности <code>Nano</code> на фоне <code>Vim</code> или <code>Emacs</code> не производят впечатления исключительно богатых. Однако это — не только минус, но и плюс: ограниченный набор функций легче освоить и особенно — держать в голове при эпизодическом применении. Тем более, что их хватает не только на несложную правку мелких конфигов, но и на сочинение не слишком масштабных нарративных текстов.</p>
+
+
+  <br />
+      <div class='row'>
+        <div class='col-sm-4 col-xs-6'>
+          <a href='/ru/17-1-Rebecca/130_cli_utils.html'>&larr; Утилиты CLI</a>
+        </div>
+        <div class='col-sm-4 hidden-xs' style='text-align: center'>
+          | <b>Текстовый редактор nano</b> |
+        </div>
+        <div class='col-sm-4 col-xs-6' style='text-align: right'>
+          
+        </div>
+      </div>
+
+</div>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-lg-12 footer">
+      2015 Алексей Alv Федорчук.<br />
+       Site last generated: Feb 17, 2016 <br />
+      <p><a href="http://linuxmint.com/"><img title="http://linuxmint.com/" width="50" src="/images/menu.svg"/></a></p>
+    </div>
+  </div>
+</footer>
+
+    </div><!-- /.row -->
+  </div>    <!-- /.container -->
+</body>
+
+</html>

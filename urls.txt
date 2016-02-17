@@ -108,6 +108,12 @@ index:
   link: "<a href='130_cli_utils.html'>Утилиты CLI</a>"
 
 
+140_nano:
+  title: "Текстовый редактор nano"
+  url: "140_nano.html"
+  link: "<a href='140_nano.html'>Текстовый редактор nano</a>"
+
+
 
 
 
