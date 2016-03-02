@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Mint и Zsh  | Linux Mint и его Cinnamon (Алексей Alv Федорчук)</title>
+<link rel="stylesheet" type="text/css" href="/css/syntax.css">
+<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/css/modern-business.css">
+<link rel="stylesheet" type="text/css" href="/css/lavish-bootstrap.css">
+<link rel="stylesheet" type="text/css" href="/css/customstyles.css">
+<link rel="stylesheet" type="text/css" href="/css/theme-green.css">
+<script src="/js/jquery.2.1.4.min.js"></script>
+<script src="/js/jquery.cookie.1.4.1.min.js"></script>
+<script src="/js/jquery.navgoco.min.js"></script>
+<script src="/js/bootstrap.3.3.4.min.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/customscripts.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+
+
+
+
+ 
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+  </head>
+
+<body>
+  <!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+            <a class="fa fa-home fa-lg navbar-brand" href="/index.html">&nbsp;<span class="projectTitle"> Linux Mint и его Cinnamon</span></a>
+            
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+                
+                
+                
+                <li><a href="https://github.com/linuxmint-cinnamon-manual/linuxmint-cinnamon-jekyll" target="_blank">Github Repo</a></li>
+                
+                
+                
+                
+
+
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+
+                <li class="dropdown">
+                    
+                    
+                    
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        
+                        <li><a href="doc_about.html">About this theme</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_support.html">Support</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="doc_troubleshooting.html">Troubleshooting</a></li>
+                        
+                        
+                        
+                        
+                        
+                        <li><a href="https://talk.jekyllrb.com" target="_blank">Jekyll Talk</a></li>
+                        
+                        
+                        
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+                <!-- special insertion -->
+
+               
+                <!-- Send feedback function -->
+<script>
+function SendLinkByMail(href) {
+var subject= "Linux Mint и его Cinnamon (Алексей Alv Федорчук) feedback";
+var body = "I have some feedback about the Mint и Zsh page: ";
+body += window.location.href;
+body += "";
+var uri = "mailto:nemilya@gmail.com?subject=";
+uri += encodeURIComponent(subject);
+uri += "&body=";
+uri += encodeURIComponent(body);
+window.location.href = uri;
+}
+</script>
+
+<li><a href="javascript:(function()%7BSendLinkByMail()%3B%7D)()%3B" target="_blank"><i class="fa fa-envelope-o"></i> Feedback</a></li>
+
+
+                <li>
+                <!-- start search -->
+                <div id="search-demo-container">
+                <input type="text" id="search-input" placeholder="search...">
+                <ul id="results-container"></ul>
+                </div>
+                <script src="js/jekyll-search.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                SimpleJekyllSearch.init({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                dataSource: 'search.json',
+                searchResultTemplate: '<li><a href="{url}" title="Mint и Zsh">{title}</a></li>',
+                noResultsText: 'No results found.',
+                limit: 10,
+                fuzzy: true,
+                })
+                </script>
+                <!-- end search -->
+                </li>
+
+                
+<script language="JavaScript" type="text/javascript">
+
+    $( document ).ready(function() {
+        if (top.location == location)  {
+            $(".escapeMe").remove();
+        }
+
+    });
+
+            function breakout_of_frame() {
+                if (top.location != location) {
+                    window.open(window.location.href, '_blank');
+
+                }
+
+            }
+</script>
+
+<li class="escapeMe">
+    <a href="#" onclick="breakout_of_frame()" ><i class="fa fa-sign-out"></i> Pop-out</a>
+</li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    
+      <!-- Content Row -->
+<div class="row">
+  <!-- Sidebar Column -->
+  <div class="col-md-3">
+    <script>
+      $(document).ready(function() {
+        // Initialize navgoco with default options
+        $("#mysidebar").navgoco({
+          caretHtml: '',
+          accordion: true,
+          openClass: 'active', // open
+          save: false, // leave false or nav highlighting doesn't work right
+          cookie: {
+            name: 'navgoco',
+            expires: false,
+            path: '/'
+          },
+          slide: {
+            duration: 400,
+            easing: 'swing'
+            }
+          });
+
+          $("#collapseAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+            e.preventDefault();
+            $("#mysidebar").navgoco('toggle', true);
+          });
+
+        });
+      </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul id="mysidebar" class="nav">
+      <div class="siteTagline">Linux&nbsp;Mint Cinnamon</div>
+      <div class="versionTagline">version 17.1 (Rebecca)</div>
+
+      
+        
+          <li><a href="#">Вступление</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/index.html">Аннотация</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/010_about_book.html">Об этой книге</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Введение</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/020_linux_mint_into.html">Введение в Linux Mint</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/030_cinnamon_intro.html">Введение в Cinnamon</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Linux Mint: установка</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/040_linux_mint_installation.html">Linux Mint: установка</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+          <li><a href="#">Mint и Cinnamon</a>
+            <ul>
+            
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/050_mint_and_cinnamon_obzor.html">Обзор среды</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/060_cinnamon_system_config.html">Cinnamon и системные настройки</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/070_section_parameters.html">Секция Параметры</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/080_devices.html">Секция Оборудование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/090_admins.html">Секция Администрирование</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/100_mint_utils.html">Mint: фирменный инструментарий</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/110_other_config.html">Прочие настройки</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/120_cli_base.html">Основы командного интерфейса</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/130_cli_utils.html">Утилиты CLI</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li><a href="/ru/17-1-Rebecca/140_nano.html">Текстовый редактор nano</a></li>
+              
+
+              
+          </li>
+        
+              
+              
+              
+                <li class="active"><a href="/ru/17-1-Rebecca/150_mint_and_zsh.html">Mint и Zsh</a></li>
+              
+
+              
+          </li>
+        
+        
+        </ul>
+          <!-- </li> -->
+        
+      
+    </ul>
+
+    
+  </div>
+  <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above.-->
+  <script>$("li.active").parents('li').toggleClass("active");</script>
+
+    
+    <!-- Content Column -->
+    <div class="col-md-9">
+      <div class="post-header">
+   <h1 class="post-title-main">Mint и Zsh</h1>
+</div>
+
+<div class="post-content">
+
+   
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+
+  <p>В предыдущем очерке работа в <code>CLI</code> была рассмотрена на примере <code>Bash</code> — самой распространённой командной оболочки Linux&#39;а. Однако о ней написаны пуды бумажной литературы и мегабайты сетевых материалов, повторять которые было бы скучно. И к тому же в реальной жизни я её практически не использую. Поэтому далее будет рассмотрена оболочка <code>Zsh</code>.</p>
+
+<p>Кроме борьбы со скукой, есть и немало более технических аргументов в пользу применения <code>Zsh</code> как пользовательской оболочки (<code>login shell</code>):</p>
+
+<ul>
+<li>функциональность, существенно превосходящая возможности <code>Bash</code> в интерактивной работе;</li>
+<li>расширяемость за счёт дополнительных модулей;</li>
+<li>настраиваемость, ограниченная практически только фантазией применителя;</li>
+<li>прекрасная документированность — объём официальной документации составляет более 3 МБ в формате HTML (не считая прочих форматов);</li>
+<li>активное сообщество энтузиастов — разработчиков и применителей.</li>
+</ul>
+
+<p>Не последним аргументом в пользу <code>Zsh</code> является его отличная интеграция с утилитой <code>apt</code>, лежащей в основе пакетного менеджмента дистрибутива <code>Mint</code>. До сих пор, описывая действия по управлению пакетами в <code>CLI</code>, я, будучи давним пользователем <code>Zsh</code>, приводил их к общему знаменателю с <code>Bash</code>. В один прекрасный момент мне это надоело. Причём отказываться от мощного функционала <code>Zsh</code>, к которому привык так, что без него как без рук, не не собираюсь. И потому решил впредь помещать в тексты своих сочинений команды в «Zsh&#39;изированной» форме. А для пояснения их сути — написать настоящуюю серию мини-очерков и включить её в книгу про <code>Mint</code>.</p>
+
+<h3 id="zsh-как-login-shell">Zsh как login shell</h3>
+
+<p>В <code>Mint</code> в качестве системной командной оболочки, то есть интерпретатора общесистемных сценариев, выступает <code>Dash (Debian-клон оболочки Альмквиста,</code>ash<code>), лёгкая и компактная, но имеющая слабые возможности для интерактивной работы. Для последней, как и в подавляющем большинстве дистрибутивов</code>Linux<code>, используется</code>Bash<code>, которая является пользовательской оболочкой (</code>login shell<code>) по умолчанию. Что же до</code>Zsh<code>, она отсутствует в стандартной инсталляции</code>Mint`, но доступна в официальном репозитории, из которого легко может быть установлена.</p>
+
+<p>Начинающему применителю Mint проще всего установить <code>Zsh</code> с помощью описанного ранее менеджера пакетов. Для чего сначала надо отыскать соответствующий пакет:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_001.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_001-572x461.png" alt="Изображение237"></a> <a href="http://alv.me/wp-content/img/2015/01/zsh_001.png"></a></p>
+
+<p>После чего поглядеть на его описание и установить:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_002.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_002-572x530.png" alt="Изображение238"></a> <a href="http://alv.me/wp-content/img/2015/01/zsh_002.png"></a></p>
+
+<p>Однако просто иметь <code>Zsh</code> мало — его надо сделать регистрационной оболочкой (<code>login shell</code>) в своём аккаунте. Как ни странно, в обоих графических модулях <code>Системных настроек</code> <code>Cinnamon</code> такой возможности нет. Однако можно прибегнуть к графической утилите <code>usermode</code>, предварительно установив её через <code>Менеджер приложений</code> и запустив из главного меню, где она скрывается в секции <code>Параметры</code> под именем <code>О себе</code> и после запуска выглядит таким образом:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_003.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_003.png" alt="Изображение239"></a></p>
+
+<p>После установки <code>Zsh</code> её можно будет выбрать из выпадающего списка в поле <code>Оболочка</code>:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_004.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_004.png" alt="Изображение240"></a> <a href="http://alv.me/wp-content/img/2015/01/zsh_004.png"></a></p>
+
+<p>Кажется, это единственное, что может сделать полезного данная утилита. Поэтому возникает вопрос — а стоит ли устанавливать её ради разовой операции? Может быть, лучше прибегнуть к самому простому способу смены <code>login shell</code> — прямой команде? Тот этой:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> chsh -s /bin/zsh
+</code></pre></div>
+<p>Вопрос, как вы понимаете, риторический…</p>
+
+<p>Каким бы образом ни была назначена <code>Zsh</code> любимой женой пользовательской командной оболочкой, следующая авторизация данного пользователя в «голой» консоли однозначно её запустит. В эмуляторах же терминала, возможно, потребуется внести некоторые изменения в их настройках, например, предписать запуск <code>/bin/zsh</code> явным образом, или отметить опцию запуска оболочки как <code>login shell</code>.</p>
+
+<p>В любом случае первый запуск сеанса пользователя с новой оболочкой предложит такие варианты выбора:</p>
+
+<ul>
+<li>q — выход из программы автоконфигурирования без последствий; при следующем входе в оболочку вызов её будет повторён;</li>
+<li>0 — выход из автоконфигурирования с созданием пустого конфига <code>~/.zshrc</code>, предотвращающем в дальнейшем повторения автоконфигурирования;</li>
+<li>1 — вызов главного меню;</li>
+<li>2 — создание конфига <code>~/.zshrc</code> по образу и подобию эталонного, <code>/etc/zsh/newuser.zshrc.recommended</code>, который в дальнейшем может редактироваться вручную.</li>
+</ul>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_005.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_005-572x321.png" alt="Изображение241"></a> <a href="http://alv.me/wp-content/img/2015/01/zsh_005.png"></a></p>
+
+<p>С вариантом <code>q</code> всё ясно, это просто откладывание вопроса на потом, вариант <code>1</code>, с автоконфигурированием, был некогда <a href="http://fossbook.info/subproj/shell/1120">описан достаточно подробно</a>, и с тех пор процесс этот ничуть не изменился, вариант же <code>2</code> зависит от настроек общего конфига оболочки, принятых майнтайнерами данного дистрибутива. Так что я хотел бы сконцентрировать внимание на «нулевом» варианте. И последовательно рассмотреть все настройки, которые потребуется выполнить применителю для создания комфортной среды <code>CLI</code>. Не абстрактно, разумеется, а применительно к целям и задачам себя, любимого. Так что читатель должен воспринимать всё сказанное в этих очерках далее, не как догму, а как руководство к действиям, то есть экспериментам, и к размышлениям о своих потребностях.</p>
+
+<p>Однако прежде отмечу, что применителю не обязательно сразу определять <code>Zsh</code> как <code>login shell</code>. Он может вызвать её из командной строки <code>Bash</code>:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> /bin/zsh
+</code></pre></div>
+<p>Запуск <code>Zsh</code> ознаменуется сменой вида приглашения командной строки с Bash&#39;евской, которая в Mint&#39;е по умолчанию выглядит так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">zshuser@alv-cinn ~ $</span>
+</code></pre></div>
+<p>на умолчальную Zsh&#39;еву:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">alv-cinn%</span>
+</code></pre></div>
+<p>Вот с настройки вида приглашения командной строки я и начну. Добавив только, что после каждого изменения в конфиге <code>~/.zshrc</code> для вступления его в силу вовсе не обязательно завершать сеанс и авторизоваться заново — достаточно такой команды:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">alv-cinn% source .zshrc</span>
+</code></pre></div>
+<p>Кстати, конфигурационных файлов для Zsh предусмотрено много, и порядок их считывания тоже определён жёстко. Однако далее речь будет идти, за одним специально оговоренным исключением, только о редактировании <code>~/.zshrc</code>. Почему? Да потому, что остальные конфиги или были придуманы для совместимости с оболочкой совсем другого семейства, <code>Tcsh</code>, или не оказывают влияния на пользовательский сеанс.</p>
+
+<h3 id="Документация">Документация</h3>
+
+<p>Но прежде чем перейти к настройкам <code>Zsh</code>, надо сказать несколько слов о его документации, столь расхваленной мной во вводных словах. И первое, что тут удивляет — отсутствие для его текущих версий (5.0.X) стандартных <code>man</code>-страниц. Раньше они были, причём во множестве: собственные страницы были посвящены отдельным частям этой оболочки (опциям, параметрам, функциям etc.), а сама по себе страница <code>man (1) zsh</code> играла роль оглавления.</p>
+
+<p>Но со временем суммарный объём man-документации достиг такого размера, что ей стало практически невозможно пользоваться в том режиме, в котором мы все привыкли общаться с любимой тётей Маней. И потому разработчики <code>Zsh</code> от man-страниц в составе самого пакета отказались.</p>
+
+<p>Но зато, во-первых, пакет <code>zsh</code> и жёстко с ним связанный <code>zsh-common</code> сопровождается пакетом <code>zsh-doc</code>, который в большинстве дистрибутивов (в том числе и в <code>Mint</code>) следует устанавливать отдельно. Он содержит материалы в форматах <code>info</code> и <code>html</code> общим объёмом <code>6 МБ</code>, а также включает <code>PDF</code>-руководство на 400 страниц.</p>
+
+<p>Во-вторых, <code>Zsh</code> сопровождается также пакетом <code>zsh-lovers</code> — он также устанавливается отдельно, и его компоненты после этого будут располагаться в каталоге <code>/usr/share/doc/zsh-lovers</code>. Он озаглавлен так: <code>Советы, рекомендации и примеры для Z Shell</code>. И содержит большинство тех самых man-страниц, которые были изъяты из основного пакета — в чисто текстовом формате или в виде gz-компрессированных файлов. А также — заявленные советы, рекомендации и примеры, созданные многочисленными применителями этой оболочки. Все они поимённо перечислены в файле <code>/usr/share/doc/zsh-lovers/README</code>. Своего рода квинтэссенцией пакета является страница <code>man (1) zsh-lovers</code>, в конспективной форме описывающая основные возможности этой оболочки, иллюстрируя их примерами. Собственно, её обзор (<code>OVERVIEW</code>) и начинается словами:</p>
+
+<blockquote>
+<p>Каждый раз, когда мы заглядываем в руководство по Zsh, мы удивляемся, почему там нет примеров или просто случаев из жизни в командной оболочке. Возможностей у Zsh, много, а руководства, иллюстрирующего их примерами, нет. Поэтому мы написали своё руководство. …  Это просто развлекухи ради.</p>
+</blockquote>
+
+<p>И, надо сказать, развлекуха получилась не без пользы для нас, применителей. Кстати, читать эту развлекуху можно также в форматах <code>HTML</code> и <code>PDF</code>.</p>
+
+<p>В-третьих, неисчислимое по объёму количество информации о Zsh&#39;е имеется в Интернете — и всё это богачество доступно по ссылкам с <a href="http://www.zsh.org/">официальный сайт</a>, главнейшей из которых является ссылка на <a href="http://zsh.sourceforge.net/">zsh.sourceforge.net</a>. Здесь можно найти руководства по этому шеллу на любой вкус — от «юзерофильного» до исчерпывающего, а также ссылки на книги, wiki, статьи и прочие материалы. Разбираться в этом океане я предоставляю заинтересованным (или заинтересовавшимся) читателям.</p>
+
+<p>В-четвёртых, существует сайт, именуемый <a href="http://ohmyz.sh/">Oh My ZSH!</a>. Это коллекция плагинов, скриптов, конфигов и тем приглашения командной строки. Она инсталлируется на локальную машину и в дальнейшем автоматически синхронизируется с родительским сайтом, который пользуется всенародной популярностью и широкой известностью в узких кругах энтузиастов <code>Zsh</code>.</p>
+
+<p>Наконец, в-пятых, официальными, полуофициальными и общенародными ресурсами информация о <code>Zsh</code> не исчерпывается — существует много «неучтённых» на <code>zsh.sourceforge.net</code> сайтов и блогов, ведомых любителями этого шелла. И на них часто можно найти освещёние неожиданных и интересных нюансов его конфигурирования. В последние годы в их числе появились и русскоязычные ресурсы. Из последних хотелось бы отметить подборку статей на <a href="http://muhas.ru/">сайте Михаила Мищенкова aka muhas</a>).</p>
+
+<h3 id="Настройка-приглашения">Настройка приглашения</h3>
+
+<p>Как известно со времён со времён Константин Сергеича Станиславского, театр начинается с вешалки, а дистрибутив — с инсталлятора. Командная же оболочка начинается с приглашения командной строки. Каковая, во-первых, отражает готовность системы к выполнению действий применителя, а во-вторых, несёт (или должна бы нести) некую существенную для него информацию.</p>
+
+<p>Правда, умолчальное приглашение <code>Zsh</code> информативностью не блещёт, сообщая только имя хоста (в примере на предыдущей странице — <code>alv-cinn</code>), и то, что сеанс шелла запущен обычным пользователем — в отличие от Bash&#39;а, здесь это по умолчанию выражается символом <code>%</code>. Однако добавить информации нам никто не мешает. А помогает — файл <code>zshexports.gz</code> из пакета <code>zsh-lovers</code>, упомянутого в позапрошлом очерке. Его можно просмотреть командой</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> zcat path3/zshexports.gz
+</code></pre></div>
+<p>отыскать в нём секцию, начинающуюся словами</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># PS{1,2,3}, RPOMPT, ..
+
+# The &quot;prompt&quot; of the shell
+
+...
+</code></pre></div>
+<p>внимательно изучить её, а также фрагмент конкретных примеров:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># Some examples:
+
+#  PS1=&quot;PS1=&#39;%B%n%b@%m:%4c&gt;&#39;&quot;
+
+...
+</code></pre></div>
+<p>осмыслить прочитанное и опробованное на примерах. После чего решить, какую же информацию вы хотите видеть в приглашении командной строки.</p>
+
+<p>Я, например, не хочу видеть там имени хоста, поскольку не дожил ещё до ситуации из известного аккордеонистого бояна: <em>«Кто я, кто я? Губайдулин я!»</em> Да и вообще, времена, когда каждая машина в сети имела собственное неповторимое имя, канули в лету, и нынче так называемое «хвостнаме» берётся от булды.</p>
+
+<p>А вот имя пользователя в явном виде будет не лишним — у меня на основной машине их обычно не менее трёх: рабочий, экспериментальный и умолчально-восстановительный. Также неплохо иметь представление о своём положении в файловой иерархии, причём в полном виде — одноимённые подкаталоги часто находятся в разных её ветвях. Приглашение получается перегруженным? Отнюдь, потому что в <code>Zsh</code> таковых предусмотрено два — просто <code>PROMPT</code> и <code>RPROMT</code>, и перечисленные элементы можно разнести таким образом:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">/home/data/current $=&gt;                                  [alv]</span>
+</code></pre></div>
+<p>Или наоборот, таким:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">[zshuser]$=&gt;                                  [/home/data/current]</span>
+</code></pre></div>
+<p>Добиться этого можно, как вы понимаете, редактированием файла <code>~/.zshrc</code>. До сих пор он у нас содержал единственную строку комментария:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># Created by newuser for 5.0.2
+</code></pre></div>
+<p>Теперь же добавляем в него сторки для получения приглашения первого вида:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">## Prompt
+
+PROMPT=&#39;%~ $=&gt; &#39;
+
+RPROMPT=&#39; [%n] &#39;
+</code></pre></div>
+<p>Или второго:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">## Prompt
+
+PROMPT=&#39;[%n]$=&gt; &#39;
+
+RPROMPT=&#39; [%~] &#39;
+</code></pre></div>
+<p>Раньше мне больше нравился первый вариант, но ныне я перешёл на второй.</p>
+
+<p>Кроме обычного, то есть «левого» приглашения и приглашения «правого», в <code>Zsh</code> поддерживаются также приглашение «вторичное», выводимое в многострочных командах, и «третичное» — предложение вариантов замены при включённой коррекции ошибок, <code>PROMPT2</code> и <code>PROMPT3</code>, соответственно. Вторичное приглашение у меня имеет вид</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">PROMPT2=&#39;%i%U&gt; &#39;
+</code></pre></div>
+<p>В результате в нём выводится номер «вторичной» строки в данном сеансе шелла, указывается стрелкой на то, что ввод следует в ней продолжить, а сам ввод даётся подчёркнутым шрифтоначертанием. Вживе это выглядит так:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">[zshuser]$=&gt; echo $USER \                                   [~]</span>
+
+<span class="go">33&gt; echo $SHELL \</span>
+
+<span class="go">34&gt; echo $PATH</span>
+
+<span class="go">zshuser echo /bin/zsh echo /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin</span>
+</code></pre></div>
+<p>Что же до коррекции ошибок, у меня она отключена (к этому вопросу мы ещё вернёмся).</p>
+
+<p>А вообще, как можно увидеть в файле <code>zshexports.gz</code>, в любом из видов приглашения командной строки могут фигурировать:</p>
+
+<ul>
+<li>полное или сокращенное имя хост-машины;</li>
+<li>путь к текущему каталогу в различных формах;</li>
+<li>номер текущей команды в буфере истории или строки в данном сеансе работы;</li>
+<li>имя пользователя;</li>
+<li>название командной оболочки;</li>
+<li>номер виртуальной консоли или текущего терминала;</li>
+<li>дата и время в разных форматах;</li>
+<li>индикация работы от лица суперпользователя;</li>
+<li>любые символы типа стрелок, крышечек, скобочек;</li>
+<li>текстовые сообщения (например, поздравление с началом трудового процесса);</li>
+<li>и многое другое.</li>
+</ul>
+
+<p>Кроме того, приглашение могут быть оформлены визуально различно: выделением жирным шрифтом (<code>boldface mode</code>), инвертированием текста/фона (<code>standout mode</code>), полчёркиванием (<code>underline mode</code>), а также цветами. «Раскрашенный» шелл мне нравится не больше, чем «раскрашенный» Штирлиц, инвертирование также вызывает раздражение, а вот выделение полужирным шрифтоначертанием и подчёркиванием я использую. В результате секция настройки вида приглашения в моём <code>~/.zshrc</code> выглядит так:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># Left prompt
+PROMPT=&#39;%B[%n]$=&gt;%b &#39;
+
+PROMPT2=&#39;%i%U&gt; &#39;
+
+#
+
+# Right prompt
+
+RPROMPT=&#39; %B[%~]%b &#39;
+</code></pre></div>
+<p>Как уже говорилось, я не призываю к подражательству, а лишь предлагаю поэкспериментировать, чтобы добиться максимальной информативности приглашения и его внешней выразительности.</p>
+
+<h3 id="Темы-приглашений">Темы приглашений</h3>
+
+<p>Только что речь шла о том, как оформить приглашение командной строки <code>Zsh</code> своими руками, в соответствие с собственными вкусами и предпочтениями. Однако можно пойти другим путём, и воспользоваться уже готовыми темами приглашений. Они входят в пакет <code>zsh-common</code>, который всегда, насколько я знаю, устанавливается как зависимость пакета <code>zsh</code>. После установки местоположение готовых тем — каталог <code>/usr/share/zsh/functions/Prompts</code>.</p>
+
+<p>Сами по себе темы приглашения — файлы вида <code>prompt_themename_setup</code>, представляющие собой функции <code>Zsh</code>, описывающие как вид приглашения, так и, часто, некоторый его декор, типа расцветки, которая может быть нескольких видов. Однако разбираться в устройстве этих функций не обязательно — с ними можно ознакомиться визуально.</p>
+
+<p>Знакомство это начинается с запуска функций управления видом приглашений:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> autoload -U promptinit <span class="o">&amp;&amp;</span> promptinit
+</code></pre></div>
+<p>После чего можно давать команду на «смотрины невест»:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> prompt -p
+</code></pre></div>
+<p>которая выведет их все (в моей системе — около двух десятков, плюс цветовые вариации) примерно в таком виде:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_006.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_006-540x572.png" alt="Изображение242"></a> <a href="http://alv.me/wp-content/img/2015/01/zsh_006.png"></a></p>
+
+<p>Среди «невест» можно видеть весьма пёстро наряженных:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_0071.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_0071-540x572.png" alt="Изображение243"></a> <a href="http://alv.me/wp-content/img/2015/01/zsh_0071.png"></a></p>
+
+<p>Но и одетых весьма скромно также есть:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_008.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_008-540x572.png" alt="Изображение244"></a> <a href="http://alv.me/wp-content/img/2015/01/zsh_008.png"></a></p>
+
+<p>Выбрав подходящую невесту тему, её можно тут же установить командой</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> prompt имя_темы
+</code></pre></div>
+<p>при желании — с указанием цветовых параметров, например:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> prompt fade white grey blue
+</code></pre></div>
+<p>Что в «живом» терминальном окне (терминал <code>Sakura</code>) будет выглядеть так:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_009.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_009-572x290.png" alt="Изображение245"></a> <a href="http://alv.me/wp-content/img/2015/01/zsh_009.png"></a></p>
+
+<p>А в выпадающем терминале <code>Guake</code> — несколько иначе:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_010.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_010-572x305.png" alt="Изображение246"></a></p>
+
+<p>Кстати, а в «голой» консоли вид этой же темы будет существенно скромнее — разбираться с программами для изготовления скриншотов консоли мне было лень, так что прошу поверить на слово.</p>
+
+<p>Установленная таким образом тема будет функционировать только в данном терминальном окне в течении текущего сеанса. Чтобы увековечить её, необходимо вписать в файл <code>~/.zshrc</code> такие строки:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">autoload -Uz promptinit
+
+promptinit
+
+prompt clint
+</code></pre></div>
+<p>В примере приведена тема, пожалуй, наиболее информативного приглашения, которое «вживе» вылядит так:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_011.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_011-572x290.png" alt="Изображение247"></a> <a href="http://alv.me/wp-content/img/2015/01/zsh_011.png"></a></p>
+
+<p>Большое количество тем можно при желании отыскать на сайте <a href="http://ohmyz.sh/">Oh My ZSH!</a>, но эти я уже заниматься не стал.</p>
+
+<h3 id="Приёмы-навигации">Приёмы навигации</h3>
+
+<p>Сознательные граждане, активно применяющие <code>CLI</code>, используют множество команд, как встроенных в их любимый шелл, так и внешних. Но, думаю, что самыми употребимыми в повседневной жизни являются такие:</p>
+
+<ul>
+<li><code>pwd</code> для определения своего текущего положения на файловом древе — да-да, иногда, после многократных переходов между подкаталогами, забываешь, не только кто я, но и где я (уж не в Тимирязском ли?);</li>
+<li><code>ls</code> — для просмотра содержимого текущего каталога;</li>
+<li><code>cd</code> — для перехода в определённый каталог.</li>
+</ul>
+
+<p>Однако здесь <code>Zsh</code> вносит свои коррективы, здорово облегчающие жизнь его применителя. Только что было показано, как фактическим можно избавиться от команды <code>pwd</code>, выведя путь к текущему каталогу в качестве <code>RPROMPT</code>. Без команды <code>ls</code>, конечно, не обойтись и <code>Zsh</code>. А вот команда <code>cd</code> в <code>Zsh</code> просто… не нужна.</p>
+
+<p>Да, дорогие мои болельщики, в среде <code>Zsh</code> без этой команды не просто можно обойтись, а жить куда комфортней, нежели с ней. Ведь давайте вспомним, что такое переход в каталог <code>имя_рек</code>? Для типа файлов, именуемого каталогом (<code>directory</code>) это то же самое, что исполнение для обычного (<code>ordinary</code>) файла, будь он откомпилированным бинарником или интерпретируемым сценарием.</p>
+
+<p>И потому более чем логично то, что как для запуска скрипта оболочки не требуется никакой внешней команды (хотя и не возбраняется что-нибудь типа <code>.</code> или <code>/bin/sh</code>), так и для перехода в каталог, к которому данный юзер имеет доступ (то есть попадает в число тех, для кого у этого каталога установлен бит исполнения), ему достаточно указать полный путь к нему, без всяких команд. Например, введя к командной строке что-нибудь вроде</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> /usr/share/fonts/truetype/
+</code></pre></div>
+<p>можно сразу оказаться в каталоге с <code>TTF</code>-шрифтами.</p>
+
+<p>«Бескомандный» переход в каталоги распространяется и на «символические» обозначения последних. Так, команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ~
+</code></pre></div>
+<p>переместит пользователя в его домашний каталог. Как, кстати, и команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nv">$HOME</span>
+</code></pre></div>
+<p>Хотя практического смысла последний вариант не имеет. Зато директива</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ..
+</code></pre></div>
+<p>волшебным образом ознаменует переход в каталог, родительский относительно текущего.</p>
+
+<p>Правда, всё это происходит не само собой: для практического воплощения этого волшебства в общесистемном конфиге <code>/etc/zsh/zshrc</code> или пользовательском <code>~/.zshrc</code> должна присутствовать строка</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">setopt autocd
+</code></pre></div>
+<p>В пару к ней можно добавить ещё и такую строку:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cdpath=(~/ /home/current/ /home/data/)
+</code></pre></div>
+<p>где в скобках перечислены каталоги, к подкаталогам которых чаще всего требуется быстрый доступ. И теперь, где бы в пределах файлового древа ни находился пользователь, ввод им директивы</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ Documents
+</code></pre></div>
+<p>нечувствительно сделает текущим каталогом <code>/home/username/Documents</code>.</p>
+
+<p>То есть опция <code>autocd</code> и массив переменных <code>cdpath</code> отнюдь не исключают, а прекрасно дополняют друг друга.</p>
+
+<h3 id="Автодополнение">Автодополнение</h3>
+
+<p>Волшебное свойство клавиши <code>Tab</code>, вызывающей автодополнение — одно из первых, с чем знакомится применитель <code>CLI</code>. Хотя при этом часто забывается, что когда-то, в перворождённом шелле Борна, никакого автодополнения не было. Оно появилось в <code>Csh</code> — и сначала только для путей, но не для команд. Тем не менее, ныне представить себе интерактиную работу в командной строке без автодополнения невозможно (да и не нужно).</p>
+
+<p>Однако в <code>Zsh</code> клавиша <code>Tab</code> волшебна дважды: она не только дополняет пути и команды после их частичного ввода, но и способна развернуть аббревиатуры для тех и других. Например, нажатие клавиши табулции после набора последовательности</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> /u/s/f/tr
+</code></pre></div>
+<p>развернёт её в полный путь к каталогу со шрифтами <code>TrueType</code></p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> /usr/share/fonts/truetype
+</code></pre></div>
+<p>а после нажатия клавиши <code>Enter</code> сделает этот каталог текущим, как мы только что видели.</p>
+
+<p>Правда, само по себе развёртывание аббревиатур работать не будет — его надо активизировать такими строками в файле <code>~/.zshrc</code>:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> autoload -Uz compinit
+
+compinit
+</code></pre></div>
+<p>Можно пойти дальше, и не просто разворачивать безальтернативные аббревиатуры, типа приведённый выше, но и выбирать стрелками, как в меню, подкаталги или файлы среди предлагаемый альтернатив. Например, если набрать ту же самую последовательность символов:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> /u/s/f/tr
+</code></pre></div>
+<p>а затем дважды нажать клавишу табуляции, то она не только развернётся в полный путь</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> /usr/share/fonts/truetype/
+</code></pre></div>
+<p>но и выведет список подкаталогов указанного каталога:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">dejavu/ freefont/ openoffice/ ubuntu-font-family/ droid/ liberation/
+
+ttf-dejavu/ wqy/
+</code></pre></div>
+<p>И выбор нужного среди них можно выполнять либо стрелками управления курсором, либо обычными кейбиндингами типа <code>Control+f</code>, <code>Control+b</code> и им подобными:</p>
+
+<p><a href="http://alv.me/wp-content/img/2015/01/zsh_012.png"><img src="http://alv.me/wp-content/img/im_cin_img/zsh_012-572x305.png" alt="Изображение248"></a></p>
+
+<p>Правда, и такая реакция <code>Zsh</code> на <code>Tab</code> возникает не из воздуха, а из присутстствия в файле <code>~/.zshrc</code> таких строк:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> setopt menucomplete
+
+zstyle &#39;:completion:*&#39; menu select=1 _complete _ignored _approximate
+</code></pre></div>
+<p>По умолчанию их там нет, а вот стоит ли их вносить — применитель должен решить для себя сам — перебор вариантов традиционным способом, то есть последовательным нажатием клавиши табулции, может показаться более удобным.</p>
+
+<h3 id="История-команд">История команд</h3>
+
+<p>Возможность просмотра истории введённых ранее команд клавишами <code>Up/Down</code> кажется таким же неотъемлемым атрибутом <code>CLI</code>, как и автодополнение командной строки. И, как и последнее, напрочь отсутствовало в перворождённом шелле Борна, однако ныне имеется во всеш развитых шеллах. Причём доступ к истории команд в них не ограничивается командой <code>history</code> и упомянутыми стрелками. В частности, в <code>Bash</code> широко практикуется инкрементный поиск по клавишной последовательности <code>Control+R</code> и вводу последовательности символов одной из предыдущих команд или её аргументов.</p>
+
+<p>В <code>tcsh</code> же испокон веков существовала (и, что характерно, обычно была активирована по умолчанию) другая возможность — так называемый <code>history-substring-search</code>, то есть инкрементный перебор истории команд по вводимым символам. Что это такое — проще пояснить на примере: вы вводите в командной строке один символ (для примера — <code>s</code>) и нажимаете клавишу <code>Up</code>. И тут в перебор включаются только те команды из истории, которые с буковки <code>s</code> начинаются. Вводя дополнительные символы, можно сузить круг поиска: например, последовательность <code>sudo</code> позволяет просмотреть, что было наколбасино от лица суперпользователя вообще.</p>
+
+<p>Поскольку <code>Zsh</code> изначально задумывалась как синтез всех передовых достижений шелло-строительной мысли, аналогичная возможность имеется и здесь. Правда, как и многие другие продвинутые фичи этой оболочки, она требует активации. То есть — внесения в файл <code>~/.zshrc</code> таких строк:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">bindkey &quot;^[[A&quot; up-line-or-search
+
+bindkey &quot;^[[B&quot; down-line-or-search
+</code></pre></div>
+<p>Как выяснилось, надо подчеркнуть: перебор <code>history-substring-search</code> и инкрементный поиск по <code>Control+R</code> отнюдь не исключают друг друга, а дополняют: первым способом проще искать ранее введённые директивы по имени команды, вторым — по её аргументам, например, по имени файла.</p>
+
+<p>Справедливости ради надо сказать, что <code>history-substring-search</code> нынче реализован и в <code>Bash</code>, хотя, как и в <code>Zsh</code>, требует активации.</p>
+
+<p>Опытный применитель <code>Zsh</code>, не имевший ранее дела с <code>Ubuntu</code> и её производными (в том числе и с <code>Mint</code>&#39;ом), будет весьма удивлён тем обстоятельством, что эта фича (по моему мнению, одна из самых полезных среди всех достоинств нашей героини), с кондачка работать не будет. Даже при условии правильно настроенного конфига — при внесённых в него строках, указанных выше. Точнее, не будет делать это в окне любого иксового эмулятора терминала, хотя не откажется от выполнения <code>history-substring-search</code> в «голой» консоли. Причём интересно, что это же касается и <code>Bash</code>, хотя в <code>Tcsh</code> данная фича будет работать «искаропки».</p>
+
+<p>Следствие, проведённое в Джуйке и благодаря участию джуковца @altwazar&#39;а, показало, что это давний известный баг, восходящий к <code>Debian</code>&#39;у, знаменитому своей стабильностью во всех отношениях (в том числе и в отношении багов, вероятно). И бороться с этим можно различными методами. Мне самым простым показался такой: создание в домашнем каталоге файла <code>~/.zshenv</code> с единственной строкой:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">DEBIAN_PREVENT_KEYBOARD_CHANGES=yes
+</code></pre></div>
+<p>Разумеется, на поведение <code>Bash</code> это никак не скажется: в нём <code>history-substring-search</code> включается не через его профильный файл, а через <code>inputrc</code> — конфиг для <code>readline</code>. Как именно — оставляю на рассмотрение преданных поклонников этой оболочки.</p>
+
+<p>Разумеется, возможности настройки доступа к истории команд всем сказанным выше не исчерпываются: имеет место быть и исключение из неё дубликатов, и пустых строк, и прочего баласта, а также подключения некоторых полезных фич, вроде ограничения общей истории и истории текущего сеанса. А также — дополнения файла истории. Однако ничего особенного, специфичного именно для <code>Zsh</code>, тут уже нет. Так что к рассмотрению этих вопросов я вернусь под занавес — когда буду говорить о <code>~/.zshrc</code> для себя, любимого...</p>
+
+<h3 id="Рекурсивный-поиск">Рекурсивный поиск</h3>
+
+<p>Все применители <code>CLI</code> знают и любят утилиту <code>find</code> — и любят заслуженно, ибо это апофеоз командного интерфейса: с её помощью можно отыскать в файловой системе всё, что угодно — и почти всё, что нужно, с найденным сделать, конечно, с помощью некоторых дополнительных средств, вроде <code>xargs</code> и конвейеров. Однако для многих рутинных задач мощь этой команды кажется излишней, напоминая знаменитое упражнение по отстрелу мелких пернатых их зенитно-ракетных комплексов. И вот тут <code>Zsh</code> опять позволяет решать такие задачи малой кровью — то есть с минимальным ударением по клавишам. Ибо поддерживает такую штуку, как рекурсивные поиск.</p>
+
+<p>Что это такое — как обычно, проще показать, чем рассказать. Предположим, перед применителем стоит задача отыскать все картинки в каталоге некоего проекта, включая все вложенные в него подкаталоги. Средствами <code>Zsh</code> сделать это очень просто — достаточно дать команду</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls path3/**/*.png
+</code></pre></div>
+<p>где <code>path3</code>, как нетрудно догадаться, «корневой» каталог поиска, <code>*.png</code> — маска искомых файлов, а «двузвёздие» — так сказать, директива рекурсивного поиска.</p>
+
+<p>Правда, вопреки утверждениям некоторых уж очень правоверных <code>Zsh</code>&#39;истов, эта возможность не делает команду <code>find</code> избыточной, ибо, как все знают, она умеет и многое другое. Но зато такая простая директива позволяет не беспокоить <code>Её Величество</code> по пустякам...</p>
+
+<p>А заодно — конструкции вида <code>**/*</code> можно использовать как аргументы команд управления файлами, таких, как <code>cp</code>, <code>mv</code>, <code>rm</code>. В частности, с помощью команды вида</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> rm -f path3/**/*~
+</code></pre></div>
+<p>можно легко гуртом избавиться от всех временных копий, которые по умолчанию так любят сохранять некоторые текстовые редакторы и ворд-процессоры, если им не запретить это самым категорическим образом.</p>
+
+<p>Разумеется, можно фильтровать базар. Давеча в приступе чёрной меланхолии переслушивал я всё, что сочинил и спел Фред Солянов — увы, большинство моих потенциальных читателей о его существовании не подозревают: в отличе от многих всенародно известных так называемых «бардов», он не был популярен при жизни. А когда его верхние люди позвали — люди нижние про него забыли напрочь. И зря — но это из совсем другой оперы. А в нынешней арии мне было интересно, сколько же Фред сочинил песен за ту четверть чека, что ему отпустила на то судьба. И я дал очень простую команду:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> ls path3/fred/**/*.mp3 <span class="p">|</span> wc -l
+</code></pre></div>
+<p>И она мне сказала, что сочинил Фред 168 песен. Откидываем дубликаты, неизбежные в любой коллекции — но здесь их очень мало, на штуки счёт.</p>
+
+<p>Откинем откровенно слабые песенки — ведь даже гений не каждое утро начинает с сочинения чего-то шедеврального. Откинем песенки вторичные — Фред никогда не претендовал на основоположничество, и, в отличе от некоторых более иных авторов, на которых я не хотел бы указывать пальцем, не считал для себя западло называть своего реального учителя в ентом деле, Булат Шавловича...</p>
+
+<p>Для себя откину те песенки, которые лично меня не очень зацепили — их, по сравнению с прочими фильтрами, больше всего, почти полсотни.</p>
+
+<p>Остаётся - около ста песен. За двадцать пять лет. Мало по сравнению с раннеперестроечными сборниками типа «Шестьсот лучших песен имя река»? Да, не много. Но ведь (и это мнение не только моё, а тысяч людей с такими же биографиями) эти песни стали, как нынче принято говорить, культовыми.</p>
+
+<p>Ну, дальше на эту тему распространяться не буду, а вернусь к генеральной линии сюжета. А именно — что маски типа <code>**/*</code> можно использовать в аргументах команды <code>grep</code> и для поиска фрагментов текстов. Так, команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> grep KDE **/*html
+</code></pre></div>
+<p>выведет все строки с упоминанием <code>KDE</code> в html-файлах каталога текущего и вложенных. А в форме</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> grep -i kde **/kde*.html
+</code></pre></div>
+<p>она произведёт аналогичный поиск только в файлах вида <code>kde01.html</code>, <code>kde02.html</code> и так далее. Причём без учёта регистра — но к мадемуазель <code>Zsh</code>, интересы которой я представляю в данный момент, это не имеет никакого отношения.</p>
+
+<h3 id="Перенаправление-расширенное-и-множественное">Перенаправление расширенное и множественное</h3>
+
+<p>Что такое перенаправление ввода/вывода — знают все применители <code>CLI</code>. Однако в <code>Zsh</code> возможности его очень широки, почему оно и называется здесь расширенным перенаправлением. Этот механизм позволяет в ряде случаев обходиться без некоторых команд вообще. Например, обычно для просмотра текстового файла применяют или команду <code>cat</code>, или команды-пейджеры типа <code>more</code>, <code>less</code>, <code>most</code>. Выбор между конкатенатором и одним из пейджеров определяется ситуацией, выбор внутри «тройки по борьбе с басмачами файлами» зависит от привычек или предпочтений. Однако <code>Zsh</code> может избавить применителя от мук буриданова осла, подменяя любую из этих команд оператором перенаправления в виде команды</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> &lt; filename
+</code></pre></div>
+<p>Результатом чего будет постраничный вывод содержимого файла, подобный таковому любого пейджера.</p>
+
+<p>С помощью того же оператора можно просмотреть одновременно содержимое двух файлов — то есть, конечно, не одновременно, а последовательно, но в едином потоке. То есть команда</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> &lt; <span class="o">{</span>zshenv,zshrc<span class="o">}</span>
+</code></pre></div>
+<p>покажет оба файла как одно целое. Причём в данном случае можно поступить ещё проще, ибо маски имён файлов также не возбраняются:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> &lt; z*
+</code></pre></div>
+<p>Кстати, в терминах <code>Zsh</code> развёртывание масок имён файлов называется <code>globbing</code> — с ним мы уже сталкивались в рассказе о рекурсивном поиске.</p>
+
+<p>Число «оперируемых» файлов ничем не ограничено, кроме здравого смысла и целесообразности. Так, есть резон проглядеть таким образом на скорую руку, как будут выглядеть 5-6 заметок по несколько строк каждая, если их объединить в одну статью. Но просматривать с помощью оператора перенаправления книжку, состоящую из пары десятков глав по много страниц каждая, уже явный перебор.</p>
+
+<p>Однако бывают случаи, когда большое число «оперируемых» файлов очень даже уместно. Например, если требуется объединить ряд текстовых фрагментов в единый файл. И тогда, легким движением рук набрав в командной строке конструкцию</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> &lt; chapter<span class="o">[</span>01-10<span class="o">]</span> &gt; mybook
+</code></pre></div>
+<p>мы на выходе из разрозненных глав получаем готовую книгу.</p>
+
+<p>Таким образом мы перешли уже к множественному перенаправлению. Применение которого просмотром файлов не исчерпывается — их содержимое может быть перенаправлено не только на стандартный вывод, но и на ввод какой-либо команды, подменяя командный конвейер. Например, конструкция вида</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> sort &lt; file_<span class="o">{</span>1,2<span class="o">}</span>
+</code></pre></div>
+<p>совместно отсортирует строки обоих файлов, <code>file_1</code> и <code>file_2</code>, точно так же, как это сделал бы конвейер команд</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cat file_1 file_2 <span class="p">|</span> sort
+</code></pre></div>
+<p>Кстати, перенаправление вполне может играть с конвейерами в одной команде. Например, конструкция вида</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">time </span>commandname <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>arguments<span class="o">]</span> &gt; filename <span class="p">|</span> cat
+</code></pre></div>
+<p>занесёт время выполнения некоей команды в файл с одновременным выводом его на экран, заменяя команду <code>tee</code>. Это особенно полезно при всяких «тестированиях на быстродействие», когда надо и сохранить результат для дальнейшей обработки, и не терпится посмотреть на него сразу.</p>
+
+<p>Множественное перенаправление удобно использовать для суммарного подсчёта числа символов в нескольких файлах таким образом:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> wc -m &lt;*txt
+</code></pre></div>
+<p>Что на выводе даст единственное число, например:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">5382
+</code></pre></div>
+<p>Казалось бы, та же команда в «обычной» форме даже короче на один символ:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">$ wc -m *txt
+</code></pre></div>
+<p>Однако вывод её будет развёрнут:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">2820 my_file_1.txt
+ 606 my_file_2.txt
+ 401 my_file_3.txt
+1555 my_file_4.txt
+
+5382 итого
+</code></pre></div>
+<p>Что при работе во встроенных терминальных окнах текстовых редакторов вроде <code>Geany</code> или <code>Kate</code> , часто небольших по размеру может оказаться лишним. А ведь именно там приёмы, подобные описанным в этом разделе, оказываются весьма эффективными.</p>
+
+<p>В общем, уже за одну только конструкцию <code>&lt; filename</code> разработчики <code>Zsh</code> заслужили памятник, а все остальные возможности расширенного и множественного перенаправления выступают как бесплатное приложение к ней.</p>
+
+<h3 id="Просто-псевдонимы-и-псевдонимы-глобальные">Просто псевдонимы и псевдонимы глобальные</h3>
+
+<p>Что такое псевдонимы, по простому `aliases, — знают все, кто применяет любую командную оболочку: их поддержка существует со времён перворождённого шелла Борна. Это один из простых способов минимизировать ввод командных директив, начиная с простейшего рекурсивного копирования файлов:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">alias </span><span class="nv">cp</span><span class="o">=</span><span class="s1">&#39;cp -R&#39;</span>
+</code></pre></div>
+<p>И заканчивая бессчётным количеством псевдонимов для команды <code>ls</code>.</p>
+
+<p>Однако в <code>Zsh</code> есть ещё одна фича — глобальные псевдонимы, по сей день не имеющие аналогов, насколько я знаю, во всяких там ваших башах. И даже в почти соплеменных тсишах их нет.</p>
+
+<p>Но начну по порядку. Опять же, кого не раздражала ситуация: в ответ на поиск файла <code>find</code>&#39;ом или поиск фрагмента текста <code>grep</code>&#39;ом выдаётся сто пятьсот экранов сообщений, что доступ к каталогу запрещён?</p>
+
+<p>Разумеется, каждый применитель <code>Bash</code>&#39;а знает, как с этим бороться — достаточно присобачить к конструкции поиска посредством той или другой утилиты маленький аппендикс в виде <code>2&gt; /dev/null</code>, отправляющий в небытие все сообщения об ошибках.</p>
+
+<p>Сложнее применителям <code>Tcsh</code> — там подавления вывода нежелательных сообщений об ошибках возможно в виде такой конструкции:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">%</span> <span class="o">(</span><span class="nb">command</span> &gt; out<span class="o">)</span>&gt;<span class="p">&amp;</span> err
+</code></pre></div>
+<p>где <code>command</code> — команда со всеми её опциями и аргументами, <code>out</code> — условное имя файла, в который перенаправляется «полезный» вывод команды, а <code>&amp;</code> в данном контексте представляет весь остаток от оного, то есть сообщения об ошибках, которые помещаются в файл <code>err</code>. Имя последнего также условно, так что никто не запрещает подменить его сакраментальным <code>/dev/null</code>.</p>
+
+<p>Конструкция далеко не столь проста, как в <code>sh</code>-совместимых оболочках типа <code>Bash</code>. Кроме того, для просмотра «полезного» вывода она потребует ещё одной команды — вызова какого-либо пейджера вроде <code>less</code>:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">%</span> <span class="o">(</span><span class="nb">command</span> &gt; out<span class="o">)</span>&gt;<span class="p">&amp;</span> err <span class="p">;</span> less out
+</code></pre></div>
+<p>А вот применителям <code>Zsh</code> — проще всех. Им достаточно задать такой глобальный псевдоним:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">alias</span> -g <span class="nv">N</span><span class="o">=</span><span class="s1">&#39;2&gt;/dev/null&#39;</span>
+</code></pre></div>
+<p>где -g указывает, что следующий символ (или символы) являют собой на простой псевдоним, а глобальный, <code>N</code> — его имя, а следующая после равенства последовательность в строгих кавычках — подменяемое им выражение. После чего можно практиковать такое:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> find path3 -name <span class="o">[</span>filename<span class="o">]</span> N
+</code></pre></div>
+<p>И больше не заботиться о фильтрации зёрен от плевел.</p>
+
+<p>Глобальные псевдонимы очень полезны в командных конструкциях перенаправления по конвейеру, например, для поэкранного вывода:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">alias</span> -g <span class="nv">L</span><span class="o">=</span><span class="s1">&#39;|less&#39;</span>
+</code></pre></div>
+<p>Пример для «пролистывания» вывода команды dmesg:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> dmesg L
+</code></pre></div>
+<p>Для фильтрации по вхождению «слова» можно задать такой глобальный псевдоним:</p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">alias</span> -g <span class="nv">G</span><span class="o">=</span><span class="s1">&#39;|grep&#39;</span>
+</code></pre></div>
+<p>После чего использовать его в конструкциях, подобных такой:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> dmesg G raid
+</code></pre></div>
+<p>что выведет нечто вроде</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">[   1.434246] md: raid0 personality registered for level 0
+[   1.434376] md/raid0:md0: md_size is 390742016 sectors.
+...
+</code></pre></div>
+<p>Мне весьма полезен глобальный псевдоним вида</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">alias -g W=&#39;|wc -m&#39;</span>
+</code></pre></div>
+<p>Поскольку часто требуется прибегать к такой конструкции</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> cat filename W
+</code></pre></div>
+<p>которая в данном случае выведет число символов в текстовом файле — для меня оно важнее числа байт (а при использовании 16-битной кодировки для преимущественно кириллического текста эти значения не совпадают).</p>
+
+<p>К именам глобальных псевдонимов применяются те же требования, что и к именам псевдонимов обычных: они должны быть по возможности короткими, мнемонически прозрачными. И, разумеется, определения всех постоянно используемых глобальных псевдонимов следует занести в свой кондуитик — то есть в <code>~/.zshrc</code>.</p>
+
+<p>Разумеется, здесь не описаны все возможные случаи употребления глобальных псевдонимов — они лимитируются только потребностями применителя и его фантазией. И, конечно, наказом, который дал атаман Платов небезызвестному Левше:</p>
+
+<blockquote>
+<p>Не пей мало, не пей много, а пей средственно.</p>
+</blockquote>
+
+<p>То есть — не придумывайте глобальных псевдонимов больше, чем сможете запомнить.</p>
+
+<h3 id="Псевдонимы-суффиксы">Псевдонимы-суффиксы</h3>
+
+<p>Кроме обычных и глобальных псевдонимов, в <code>Zsh</code> существует ещё одна их разновидность — псевдонимы «суффиксные», более удачного определения на языке родных осин я не придумал, псевдонимы.</p>
+
+<p>Подобно тому, как добаление к команде <code>alias</code> опции <code>-g</code> с помощью магии превращает обычный псевдоним в глобальный, так и опция <code>-s</code> делает обычный псевдоним «суффиксным». То есть привязывает суффикс имени файла (те, кто, подобно автору этих строк, затронуты порчей чёрным <code>DOS</code>&#39;ом, до сих пор часто называют его «расширением») к некоей программе, которая может сотворить над ним нужное действо. Например, если задать псевдоним такого вида</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">alias</span> -s <span class="nv">html</span><span class="o">=</span>links
+</code></pre></div>
+<p>а затем набрать в <code>CLI</code> такое</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> path3/некто.html
+</code></pre></div>
+<p>то этот самый <code>некто.html</code> будет открыт в текстовом браузере <code>Links</code>.</p>
+
+<p>Чем, разумеется, возможности «суффиксных» псевдонимов не исчерпываются — как всегда, предел им ставит только фантазия применителя применительно к его задачам. Ограничусь одним примером.</p>
+
+<p>Какой же русский не любит <code>Командера-полуночника</code>? В том числе и потому, что он — один из сыновей прославленного командера Нортона, имя которого, в свою очередь, не более чем <code>alias</code> незабвенного лейтенанта Шмидта (история его чудесного спасения из лап царской охранки и последующей блестящей карьере сначала в ВМС Пендостана, а затем в интернациональном софтверном бузиненсе реконструирована <a href="http://alv.me/?p=290#1">нашими замечательными историками</a> из славного Екатеринбурга). Впрочем, со временем наш русский применитель, не смотря на весь свой патриотизм, начинает понимать, что слепая любовь к <code>MC</code> связывает ему руки в операциях с возлюбленной <code>CLI</code>, и хорошо бы с командиром расстаться, как это делают цивилизованные люди — без скандалов и истерик.</p>
+
+<p>Но тут возникает проблема: <code>MC</code> — один из самых удобных способов просмотра того, из чего состоят файлы пакетов (будь то <code>deb</code>, <code>rpm</code> или что ещё из <code>tar.*z</code>-серии). Так вот, механизм «суффиксных» псевдонимов <code>Zsh</code> предлагает нам адекватную замену: если дать команду, например,</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> <span class="nb">alias</span> -s <span class="nv">deb</span><span class="o">=</span><span class="s1">&#39;dpkg -c&#39;</span>
+</code></pre></div>
+<p>а затем набрать в командной строке такое:</p>
+<div class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">$</span> path3/opera-beta_25.0.1614.11_amd64.deb
+</code></pre></div>
+<p>то мы сразу увидим, что же припасли для нас разработчики этого многими любимого браузера в своём полуподпольном пре-релизе за нумером 25 (впрочем, за время сочинения этой книги он стал вполне официальным, приобретя номер версии 27):</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">drwxr-xr-x root/root         0 2014-09-13 03:54 ./
+drwxr-xr-x root/root         0 2014-09-13 03:54 ./usr/
+drwxr-xr-x root/root         0 2014-09-13 03:54 ./usr/bin/
+drwxr-xr-x root/root         0 2014-09-13 03:54 ./usr/lib/
+drwxr-xr-x root/root         0 2014-09-13 03:54 ./usr/lib/x86_64-linux-gnu/
+...
+</code></pre></div>
+<p>Понятное дело, что аналогичные псевдонимы можно придумать и для всяких <code>rpm</code>-и <code>tgz</code>-пакетов. И, разумеется, наиболее востребованные из них занести в кондуит... то есть в <code>~/.zshrc</code>.</p>
+
+<h3 id="Конфигурирование">Конфигурирование</h3>
+
+<p>В качестве обобщения всего сказанного выше в заключение этого очерка я размещаю свой конфигурационный файл <code>~/.zshrc</code>, прокомментированный, по мере сил, подробно. Этот конфиг существует с 2001 года, кочуя с машина на машину, из системы в систему, постоянно модернизируюсь в соответствие с изменениями моих потребностей и возможностей <code>Zsh</code>. И в текущем состоянии он обеспечивает все функции и особенности, о которых я говорил ранее, и некоторые другие, которые станут понятными после знакомства с <code>Mint</code>-утилитой пакетного менеджмента <code>apt</code>.</p>
+
+<p>Данный конфиг может быть использован полностью или фрагментарно всеми заинтересованными лицами: блоки, заключённые <code>в теги</code>, пригодны для прямого копирования, за одним исключением, о котором будет сказано в своё время. Однако я отнюдь не призываю к этому, напротив: настоятельно рекомендую, используя данный конфиг и аналогичные, которые можно найти в Сети, по мере сил и возможности создавать конфиг собственный. Ибо хороший (для конкретного применителя) <code>~/.zshrc</code> — это не результат, а процесс, и причём процесс преувлекательный.</p>
+
+<p>Как и большинство уважающих себя конфигов, мой начинается с секции, закрытой комментариями, в которой сообщается, что:</p>
+
+<ul>
+<li>это <code>~/.zshrc</code> — то есть «домашний» конфигурационный файл для командной оболочки <code>Zsh</code>;</li>
+<li>используется только в интерактивных её экземплярах;</li>
+<li>содержит команды для определения псевдонимов, функций, опций и прочих кейбиндингов;</li>
+<li>укладывается в последовательность считывания конфигов таким образом: <code>zshenv</code>, <code>zprofile</code>, <code>zshrc</code>, <code>zlogin</code>.</li>
+</ul>
+
+<p>Всё это потибрено унаследовано от прототипа, распространяющегося разрабочиками <code>Zsh</code>. От себя я добавил лишь такую строку:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#
+# Alv&#39;s edition for Mint
+#
+</code></pre></div>
+<p>Это не значит, что данный конфиг нельзя использовать вне <code>Mint</code>: подавляющая часть его строк будет иметь силу в любых дистрибутивах <code>Linux</code>&#39;а или в <code>BSD</code>-системах. Но отдельные его блоки (специально оговоренные) в них просто не будут иметь смысла.</p>
+
+<p>Далее начинается собственно строки определения конфигурируемых параметров. Для удобства восприятия (по крайней мере, моего собственного) они разделены на блоки «целевого назначения». Последовательность блоков, как и строк внутри них, в большинстве случаев рояля не играет, отдельные исключения также оговорены специально.</p>
+
+<p>Поскольку всё имеет своё начало, начать свой конфиг мне показалось логичным с блока строк, имеющих отношение к истории команд. Перво-наперво — определение числа команд, сохраняемых в буфере во время данного сеанса, имени файла истории, и числа сохраняемых в нём команд:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">HISTSIZE=2000
+HISTFILE=~/.zhistfile
+SAVEHIST=10000
+</code></pre></div>
+<p>Обычно для <code>HISTSIZE</code> и <code>SAVEHIST</code> рекомендуют принимать одинаковые значения (по умолчанию при автоматическом конфигурировании они равны <code>1000</code>). Однако если действительно трудно представить ввод более чем тысячи команд в течении сеанса, то вот за весь цикл жизнедеятельности оболочки в системе превысить этот лимит достаточно просто.</p>
+
+<p>Кроме того, надо учесть, что в обоих случаях сохраняются не просто команды, а целые директивы с опциями и аргументами, перенаправлениями и конвейерами, подчас достаточно сложными и редко используемыми. В <code>Zsh</code> имеются очень эффективные механизмы извлечения командных строк из сохранённой истории — не только по именам команд, но и по их опциям и аргументам. Обычно этим мало кто заморчивается, однако в некоторых, пусть и не частых, случаях такие командные конструкции могут потребоваться вторично. И тогда приятно сознавать, что они храняться в файле истории, откуда вытащить их всё равно проще, чем пытаться воспроизвести по памяти или отыскивать аналоги в сети.</p>
+
+<p>Так что со временем я, увеличив на всякий пожарный случай <code>HISTSIZE</code> вдвое, отвёл под <code>SAVEHIST</code> <code>10000</code> строк. Кстати, когда предупреждают о том, что увеличение обоих значений может привести к торможению, следует учитывать, что в памяти постоянно находится только содержимое <code>HISTSIZE</code>, тогда как из <code>SAVEHIST</code> оно извлекается по мере необходимости. Не говоря уже о том, что при типичных для современных машин объёмах памяти об этом просто смешно говорить.</p>
+
+<p>Имя файла истории я тоже изменяю на <code>~/.zhistfile</code>. Во-первых потому, что иногда по старой памяти балуюсь <code>Tsch</code>, а в ней файл истории по умолчанию также именуется <code>~/.histfile</code> (собственно, оттуда он в <code>Zsh</code> и был потибрен, в хорошем смысле этого слова). А во-вторых, просто для удобства восприятия — чтобы все имеющие отношение к <code>Zsh</code> файлы в домашнем каталоге были рядом.</p>
+
+<p>Однако продолжим наши «исторические» опции. Следующие строки задают условия сохранения команд в файле истории:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">setopt  INC_APPEND_HISTORY
+setopt  HIST_IGNORE_ALL_DUPS
+setopt  HIST_REDUCE_BLANKS
+setopt  HIST_IGNORE_SPACE
+</code></pre></div>
+<p>Они определяют, соответственно:</p>
+
+<ol>
+<li>инкрементное наращивание файла истории — без указания этой опции (или одной из однотипных) его прежние команды будут заменены командами текущего сеанса;</li>
+<li>удаление предыдущих полных дубликатов нововведённых командных конструкций;</li>
+<li>избавление от пустых строк, возникающих после ошибочного нажатия Enter в «голом» приглашении;</li>
+<li>удаление лишних пробелов из командной конструкции.</li>
+</ol>
+
+<p>Зачем нужны пункты 2–4 — ясно без комментариев. А вот о пункте 1-м надо сказать несколько слов. Ибо он не просто обеспечивает наращивание файла истории (для этого было бы достаточно опции, <code>APPEND_HISTORY</code>), но делает это в ходе сеанса, не дожидаясь его завершения. В результате команда, введённая в одном терминальном окне или вкладе терминала, будет доступна в истории команд другого терминала или вкладки (хотя и с некоторой задежкой).</p>
+
+<p>Далее следуют две очень важные строки, определяющие одну из полезнейших возможностей <code>Zsh</code> — тот самый механизм <code>history-substring-search</code>, о котором говорилось ранее:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">bindkey &quot;^[[A&quot; up-line-or-search
+bindkey &quot;^[[B&quot; down-line-or-search
+</code></pre></div>
+<p>Следующие две строки касаются уже простого пролистывания истории в командной строке, позволяя делать это клавишами <code>PageUp</code> и <code>PageDown</code> (а не только стрелками <code>Up</code> и <code>Down</code>, которые в этом качестве работают всегда и везде):</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">bindkey &quot;^[[5~&quot; up-line-or-history
+bindkey &quot;^[[6~&quot; down-line-or-history
+</code></pre></div>
+<p>Этими строками перебрасывается логический мостик к определению кейбиндингов для клавиш, которые в <code>Zsh</code> по умолчанию работают «неправильно» в большинстве терминалов (если не во всех). У меня это <code>Home</code>, <code>End</code>, <code>Delete</code> — их поведение исправляется такими, соответственно, строками:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">bindkey &quot;^[OH&quot; beginning-of-line
+bindkey &quot;^[OF&quot; end-of-line
+bindkey &quot;^[[3~&quot; delete-char
+</code></pre></div>
+<p>Это как раз пример тех строк, которые <code>as is</code> копировать не нужно. Во-первых, в общем случае, могут не работать другие клавиши (скорее, не только эти). Во-вторых же и главных, в более иных терминалах коды тех же клавиш могут быть совсем другими. Какими — легко определить, нажав <code>Control+V</code>, а затем «неправильную» клавишу. Именно таким образом получены коды для <code>Home</code>, <code>End</code> и <code>Delete</code> в системе, в которой сочиняются эти строки.</p>
+
+<p>Теперь — опции, определяющие магию <code>Zsh</code> при навигации по файловой системе:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cdpath=(/home/current /home/current/alv.me /etc)
+setopt autocd
+</code></pre></div>
+<p>Первая строка позволяет с помощью команды <code>cd</code> переходить в подкаталоги перечисленных каталогов, не набирая никаких путей, ни относительных, ни абсолютных, вторая же — обходиться без команды <code>cd</code>.</p>
+
+<p>На грани между опциями навигации и автодополнения находятся такие строки:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">setopt menucomplete
+zstyle &#39;:completion:*&#39; menu select=1 _complete _ignored _approximate
+</code></pre></div>
+<p>Они в паре обеспечивают «менюобразный» вывод списка доступных дополнений по нажатию клавиши табуляции. И это как раз тот случай, когда последовательность строк имеет значение.</p>
+
+<p>Аналогично и со следующими строками — теми самыми, которые обеспечивают волшебство развёртывания <a href="http://alv.me/?p=6745">сокращённого ввода пути в полный</a>:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">autoload -Uz compinit
+compinit
+</code></pre></div>
+<p>Расширенные подстановки и дополнения обеспечиваются вот этими строками:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">setopt extendedglob nomatch notify
+zstyle &#39;:completion:*&#39; completer _expand _complete _ignored _correct _approximate
+</code></pre></div>
+<p>Строка</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">zstyle &#39;:completion:*&#39; use-compctl false
+</code></pre></div>
+<p>знаменует собой отречение от старого мира — системы дополнения <code>compctl</code>, в пользу новой системы <code>compsys</code>.</p>
+
+<p>Строка</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">zstyle &#39;:completion:*&#39; matcher-list &#39;m:{a-z}={A-Z}&#39;
+</code></pre></div>
+<p>устанавливает равноправие при дополнениях символов нижнего регистра с верхним.</p>
+
+<p>А строка</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">zstyle :compinstall filename &#39;/home/zsh/.zshrc&#39;
+</code></pre></div>
+<p>фиксирует файл, в который <code>compinstall</code> (функция автоматического конфигурирования <code>compsys</code>) будет вносить свои изменения при грядущих её вызовах (если они, конечно, будут).</p>
+
+<p>Пора переходить к псевдонимам. Сначала — серия таковых для команд манипуляции файлами, предписывающие запрос подтверждения на таковые или, напротив, форсированное исполнение, в зависимости от ситуации:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">alias mv=&#39;mv -i&#39;
+alias cp=&#39;cp -iR&#39;
+alias cpr=&#39;cp -fR&#39;
+alias rm=&#39;rm -i&#39;
+alias rmf=&#39;rm -f&#39;
+alias rmrf=&#39;rm -fR&#39;
+</code></pre></div>
+<p>Оказывается, что для одной-единственной команды <code>ls</code> можно придумать больше псевдонимов, чем для всех файломанипулирующих команд, вместе взятых:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">alias ls=&#39;ls -F&#39;
+alias ll=&#39;ls -lh&#39;
+alias la=&#39;ls -A&#39;
+alias li=&#39;ls -ial&#39;
+alias lsd=&#39;ls -ld *(-/DN)&#39;
+alias lsa=&#39;ls -ld .*&#39;
+</code></pre></div>
+<p>На самом деле их можно придумывать ещё и ещё — этот тот необходимый минимум, который я в состоянии запомнить без вреда для рассудка. Расшифровывать псевдонимы не буду — кому надо, и так могут сорвать с них маски, а кто не знает — так ему это и не нужно.</p>
+
+<p>Далее идёт серия псевдонимов для различных команд и утилит разного назначения. Здесь также расшифровка будет лишней. Ибо они или оболее-менее общеприняты:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">alias h=history
+alias df=&#39;df -h&#39;
+alias du=&#39;du -h&#39;
+</code></pre></div>
+<p>Либо обусловлены давними привычками (как, например, <code>more</code>-образный вывод команды <code>less</code>):</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">alias less=&#39;less -M&#39;
+alias wget=&#39;wget -c&#39;
+alias nano=&#39;nano -$&#39;
+</code></pre></div>
+<p>Либо связаны со спецификой деятельности:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">alias wcl=&#39;wc -l&#39;
+alias wcw=&#39;wc -w&#39;
+alias wcm=&#39;wc -m&#39;
+alias wcc=&#39;wc -c&#39;
+</code></pre></div>
+<p>Так что можно переходить к следующей убойной фиче <code>Zsh</code> — определению глобальных псевдонимов:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">alias -g N=&#39;2&gt;/dev/null&#39;
+alias -g L=&#39;|less&#39;
+alias -g G=&#39;|grep&#39;
+alias -g W=&#39;|wc -m&#39;
+</code></pre></div>
+<p>Где, впрочем, комментарии тоже излишни.</p>
+
+<p>А посему перехожу к тем самым дистрибутив-специфическим блокам, которые я предназначил для применения в <code>Mint</code>. Это — псевдонимы для субкоманд её утилиты <code>apt</code>, призванные минимизировать ввод при наиболее частых действиях по пакетному менеджменту:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">alias aptin=&#39;apt install --yes&#39;
+alias apter=&#39;apt purge&#39;
+alias aptup=&#39;apt update&#39;
+alias aptug=&#39;apt upgrade&#39;
+alias aptse=&#39;apt search&#39;
+alias aptsh=&#39;apt show&#39;
+</code></pre></div>
+<p>Псевдонимы для внутренних команд <code>apt</code> из <code>APT</code> также имеет смысл определить, по крайней мере один, для получения списка инсталлированных пакетов:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">alias aptlist=&#39;/usr/bin/apt list --installed&#39;
+</code></pre></div>
+<p>Смысл этих псевдонимов будет ясен после знакомства с очерком об утилите <code>apt</code>. И в них нет ничего <code>Zsh</code>-специфичного. В отличие от альтернативного метода, основанного на псевдонимах глобальных, которые определяются для соответствующих аргументов команды <code>sudo</code>. Правда, особенность реализации утилиты <code>apt</code> в <code>Mint</code> такова, что она не требует ввода этой команды в явном виде. И потому здесь у меня осталась единственная строка для псевдонима команды добавления репозиториев:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">alias -g Ar=&#39;add-apt-repository&#39;
+</code></pre></div>
+<p>Хотя я и утверждал не так давно, что приглашение оболочки — нечто вроде вешалки для театра, сам добрался до этой темы только к концу своего конфига. Однако вот — обычное левосторонне приглашение:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#PROMPT=&#39;%B[%n]$=&gt;%b &#39;
+</code></pre></div>
+<p>Вторичное приглашение:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#PROMPT2=&#39;%i%U&gt; &#39;
+</code></pre></div>
+<p>Правостороннее приглашение:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#RPROMPT=&#39; %B[%~]%b &#39;
+</code></pre></div>
+<p>А вот это — альтернативы, которыми я баловался во время сочинения раздела про приглашения. Все они начинаются с такой пары строк:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">autoload -Uz promptinit
+promptinit
+</code></pre></div>
+<p>После которых вызывается уже одна из конкретных тем:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#prompt fade
+prompt fade white grey blue
+#prompt clint
+</code></pre></div>
+<p>Естественно, что остальные строки должны быть закомментированы.</p>
+
+<p>Осталось немного — всякая всячина. Например, предотвращение выхода из оболочки после случайного нажатия <code>Control+D</code> в пустой командной строке:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">setopt IGNORE_EOF
+</code></pre></div>
+<p>Отключение раздражающего звукового сигнала при ошибках набора:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">setopt NO_BEEP
+</code></pre></div>
+<p>Фиксация <code>emacs</code>-образного поведения клавиш (хотя это и так имеет место быть по умолчанию):</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">bindkey -e
+</code></pre></div>
+<p>И под занавес — определение пары переменных среды, для начала умолчального пейджера. Хотя я не так давно говорил, что расширенное перенаправление делает его практически не нужным, но, кроме всего прочего, это ещё и средство для просмотра man-страниц:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">export PAGER=&quot;less&quot;
+</code></pre></div>
+<p>И умолчальный редактор: не смотря на свою любовь к <code>Joe</code>, навыки работы с ним я утратил напрочь, поэтому так:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">export EDITOR=&quot;nano&quot;
+</code></pre></div>
+<p>Вот вроде и всё. Остаётся последний дистрибутив-специфичный стришок — исправление нехорошего поведения <code>history-substring-search</code> в <code>Mint</code>, унаследованного от <code>Ubuntu</code>. А точнее, поведения никакого — эта фича без дополнительных мер просто не работает. Благо меры эти очень просты — создание файла <code>~/.zshenv</code> с единственной строкой:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">DEBIAN_PREVENT_KEYBOARD_CHANGES=yes
+</code></pre></div>
+<p>Вот теперь действительно всё — с конфигурированием <code>Zsh</code> «мануальным» способом покончено.</p>
+
+
+  <br />
+      <div class='row'>
+        <div class='col-sm-4 col-xs-6'>
+          <a href='/ru/17-1-Rebecca/140_nano.html'>&larr; Текстовый редактор nano</a>
+        </div>
+        <div class='col-sm-4 hidden-xs' style='text-align: center'>
+          | <b>Mint и Zsh</b> |
+        </div>
+        <div class='col-sm-4 col-xs-6' style='text-align: right'>
+          
+        </div>
+      </div>
+
+</div>
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-lg-12 footer">
+      2015 Алексей Alv Федорчук.<br />
+       Site last generated: Mar 2, 2016 <br />
+      <p><a href="http://linuxmint.com/"><img title="http://linuxmint.com/" width="50" src="/images/menu.svg"/></a></p>
+    </div>
+  </div>
+</footer>
+
+    </div><!-- /.row -->
+  </div>    <!-- /.container -->
+</body>
+
+</html>
